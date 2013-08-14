@@ -61,6 +61,7 @@ Texts. A copy of the license is included in the section entitled
 
 @menu
 * Create a repository::
+* Create an origin::
 @end menu
 
 
@@ -128,6 +129,42 @@ are ready to stage it and make your first commit:
 git add .gitignore
 git commit -n 'first commit'
 @end example
+
+
+
+@node Create an origin
+@section Create an origin
+
+It is a good idea to create a backup repostory,
+so you do not lose your work on a disc failure,
+filesystem corruption accidental removal.
+
+You can such repostory for allowing collaboration
+with a command repository that the collaborators
+can all submit and fetch commits from.
+
+This repository is customarly called `origin'.
+And it is a bare repository, meaning that it
+only hold the data in the @file{.git} directory
+and cannot be used as the working directory.
+
+@example
+mkcd -p /srv/git/MY_REPOSITORY.git
+cd /srv/git/MY_REPOSITORY.git
+git init --bare
+
+cd -  # Go back to your project respository
+git remote add origin file:///srv/git/MY_REPOSITORY.git
+git push -u orgin master  # master is the bransh you are working in
+@end example
+
+It is standard to append @file{.git} to the
+end of the repository name when it is bare.
+
+To submit your changes to origin you can now
+use the command @command{git push}. To fetch
+updates others have made, use the command
+@command{git pull}.
 
 
 
