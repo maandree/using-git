@@ -7,14 +7,24 @@ _/
 *.bak
 *.swo
 *.swp
+
+## Texinfo
+*.info
+*.pdf
+*.ps
+*.dvi
 *.aux
 *.cp
+*.cps
 *.fn
 *.ky
 *.log
-*.pdf
 *.pg
 *.toc
 *.tp
 *.vr
+*.op
+*.ops
+*.pgs
+*.vrs
 
