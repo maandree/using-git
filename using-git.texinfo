@@ -9,9 +9,6 @@
 @finalout
 @c %**end of header
 
-@c --- start of do not touch ---
-@set DICT /usr/share/applebloom
-@c --- end of do not touch ---
 
 
 @dircategory Version Control
