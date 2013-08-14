@@ -68,8 +68,8 @@ uninstall-info:
 .PHONY: clean-texinfo
 clean: clean-texinfo
 clean-texinfo:
-	-rm -- *.{info,pdf,ps,dvi}{,.gz,.bz2,.xz}
-	-rm -- *.{aux,cp,cps,fn,ky,log,pg,pgs,toc,tp,vr,vrs}
+	-rm -- *.{info,pdf,ps,dvi}{,.gz,.bz2,.xz} 2>/dev/null
+	-rm -- *.{aux,cp,cps,fn,ky,log,pg,pgs,toc,tp,vr,vrs} 2>/dev/null
 
 ## License section
 
