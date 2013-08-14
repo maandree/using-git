@@ -35,7 +35,7 @@ clean:
 
 .PHONY: doc
 all: doc
-doc: info
+doc: info pdf ps dvi
 
 .PHONY: info pdf ps dvi
 info: $(PROGRAM).info.gz
