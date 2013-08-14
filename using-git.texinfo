@@ -53,8 +53,84 @@ Texts. A copy of the license is included in the section entitled
 
 
 @menu
-* GNU Free Documentation License::  Copying and sharing this manual.
+* Getting started::
+* GNU Free Documentation License::
 @end menu
+
+
+
+@node Getting started
+@chapter Getting started
+
+@menu
+* Create a repository::
+@end menu
+
+
+
+@node Create a repository
+@section Create a repository
+
+A repository is a directory under source control,
+normally your project you are working on.
+
+Create an empty directory and @command{cd} into it:
+
+@example
+mkdir MY_PROJECT
+cd MY_PROJECT
+@end example
+
+When you are inside the directory for the repository
+issus the git command to initialise the repository:
+
+@example
+git init
+@end example
+
+This command creates a directory namend @file{.git}
+inside the directory with all data git requires to
+operate on the repository.
+
+The next thing you want to do is to create a
+@file{.gitignore} file, it is used to keep track
+of with files that should be be included in the
+repository, unless overruled with a forced staging.
+
+A good base @file{.gitignore} content you probably
+always want to use is:
+
+@example
+_/
+# It is a good idea to allow the directory _ to
+# contain temporary file you do not whant to stage.
+
+.*
+# Generally you probably do not want to include
+# hidden files.
+
+!.git*
+# But you do generally want to include files
+starting with .git, such as .gitignore.
+
+\#*\#
+*~
+*.bak
+# And you do not want to include backup files.
+@end example
+
+Git parses @file{.gitignore} with wildcards,
+@code{#} for comments and @code{!} for inclusion
+rather than exclusion, latter entires override
+earlier entries.
+
+When you have create you @file{.gitignore} you
+are ready to stage it and make your first commit:
+
+@example
+git add .gitignore
+git commit -n 'first commit'
+@end example
 
 
 
