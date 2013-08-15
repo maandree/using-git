@@ -63,6 +63,7 @@ Texts. A copy of the license is included in the section entitled
 @menu
 * Create a repository::
 * Create an origin::
+* Gratis hosting::
 @end menu
 
 
@@ -166,6 +167,50 @@ To submit your changes to origin you can now
 use the command @command{git push}. To fetch
 updates others have made, use the command
 @command{git pull}.
+
+
+
+@node Gratis hosting
+@section Gratis hosting
+
+As seen you do not need host, but it is a grate
+way for making your projects available to the world.
+
+Here is a lost of gratis git hosting services that
+hosts Free Software.
+
+@table @asis
+@item @bullet{} @url{https://savannah.nongnu.org/, Savannah}
+Hosts Free Software only, and projects are audited
+for licensing issues upon registration. So it can
+take some a few hours before it is accepted.
+Savannah runs on only free software.
+
+@item @bullet{} @url{https://gna.org, Gna!}
+For Free Software projects only.
+
+@item @bullet{} @url{https://bitbucket.org, BitBucket}
+Gratis for 5 uses, with unlimied number of private repositories
+for 5 collaborators.
+
+@item @bullet{} @url{https://github.com/, GitHub}
+5 private repositories for students, for two yours and reactivatable
+when expired. Teachers and student organisations can get private
+repositories, as many as required, for an organisation.
+
+@item @bullet{} @url{https://www.assembla.com/catalog/51-free-private-git-repository-package?type=private&ad=git-wiki, Assembla}
+Hosting limited to 2 GB with one free private
+repository for three users.
+
+@item @bullet{} @url{https://www.cloudforge.com/pricing, CloudForge}
+Hosting limited to 2 GB.
+
+@end table
+
+You should note that there are, other, git hosting
+services that does not allow Free Software. Some
+of them will allow Open Source, some will allow
+Free Software, but not gratis.
 
 
 
