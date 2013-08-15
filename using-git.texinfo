@@ -183,20 +183,23 @@ hosts Free Software.
 @item @bullet{} @url{https://savannah.nongnu.org/, Savannah}
 Hosts Free Software only, and projects are audited
 for licensing issues upon registration. So it can
-take some a few hours before it is accepted.
-Savannah runs on only free software.
+take a short time before it is accepted, but you your
+project will not use non-Free Software and no license
+information will be missing. Savannah runs on only
+free software.
 
 @item @bullet{} @url{https://gna.org, Gna!}
 For Free Software projects only.
 
 @item @bullet{} @url{https://bitbucket.org, BitBucket}
-Gratis for 5 uses, with unlimied number of private repositories
-for 5 collaborators.
+Gratis for 5 uses, with unlimied number of private
+repositories for 5 collaborators.
 
 @item @bullet{} @url{https://github.com/, GitHub}
-5 private repositories for students, for two yours and reactivatable
-when expired. Teachers and student organisations can get private
-repositories, as many as required, for an organisation.
+5 private repositories for students, for two yours
+and reactivatable when expired. Teachers and student
+organisations can get private repositories, as many
+as required, for an organisation.
 
 @item @bullet{} @url{https://www.assembla.com/catalog/51-free-private-git-repository-package?type=private&ad=git-wiki, Assembla}
 Hosting limited to 2 GB with one free private
