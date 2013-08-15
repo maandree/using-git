@@ -174,6 +174,7 @@ updates others have made, use the command
 
 @menu
 * What is Git?::
+* It is distributed::
 @end menu
 
 
@@ -204,6 +205,68 @@ of the code. If you have release a program
 and is sent a bug report you may want to
 test it one both the current version and
 the version the user used.
+
+
+
+@node It is distributed
+@section It is distributed
+
+Traditionally, version control systems
+were centralised. Every project has one
+repository all contributers pushed and
+pulled from. Git is distributed, this
+means that contributers clone the
+respositor and words on that clone
+instead of ``checking out'' the current
+tip of the source code. This actually
+means that there are multiple backups
+of the respository is recovering a
+crash or corruption will be a breeze.
+
+It is a popular misconception that
+distributed systems are not suited for
+projects that requires an official
+central repository. This is far from
+true; projects have a central blessed
+repository, possibly with mirrors.
+
+A blessed repository, refered to as
+the upstream, is the projects official
+respository. Its maintained by a select
+few with input from submitted updates.
+But the upstream can also be a shared
+repository, this is the classical
+Subversion-style workflow, where everyone
+pulls from and pushes to. Git does not
+allow you to push before you have pulled
+to latest commit so this workflow works
+fine.
+
+Small projects will usally have one
+maintainer and contributors clones her
+blessed repository and sends submissons
+to her. Larger projects may have multiple
+maintainers that helps with excepting
+submissons. A common model like this,
+that you often se on GitHub, is the
+integeration manager workflow, where the
+maintainer is an integeration manager
+than excepts pull requests from developers
+that have public repositores, often
+called forks (which should not be confused
+with a project fork where the forker
+is taked the project in another direction
+is does not requests pulls.)
+
+Even larger project will usablly work
+with a dictator and lieutenants workflow
+where developers clones the blessed
+repository and submits patches to the
+lieutenants who in turn submits the the
+dictator that finally pushes the changes
+to the blessed repository.
+
+
 
 
 
