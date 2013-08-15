@@ -52,6 +52,7 @@ Texts. A copy of the license is included in the section entitled
 @menu
 * Getting started::
 * Introduction::
+* Branching out::
 * GNU Free Documentation License::
 @end menu
 
@@ -317,6 +318,36 @@ dictator that finally pushes the changes
 to the blessed repository.
 
 
+
+@node Branching out
+@chapter Branching out
+
+@menu
+* Workflow::
+@end menu
+
+
+
+@node Workflow
+@section Workflow
+
+Git encourage you to create multiple local
+branches of you repository. A branch is a
+fork of your commit history, it allows you
+to implement features in parallel. The most
+important part with this is that you can
+fix bugs meanwhile you are working one big
+new features.
+
+You main branch is by default called `master',
+from it, it is recommended to have a branch
+called `develop'. The develop branch is the
+branch you work on, and when it is stable,
+you merge it with the master branch.
+
+For the develop branch you can branch out
+an create topic branches, an disposable
+experiments.
 
 
 
