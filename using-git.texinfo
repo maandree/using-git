@@ -324,6 +324,7 @@ to the blessed repository.
 
 @menu
 * Workflow::
+* Creating branches::
 @end menu
 
 
@@ -348,6 +349,45 @@ you merge it with the master branch.
 From the develop branch you can branch out
 an create topic branches, an disposable
 experiments.
+
+
+
+@node Creating branches
+@section Creating branches
+
+The quickest way to create a new branch and
+start working on it is to issue a checkout
+command that create a new branch:
+
+@example
+git checkout -b BRANCH_NAME
+@end example
+
+After issuing this command you are located
+in a new branch. The create it in the origin,
+make a push:
+
+@example
+git push -u origin BRANCH_NAME
+@end example
+
+From this point on you can push without
+parameters:
+
+@example
+git push
+@end example
+
+The @command{-u origin BRANCH_NAME} is just
+to initially tell which remote repository
+a pushes should go to.
+
+To switch branch use the checkout command:
+
+@example
+git checkout BRANCH_NAME
+@end example
+
 
 
 
