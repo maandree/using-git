@@ -345,7 +345,7 @@ called `develop'. The develop branch is the
 branch you work on, and when it is stable,
 you merge it with the master branch.
 
-Form the develop branch you can branch out
+From the develop branch you can branch out
 an create topic branches, an disposable
 experiments.
 
