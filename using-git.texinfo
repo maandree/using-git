@@ -181,24 +181,29 @@ updates others have made, use the command
 @node What is Git?
 @section What is Git?
 
-Git is a version control system know for its lightning speed
-and being distributed. A version control system is a system
-for storing changes in a history tree and allow for multiple
-people to work on the same project without the risk of the
-code being too new to accept a submitted patch.
+Git is a version control system know for
+its lightning speed and being distributed.
+A version control system is a system for
+storing changes in a history tree and allow
+for multiple people to work on the same
+project without the risk of the code being
+too new to accept a submitted patch.
 
-When you are working it is important to keep track of changes
-so that you can find when edit step broke the system. But
-version control also lets you create branches, these are
-different versions of the same project being developed
-concurrently which lets your team implement features in
-parallel and merge them in into the mainline when stable.
+When you are working it is important to keep
+track of changes so that you can find when
+edit step broke the system. But version
+control also lets you create branches, these
+are different versions of the same project
+being developed concurrently which lets your
+team implement features in parallel and
+merge them in into the mainline when stable.
 
-And other important feature of version control that can
-be used to tag releases of the code. If you have release
-a program and is sent a bug report you may want to test
-it one both the current version and the version the user
-used.
+And other important feature of version
+control that can be used to tag releases
+of the code. If you have release a program
+and is sent a bug report you may want to
+test it one both the current version and
+the version the user used.
 
 
 
