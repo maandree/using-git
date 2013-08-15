@@ -186,10 +186,12 @@ for licensing issues upon registration. So it can
 take a short time before it is accepted, but you your
 project will not use non-Free Software and no license
 information will be missing. Savannah runs on only
-free software.
+Free Software.
 
 @item @bullet{} @url{https://gna.org, Gna!}
-For Free Software projects only.
+For Free Software projects only. Gna! runs on only
+Free Software. Gna! runs on only
+Free Software.
 
 @item @bullet{} @url{https://bitbucket.org, BitBucket}
 Gratis for 5 uses, with unlimied number of private
