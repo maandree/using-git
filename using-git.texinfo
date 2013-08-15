@@ -173,7 +173,7 @@ updates others have made, use the command
 @chapter Introduction
 
 @menu
-* What is Git?
+* What is Git?::
 @end menu
 
 
