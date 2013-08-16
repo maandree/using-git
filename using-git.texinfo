@@ -325,6 +325,7 @@ to the blessed repository.
 @menu
 * Workflow::
 * Creating branches::
+* Merging branches::
 @end menu
 
 
@@ -387,6 +388,63 @@ To switch branch use the checkout command:
 @example
 git checkout BRANCH_NAME
 @end example
+
+
+
+@node Merging branches
+@section Merging branches
+
+The merge a branch into another, switch
+to one of them and pull the other:
+
+@example
+git checkout MERGER
+git pull . MERGEE
+@end example
+
+In the default mode, @command{git pull . MERGEE}
+is a short and fore a fetch and merge:
+
+@example
+git fetch MERGEE &&
+git merge MERGEE
+@end example
+
+If you two cannot be automatically merged,
+you will you get a merge conflict. A case
+where you will get merge conflicts is when
+one of the branches as made a modification
+where the other has change the indention,
+so keep to a coding style from the start;
+or both has edited the same lines.
+
+If you get a merge conflict, git will tell
+you so, in which files there are conflicts,
+and exit with the return code 1 to indicated
+that the merge was not successful and human
+intervention is required. If the merger
+branch as a file with the line
+@code{Hello world} and the mergee branch
+as the line @code{hello world!}, the
+file will contain:
+
+@example
+<<<<<<< HEAD
+Hello world
+=======
+wello world!
+>>>>>>> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+@end example
+
+Where
+@code{xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}
+is the lower case hexadecimnal represention of
+the commit ID at the tip of the mergee branch,
+which is a SHA-1 hash sum of the commit.
+
+After a merge conflict you will need to stage
+the files and make a new commit.
+
 
 
 
