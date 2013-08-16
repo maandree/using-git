@@ -398,7 +398,7 @@ parameters:
 git push
 @end example
 
-The @command{-u origin BRANCH_NAME} is just
+The @option{-u origin BRANCH_NAME} is just
 to initially tell which remote repository
 a pushes should go to.
 
@@ -473,6 +473,7 @@ the files and make a new commit.
 * Cloning a repository::
 * Submitting patches::
 * Accepting patches::
+* Making pull requests::
 @end menu
 
 
@@ -488,7 +489,7 @@ repository:
 git clone REPOSITORY -o upstream
 @end example
 
-By including @command{-o upstream}, git
+By including @option{-o upstream}, git
 sets up the cloned repository as a
 remote repository named `upstream'.
 
@@ -581,6 +582,34 @@ help establish a chain to trace submissions,
 and some projects will require it. To
 sign off with @command{git am}, just add
 @command{--signoff}.
+
+
+
+@node Making pull requests
+@section Making pull requests
+
+A less feature rich alternative than
+patches are pull request, but they are
+easier to just because you do know need
+to know anything to make a pull request
+and to accept them you just need to
+know how to pull from other repositories.
+
+Git does however provide a command
+the produces a clean standard message
+than can be posted on a mailing list.
+To do this just type:
+
+@example
+git request pull FORKING_POINT_COMMIT YOUR_URL
+@end example
+
+Additionally you can add a commit that
+the pull requests stops at, if you have
+another commit than @code{HEAD} --- the
+current commit you are working at --- in
+mind. You can also add @option{-p} if
+you want to see the changes.
 
 
 
