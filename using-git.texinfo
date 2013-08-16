@@ -54,6 +54,7 @@ Texts. A copy of the license is included in the section entitled
 * Introduction::
 * Branching out::
 * Collaborating::
+* Basic commands::
 * GNU Free Documentation License::
 @end menu
 
@@ -610,6 +611,58 @@ another commit than @code{HEAD} --- the
 current commit you are working at --- in
 mind. You can also add @option{-p} if
 you want to see the changes.
+
+
+
+@node Basic commands
+@chapter Basic commands
+
+@menu
+* The trees of Git::
+@end menu
+
+
+
+@node The trees of Git
+@section The trees of Git
+
+Git has four trees should know about
+to better understand how Git works.
+
+The first tree you encounter is the
+working directory. The tree begins
+in the parent so called git directory;
+the directory you executed
+@command{git init} in, and contains
+the directory @file{.git}.
+
+When you are using @command{git add}
+to stage files you encounter the next
+tree. This tree is called the index,
+and is separate from the working
+directory, when you stage a file,
+you stage an edit, if you edit the
+file further those changes does not
+make it into the index until you
+restage the file.
+
+When you have done some work ---
+just a small logical step is recommended
+--- and want to save your changes you
+commit then with @command{git commit}.
+This is when you encounter the third
+tree, the @code{HEAD}. @code{HEAD} is
+the file tree of the last commit, and
+it is updated when make a commit.
+
+The fourth tree is not a file tree,
+it is the commit tree. The important
+thing with Git is that this tree is
+not linear, it is a directed acyclic
+graph, so it is not really a tree,
+but you can think of it as one because
+you are normally only interested
+in the leaves, your branches.
 
 
 
