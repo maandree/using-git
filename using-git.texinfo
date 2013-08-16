@@ -432,7 +432,7 @@ file will contain:
 <<<<<<< HEAD
 Hello world
 =======
-wello world!
+hello world!
 >>>>>>> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 @end example
 
