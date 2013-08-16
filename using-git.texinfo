@@ -564,6 +564,33 @@ normal e-mail, but use the forwarding e-mail
 address as the envelop-sender, most e-mail
 server should accept this.
 
+If you are replying to a message in the mailing
+list, perhaps with an updated patch, you should
+specify the message ID of the message to replay
+to. This done my adding the option:
+
+@example
+--in-reply-to=MESSAGE_ID
+@end example
+
+To get the message ID, open the message in your
+e-mail client and choose to see all headers ---
+if not possible: download the it as an mbox file
+and open it in an text editor --- a look for:
+
+@example
+Message-ID: <MESSAGE_ID>
+@end example
+
+As indicated here, it is surrended by less than
+and grater than-signs. You should, if you have
+subscribed to the mailing list, have gotten it
+send to your e-mail. If you do not have it, go
+the the mailing lit and click that you want to
+reply, it will open your e-mail client in compose
+mode and the in-reply-to address will have been
+set to the proper message ID.
+
 
 
 @node Accepting patches
