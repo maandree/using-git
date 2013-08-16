@@ -53,6 +53,7 @@ Texts. A copy of the license is included in the section entitled
 * Getting started::
 * Introduction::
 * Branching out::
+* Collaborating::
 * GNU Free Documentation License::
 @end menu
 
@@ -465,6 +466,34 @@ After a merge conflict you will need to stage
 the files and make a new commit.
 
 
+
+@node Collaborating
+@chapter Collaborating
+
+@menu
+* Cloning a repository::
+@end menu
+
+
+
+@node Cloning a repository
+@section Cloning a repository
+
+The first thing you need to do in order
+to begin collaboration is the clone the
+repository:
+
+@example
+git clone REPOSITORY -o upstream
+@end example
+
+By including @command{-o upstream}, git
+sets up the cloned repository as a
+remote repository named `upstream'.
+
+If you want to access a branch in the
+upstream repository, use
+@code{upstream/BRANCH} as the branch name.
 
 
 
