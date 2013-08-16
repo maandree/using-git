@@ -620,6 +620,7 @@ you want to see the changes.
 @menu
 * The trees of Git::
 * File operations::
+* Go back in time::
 @end menu
 
 
@@ -739,6 +740,146 @@ conflict when you have only
 renamed the file is not too hard
 and it eliminates a potatial
 maintenance miss.
+
+If you want do know the file
+staging difference between the
+index and working directory
+type @command{git status}.
+
+
+
+@node Go back in time
+@section Go back in time
+
+Because git keeps track of what
+has changed it has a log you
+access, which has commit messages,
+so you know when something has
+happend or what has happen lately.
+To read the log type:
+
+@example
+git log
+@end example
+
+If you want to know which files
+have changes, you can use
+@command{git whatchanged} instead.
+
+If you want to take a closer look
+a commit an see the state of the
+project at the commit type:
+
+@example
+git stash               # Only if you have uncommited changes, this
+                        # saves you changes outside the tree in a stack.
+git checkout COMMIT_ID  # Take a look around!
+git checkout -          # Checking out - means that you checkout the
+                        # commit you were on before the last checkout.
+                        # Kind of like `cd -'.
+git stash pop           # Only if you have uncommited changes, this
+                        # reapplies the changes you saved with `git stash'
+                        # and removes it from that stack.
+@end example
+
+If you instead what to see all
+changes from that point of time type:
+
+@example
+git diff COMMIT_ID
+@end example
+
+Or for a specific file:
+
+@example
+git diff COMMIT_ID FILE
+@end example
+
+If you decide that you want to go back
+permanently to this state you type:
+
+@example
+git revert THE_COMMIT_ID_OF_THE_COMMIT_AFTER_THAT_COMMIT..HEAD
+@end example
+
+If you have not push the commits you
+want to revert you can do a reset instead,
+thay way the are irreverable removed
+instead of a new commit being made:
+
+@example
+git revert --hard COMMIT_ID
+@end example
+
+But you should think of that as running
+as root:
+
+@cartouche
+@noindent
+Chris: root is the number zero user,
+it is main user in your system, it
+can do everything, it can literally
+delete the filesystem while your
+operating is running.
+
+@noindent
+Bryan: Yeah, it is a grate user in
+that regard.
+
+@noindent
+Chris: Yeah. Yeah.
+
+@noindent
+Bryan: Here is the thing, so people
+always say `do not run as root'.
+@emph{I always} run as root.
+
+@noindent
+Chris: Do you really always run as
+root?
+
+@noindent
+Bryan: Hell yes. Do you know why I
+always run as root?
+
+@noindent
+Chris: Why?
+
+@noindent
+Bryan: Awesome.
+
+@noindent
+Chris: Here, I... <interrupted>
+
+@noindent
+Bryan: I live on the edge. I'm like
+Mad Max. <Saying something but Chris
+is louder.>
+
+@noindent
+Chris: Do you really always run as
+root for real?
+
+@noindent
+Bryan: No, I do not run as root.
+Are you kidding me, that is asinine!
+I would love to think that I am so
+hardcore that I just always ran as
+root. I just, caution to the wind,
+screw it, lets just thunderdome this
+bitch and... you know, see what
+happens. But no, never run as root,
+never ever do that. The only time
+you run as root is when you run as
+root temporarly, you sudo.
+
+@noindent
+Chris: You need to do something.
+@end cartouche
+
+Only use @command{reset} if you
+are absolutely sure and know exactly
+what you are doing.
 
 
 
