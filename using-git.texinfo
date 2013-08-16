@@ -529,6 +529,39 @@ being included, but is rather for discussion,
 use `PATCH/RFC'@footnote{RFC is an abbreviation
 for `Request for comments'} instead of `PATCH'.
 
+To send the patch, use @command{git send-email}:
+
+@example
+git send-email --to=EMAIL_ADDRESS_TO_SEND_TO PATCH_FILE
+@end example
+
+If you have registered to the mailing list,
+or for some other reason, want to send under
+a different e-mail address then you made the
+commits with, you need to specify an envelop
+send, by adding an option:
+
+@example
+--envelope-sender=SENDER_EMAIL_ADDRESS
+@end example
+
+You will also need the specify which SMTP
+server to use, authorisation and configurations:
+
+@example
+--smtp-server=DOMAIN    # it usally is prefixed with smtp.
+--smtp-server-port=PORT
+--smtp-encryption=ssl   # or tls
+--smtp-user=ACCOUNT     # usally just the username without domain
+--smtp-pass=PASSPHRASE
+@end example
+
+If you are using a forwarding e-mail, such
+as @@member.fsf.org, you send from using your
+normal e-mail, but use the forwarding e-mail
+address as the envelop-sender, most e-mail
+server should accept this.
+
 
 
 
