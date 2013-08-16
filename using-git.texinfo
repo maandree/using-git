@@ -619,6 +619,7 @@ you want to see the changes.
 
 @menu
 * The trees of Git::
+* File operations::
 @end menu
 
 
@@ -663,6 +664,81 @@ graph, so it is not really a tree,
 but you can think of it as one because
 you are normally only interested
 in the leaves, your branches.
+
+
+
+@node File operations
+@section File operations
+
+Their are four basic options you can
+do on files: add, update, remove and
+rename, adding and update is done
+with the same command:
+
+@example
+git add FILE
+@end example
+
+To remove a file or rename a file,
+just do as you normally would without
+git, but prepand @code{git}:
+
+@example
+git rm FILE           # Remove FILE
+git mv FILE NEW_NAME  # Rename FILE to NEW_NAME
+@end example
+
+If an directory in becomes empty
+in the working directory it is
+automatically removed from working
+directory. And directories are never
+tracked by Git, so you cannot have
+an empty directory in a commit.
+
+You can also use @command{git add -u}
+@footnote{@option{-u} is the short
+option for @option{--update}.} to
+stage an edit in an already tracked
+file or stage the removal of it
+if it as been removed from the
+working directory.
+
+A caveat with @command{git mv} is
+that is that is that same thing as
+typing:
+
+@example
+cp FILE NEW_NAME
+git rm FILE
+git add NEW_NAME
+@end example
+
+In other words, the history for
+the file is reset and if you do
+this at the same time someone
+edits the file you will get a
+merge conflict.
+
+This is not a problem with GNU
+Arch because it keeps track of
+which file is which by giving
+it an unique identifier, and you
+may think that would have been
+a good think. But if the content
+of the file depends on the file's
+name, or the other way around,
+and a line with such dependency
+is added, the file's content
+would become bad. Well it is
+debatable since the case could
+be that another file depends on
+the renamed files name, and
+someone could make a change in
+that file. But fixing a merge
+conflict when you have only
+renamed the file is not too hard
+and it eliminates a potatial
+maintenance miss.
 
 
 
