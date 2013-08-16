@@ -192,7 +192,6 @@ Free Software.
 
 @item @bullet{} @url{https://gna.org, Gna!}
 For Free Software projects only. Gna! runs on only
-Free Software. Gna! runs on only
 Free Software.
 
 @item @bullet{} @url{https://bitbucket.org, BitBucket}
