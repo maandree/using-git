@@ -473,6 +473,7 @@ the files and make a new commit.
 @menu
 * Cloning a repository::
 * Submitting patches::
+* Accepting patches::
 @end menu
 
 
@@ -562,6 +563,25 @@ normal e-mail, but use the forwarding e-mail
 address as the envelop-sender, most e-mail
 server should accept this.
 
+
+
+@node Accepting patches
+@section Accepting patches
+
+To apply a patch, use the @command{git am}
+@footnote{`am' stands for `apply mailbox',
+but it words on regular patch files}
+command:
+
+@example
+git am PATCH_FILE
+@end example
+
+Is good practice to sign off commits to
+help establish a chain to trace submissions,
+and some projects will require it. To
+sign off with @command{git am}, just add
+@command{--signoff}.
 
 
 
