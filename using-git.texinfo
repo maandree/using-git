@@ -226,6 +226,7 @@ Free Software, but not gratis.
 @menu
 * What is Git?::
 * It is distributed::
+* Integrity::
 @end menu
 
 
@@ -316,6 +317,24 @@ repository and submits patches to the
 lieutenants who in turn submits the the
 dictator that finally pushes the changes
 to the blessed repository.
+
+
+
+@node Integrity
+@section Integrity
+
+Git cryptographically hashes all data
+associated with a commit, including the
+prior commit. This makes it unfeasible
+to modify a commit without changing the
+commit ID; change the commit ID brakes
+the commit history and would therefore
+get noticed as the develops cannot work
+against a broken commit history.
+
+Additionally commits can be signed with
+GPG, so you can be sure that the commit
+is how is says he is.
 
 
 
