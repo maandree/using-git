@@ -472,6 +472,7 @@ the files and make a new commit.
 
 @menu
 * Cloning a repository::
+* Submitting patches::
 @end menu
 
 
@@ -494,6 +495,30 @@ remote repository named `upstream'.
 If you want to access a branch in the
 upstream repository, use
 @code{upstream/BRANCH} as the branch name.
+
+
+
+@node Submitting patches
+@section Submitting patches
+
+The best way to create a patch is with Git's
+@command{format-patch} command. Assuming
+you began from @code{upstream/master}:
+
+@example
+git format-patch upstream/master
+@end example
+
+This command with create a patch whose name
+will be printed by @command{git format-patch}.
+
+Creating a patch this way will keep track
+of the commit messages, and the individual
+commits. Another advantage with it is that
+it can easily be submitted to a mailing list,
+which the common way for large projects for
+accepting patches.
+
 
 
 
