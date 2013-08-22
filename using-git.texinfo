@@ -65,11 +65,36 @@ Texts. A copy of the license is included in the section entitled
 @chapter Getting started
 
 @menu
+* Identify yourself::
 * Create a repository::
 * Create an origin::
 * Gratis hosting::
 * Generate your key::
 @end menu
+
+
+
+@node Identify yourself
+@section Identify yourself
+
+The first thing you want to do right off the bat
+is to identify yourself: add your name and e-mail
+address to your Git configurations. This is
+done with two simple commands:
+
+@example
+git config --global user.name 'YOUR NAME'
+git config --global user.email 'YOUR_EMAIL_ADDRESS'
+@end example
+
+It is possible to sign your work with GPG. If you
+are planning on doing this, and doing this with
+another GPG key then your default key, you can
+configure Git to using another key by default:
+
+@example
+git configre --global user.signingkey YOUR_GPG_KEY_ID
+@end example
 
 
 
