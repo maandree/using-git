@@ -133,7 +133,7 @@ are ready to stage it and make your first commit:
 
 @example
 git add .gitignore
-git commit -n 'first commit'
+git commit -m 'first commit'
 @end example
 
 
