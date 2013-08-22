@@ -836,7 +836,7 @@ thay way the are irreverable removed
 instead of a new commit being made:
 
 @example
-git revert --hard COMMIT_ID
+git reset --hard COMMIT_ID
 @end example
 
 But you should think of that as running
