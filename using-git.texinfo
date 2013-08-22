@@ -916,6 +916,7 @@ what you are doing.
 
 @menu
 * Naïve reset::
+* Using the stash::
 @end menu
 
 
@@ -935,6 +936,47 @@ cp REPOSITORY/.git/config REPOSITORY.new/.git/config
 yes | rm -r REPOSITORY
 mv REPOSITORY.new REPOSITORY
 @end example
+
+
+
+@node Using the stash
+@section Using the stash
+
+The stash is a grate utility for storing
+changes. If you have made changes in
+the working directory or the index, you
+can store them in the stash and both
+the working directory and the index will
+be restored to the @code{HEAD}. Keep
+in mind the the naïve reset will discard
+the stash because the stash is local.
+Changes stored to the stash can be applied
+to any branch and any later state of the
+@code{HEAD}, that is what the stash is
+made for.
+
+The basic stash operations include:
+
+@table @command
+@item git stash
+Store the changes made to the index and
+working directory.
+
+@item git stash drop
+Discard the object at the top of the
+stash stack.
+
+@item git stash apply
+Apply changes stored as the object at the
+top of the stash stack.
+
+@item git stash pop
+Synonym for
+@command{git stash apply && git stash drop}.
+
+@item git stash clear
+Discard all stored stash objects.
+@end table
 
 
 
