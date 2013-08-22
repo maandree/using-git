@@ -1209,13 +1209,13 @@ command.
 @chapter Interface
 
 @menu
-* First thing first::
+* First things first::
 @end menu
 
 
 
-@node First thing first
-@section First thing first
+@node First things first
+@section First things first
 
 Many Git commands take both revisions
 and paths as their arguments. First come
