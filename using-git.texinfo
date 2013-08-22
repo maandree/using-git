@@ -1210,6 +1210,7 @@ command.
 
 @menu
 * First things first::
+* Wildcards::
 @end menu
 
 
@@ -1226,6 +1227,20 @@ the revisions and the files, anything
 after a @option{--} is interpreted as
 a file. It is a good practice to do this
 in scripts that takes random user-input.
+
+
+
+@node Wildcards
+@section Wildcards
+
+Many Git commands allow wildcards in
+paths. These commands will expand
+wildcards in the arguments just a
+the shell. To avoid problems, never
+use characters in paths that are
+used in the shell for wildcards
+and expansions... yeah, I know, it
+is annoying.
 
 
 
