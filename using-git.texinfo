@@ -1127,6 +1127,7 @@ bisection.
 @menu
 * Tagging versions::
 * Cherry picking::
+* Examine the log::
 @end menu
 
 
@@ -1182,6 +1183,24 @@ individual commits, and commits ranges:
 @example
 git cherry-pick COMMIT_ID
 @end example
+
+
+
+@node Examine the log
+@section Examine the log
+
+So how are you going to cherry-pick commits
+if you do not know their commit ID:s? Simple,
+you use Git's log tool to find their ID:s.
+
+The log will only show earlier commits in
+the branch then the currently checked out
+commit. Typing @command{git log} will show
+you the commit's ID, author, date, and
+commit message. You can limit the commits
+to a commits where specify files has been
+changed by appending those files to the
+command.
 
 
 
