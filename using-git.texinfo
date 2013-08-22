@@ -917,6 +917,8 @@ what you are doing.
 @menu
 * Naïve reset::
 * Using the stash::
+* Commit amendment::
+* Bisection::
 @end menu
 
 
@@ -979,7 +981,27 @@ Discard all stored stash objects.
 @end table
 
 
-@c TODO git bisect
+
+@node Commit amendment
+@section Commit amendment
+
+If you have not yet pushed your latest
+commit you can amend it. If you have
+pushed it, you cannot amend it cause
+the commit ID changes because it is
+SHA-1 hashsum of all imformation.
+
+To amend your commit run
+@command{git commit --amend}.
+It will launch your text editor so
+you can edit the commit message,
+additionally all staged changes are
+included in the amendment.
+
+
+
+@node Bisection
+@section Bisection
 
 
 
