@@ -68,6 +68,7 @@ Texts. A copy of the license is included in the section entitled
 * Create a repository::
 * Create an origin::
 * Gratis hosting::
+* Generate your key::
 @end menu
 
 
@@ -219,6 +220,33 @@ You should note that there are, other, git hosting
 services that does not allow Free Software. Some
 of them will allow Open Source, some will allow
 Free Software, but not gratis.
+
+
+
+@node Generate your key
+@section Generate your key
+
+Many Git servers authenticate using public
+SSH keys. If you do not already have SSH
+installed, install it, it is probably named
+@code{openssh} in your GNU/Linux distributions'
+package repository.
+
+Before create an SSH key, check if you already
+have one. You are looking for a pair of
+@file{id_rsa.pub} and @file{id_rsa}, in
+@file{~/.ssh}. @file{id_rsa} is your private
+key and should not be shared or made public.
+@file{id_rsa.pub} is you public key and is
+the file you want to upload you your Git
+hosting server.
+
+If you do not already have a key, you can
+create it with:
+
+@example
+ssh-keygen -t rsa -C 'YOUR_EMAIL_ADDRESS'
+@end example
 
 
 
