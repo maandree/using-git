@@ -1281,7 +1281,7 @@ A working tree is clean if has no changes
 relative to the current @code{HEAD}
 
 @c @item commit
-@c @item commit objcet
+@c @item commit object
 
 @item core Git
 The fundamental tools of source code management.
@@ -1290,12 +1290,18 @@ The fundamental tools of source code management.
 @c @item deatched HEAD
 @c @item directory
 @c @item dirty
-@c @item evel merge
+@c @item evil merge
 @c @item fast-forward
 @c @item fetch
 @c @item gitfile
-@c @item grafys
-@c @item hash
+@c @item grafts
+
+@item hash
+Especially if cryptographic, almost unique,
+unfeasible reverably, fixed size, scrambling
+of content. In Git's context, synonym for
+object name.
+
 @c @item head
 @c @item HEAD
 @c @item head ref
@@ -1308,8 +1314,14 @@ The fundamental tools of source code management.
 @c @item object identifier
 @c @item object name
 @c @item object type
-@c @item octopus
-@c @item origin
+
+@item octopus
+The action of mergin more than two branches.
+
+@item origin
+The default repository to push to, the one
+you cloned.
+
 @c @item pack
 @c @item pack index
 @c @item pathspec
@@ -1325,11 +1337,27 @@ The fundamental tools of source code management.
 @c @item refspec
 @c @item remote-tracking branch
 @c @item repository
-@c @item resolve
-@c @item revision
-@c @item rewind
-@c @item SHA-1
-@c @item shallow repository
+
+@item resolve
+The action of manually merging the parts
+the tool could not automatically merge.
+
+@item revision
+A commit.
+
+@item rewind
+The action of throwing away part of the
+development.
+
+@item SHA-1
+Secure Hash Algorithm 1, a cryptographic hash
+function used by Git for object names. It is
+the fastest secure hash algorithm around, bit
+is is also quite old.
+
+@item shallow repository
+A repository with an incomplete commit history.
+
 @c @item symref
 @c @item tag
 @c @item tag object
