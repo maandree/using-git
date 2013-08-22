@@ -1003,6 +1003,63 @@ included in the amendment.
 @node Bisection
 @section Bisection
 
+Bisection is the process of identifying
+when a bug was introduced.
+
+To start a bisection you first need
+to tell git to start bisection and
+specify the commit range. If the current
+commit is bad you type:
+
+@example
+git bisect start
+git bisect bad
+git bisect good LAST_KNOWN_GOOD_COMMIT
+@end example
+
+After this you either of, depending if
+the commit Git checks out is good or bad:
+
+@example
+git bisect good
+git bisect bad
+@end example
+
+Git will tell you when it has found the
+the first bad or possible first bad commit.
+To then checkout the commit that was
+checked out before the bisection started
+type:
+
+@example
+git bisect reset
+@end example
+
+If you in the process of the bisection
+landed on a commit you need to skip because
+it has some other problem, you can use
+
+@example
+git reset --hard HEAD~N
+@end example
+
+Where @code{N} is the number of revisions
+before the checked out, you want to jump to.
+You can also use @command{git bisect skip}
+to Git which revision that cannot be tested
+so they are excluded from the bisection
+process.
+
+Instead of manually telling Git if a commit
+is good or bad, you can use:
+
+@example
+git bisect TEST_SCRIPT [ARGUMENTS...]
+@end example
+
+The test script should exit with 0, if and
+only if the commit is good.
+
 
 
 @node GNU Free Documentation License
