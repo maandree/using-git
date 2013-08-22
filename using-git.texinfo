@@ -847,7 +847,7 @@ Chris: root is the number zero user,
 it is main user in your system, it
 can do everything, it can literally
 delete the filesystem while your
-operating is running.
+operating system is running.
 
 @noindent
 Bryan: Yeah, it is a grate user in
