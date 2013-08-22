@@ -55,6 +55,7 @@ Texts. A copy of the license is included in the section entitled
 * Branching out::
 * Collaborating::
 * Basic commands::
+* I just don't know what went wrong::
 * GNU Free Documentation License::
 @end menu
 
@@ -907,6 +908,33 @@ Chris: You need to do something.
 Only use @command{reset} if you
 are absolutely sure and know exactly
 what you are doing.
+
+
+
+@node I just don't know what went wrong
+@chapter I just don't know what went wrong
+
+@menu
+* Naïve reset::
+@end menu
+
+
+
+@node Naïve reset
+@section Naïve reset
+
+If something went horribly, horribly,
+horribly, horribly wrong and you do
+not know how to get back to a clean
+state, you can always doing this naïvely
+by clone the repository:
+
+@example
+git clone REPOSITORY REPOSITORY.new
+cp REPOSITORY/.git/config REPOSITORY.new/.git/config
+yes | rm -r REPOSITORY
+mv REPOSITORY.new REPOSITORY
+@end example
 
 
 
