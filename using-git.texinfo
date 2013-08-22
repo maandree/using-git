@@ -979,10 +979,6 @@ Discard all stored stash objects.
 @end table
 
 
-
-@c TODO git reset
-
-
 @c TODO git bisect
 
 
