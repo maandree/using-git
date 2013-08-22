@@ -1058,7 +1058,11 @@ git bisect TEST_SCRIPT [ARGUMENTS...]
 @end example
 
 The test script should exit with 0, if and
-only if the commit is good.
+only if the commit is good, 125 to skip the
+commit, and anything else between 1 and
+127, inclusively, if the commmit is bad.
+Other values (128–255) are will abort the
+bisection.
 
 
 
