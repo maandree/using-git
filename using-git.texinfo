@@ -1169,7 +1169,19 @@ git push :refs/tags/'RELEASE_VERSION'
 @node Cherry picking
 @section Cherry picking
 
-TODO
+Cherry picking is the action of applying
+changes made in another commit. It is a
+create tool both for apply changes made
+to another branch or to backport features.
+
+Cherry picking works just merging branches,
+except, instead of choosing a branch to pull
+and apply all it changes you choose
+individual commits, and commits ranges:
+
+@example
+git cherry-pick COMMIT_ID
+@end example
 
 
 
