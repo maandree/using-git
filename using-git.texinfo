@@ -56,6 +56,7 @@ Texts. A copy of the license is included in the section entitled
 * Collaborating::
 * Basic commands::
 * I just don't know what went wrong::
+* Version control::
 * Glossary::
 * GNU Free Documentation License::
 @end menu
@@ -1117,6 +1118,58 @@ commit, and anything else between 1 and
 127, inclusively, if the commmit is bad.
 Other values (128–255) will abort the
 bisection.
+
+
+
+@node Version control
+@chapter Version control
+
+@menu
+* Tagging versions::
+* Cherry picking::
+@end menu
+
+
+
+@node Tagging versions
+@section Tagging versions
+
+General, programs have different release
+version. When you release a new version,
+you tag the last commit makes it into
+that version. To do this, create an
+annotated tag object and push it to your
+origin:
+
+@example
+git tag -a 'RELEASE_VERSION'
+git push origin 'RELEASE_VERSION'
+@end example
+
+Keep in mind that you will be placed
+in an deteach HEAD, and need to checkout
+the branch you want to continue your
+work on.
+
+The created tag can be refered to as
+any commit or branch.
+
+If you want to remove a tag, you
+just tell git to delete it and push
+the deletion of its reference to
+your origin:
+
+@example
+git tag -d 'RELEASE_VERSION'
+git push :refs/tags/'RELEASE_VERSION'
+@end example
+
+
+
+@node Cherry picking
+@section Cherry picking
+
+TODO
 
 
 
