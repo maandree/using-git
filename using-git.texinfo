@@ -57,6 +57,7 @@ Texts. A copy of the license is included in the section entitled
 * Basic commands::
 * I just don't know what went wrong::
 * Version control::
+* Interface::
 * Glossary::
 * GNU Free Documentation License::
 @end menu
@@ -1201,6 +1202,30 @@ commit message. You can limit the commits
 to a commits where specify files has been
 changed by appending those files to the
 command.
+
+
+
+@node Interface
+@chapter Interface
+
+@menu
+* First thing first::
+@end menu
+
+
+
+@node First thing first
+@section First thing first
+
+Many Git commands take both revisions
+and paths as their arguments. First come
+the revisions, then the files. If you
+have files that can be misunderstood for
+a revision, place a @option{--} between
+the revisions and the files, anything
+after a @option{--} is interpreted as
+a file. It is a good practice to do this
+in scripts that takes random user-input.
 
 
 
