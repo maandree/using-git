@@ -858,7 +858,7 @@ Chris: Yeah. Yeah.
 
 @noindent
 Bryan: Here is the thing, so people
-always say `do not run as root'.
+always say `do not run as root.'
 @emph{I always} run as root.
 
 @noindent
