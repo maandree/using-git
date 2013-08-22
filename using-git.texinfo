@@ -980,6 +980,13 @@ Discard all stored stash objects.
 
 
 
+@c TODO git reset
+
+
+@c TODO git bisect
+
+
+
 @node GNU Free Documentation License
 @appendix GNU Free Documentation License
 @include fdl.texinfo
