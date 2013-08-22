@@ -56,6 +56,7 @@ Texts. A copy of the license is included in the section entitled
 * Collaborating::
 * Basic commands::
 * I just don't know what went wrong::
+* Glossary::
 * GNU Free Documentation License::
 @end menu
 
@@ -1116,6 +1117,107 @@ commit, and anything else between 1 and
 127, inclusively, if the commmit is bad.
 Other values (128–255) will abort the
 bisection.
+
+
+
+@node Glossary
+@appendix Glossary
+
+@table @asis
+@item bare repositry
+A bare repository is a repository without an
+index tree or working tree. It just contains
+the commits. Because it just contains the
+commits it does not have a @file{.git} directory,
+but instread directly contains the content
+you would find in a @file{.git} directory.
+If is normally named with @file{.git} is a
+suffix.
+
+@item blob object
+Untyped object, for example, the contents of
+a file.
+
+@item branch
+Alternative parallel development line, normally
+indended the be merged with the branch it forked
+out of.
+
+@item cache
+Obsolete, replaced by ‘index’.
+
+@item checkout
+The action of changing branch.
+
+@item cherry-picking
+Creating a new commit from a subset of commits.
+
+@item clean
+A working tree is clean if has no changes
+relative to the current @code{HEAD}
+
+@c @item commit
+@c @item commit objcet
+
+@item core Git
+The fundamental tools of source code management.
+
+@c @item dangling object
+@c @item deatched HEAD
+@c @item directory
+@c @item dirty
+@c @item evel merge
+@c @item fast-forward
+@c @item fetch
+@c @item gitfile
+@c @item grafys
+@c @item hash
+@c @item head
+@c @item HEAD
+@c @item head ref
+@c @item hook
+@c @item index
+@c @item index entry
+@c @item merge
+@c @item object
+@c @item object database
+@c @item object identifier
+@c @item object name
+@c @item object type
+@c @item octopus
+@c @item origin
+@c @item pack
+@c @item pack index
+@c @item pathspec
+@c @item pickaxe
+@c @item plumbing
+@c @item porcelain
+@c @item pull
+@c @item push
+@c @item reachable
+@c @item rebase
+@c @item ref
+@c @item reflog
+@c @item refspec
+@c @item remote-tracking branch
+@c @item repository
+@c @item resolve
+@c @item revision
+@c @item rewind
+@c @item SHA-1
+@c @item shallow repository
+@c @item symref
+@c @item tag
+@c @item tag object
+@c @item topic branch
+@c @item tree
+@c @item tree object
+@c @item tree-ish
+@c @item unmerged index
+@c @item unreachable object
+@c @item upstream branch
+@c @item working tree
+@end table
 
 
 
