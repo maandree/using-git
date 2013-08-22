@@ -1148,7 +1148,7 @@ git push origin 'RELEASE_VERSION'
 @end example
 
 Keep in mind that you will be placed
-in an deteach HEAD, and need to checkout
+in an deatched HEAD, and need to checkout
 the branch you want to continue your
 work on.
 
