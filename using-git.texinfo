@@ -1322,8 +1322,12 @@ commiter, date, files and parents.
 @item core Git
 The fundamental tools of source code management.
 
-@c @item dangling object
-@c @item deatched HEAD
+@item dangling object
+An object that is not reachable, even from other
+unreachable objects; there are not references to
+it.
+
+@c @item deatched @code{HEAD}
 @c @item directory
 @c @item dirty
 @c @item evil merge
