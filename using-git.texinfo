@@ -1337,7 +1337,13 @@ not the tip of any branch, the @code{HEAD} is
 To store changes make in a detached @code{HEAD}
 you must first create a new branch from it.
 
-@c @item directory
+@item directory
+You may also know it as `catalogue' or even
+`folder'. It can contain files and other
+directories, which you can list with the
+command @command{ls} and you can change directory
+with the command @command{cd}.
+
 @c @item dirty
 @c @item evil merge
 @c @item fast-forward
