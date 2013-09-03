@@ -1383,7 +1383,7 @@ the working tree.
 
 @item hash
 Especially if cryptographic, almost unique,
-unfeasible reverably, fixed size, scrambling
+indefeasibly reverable, fixed size, scrambling
 of content. In Git's context, synonym for
 object name.
 
