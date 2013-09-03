@@ -686,7 +686,7 @@ than can be posted on a mailing list.
 To do this just type:
 
 @example
-git request pull FORKING_POINT_COMMIT YOUR_URL
+git request-pull FORKING_POINT_COMMIT YOUR_URL
 @end example
 
 Additionally you can add a commit that
