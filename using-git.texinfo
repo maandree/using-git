@@ -1348,7 +1348,12 @@ with the command @command{cd}.
 The working tree is dirty if it contains uncommited
 modifications.
 
-@c @item evil merge
+@item evil merge
+A merge that introduces changes that do not
+appear in any parent. Variable name conflicts
+can be a cause of evil merges. This is why you
+do not rebase your commits. 
+
 @c @item fast-forward
 @c @item fetch
 @c @item gitfile
