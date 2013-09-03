@@ -1307,7 +1307,11 @@ Alternatives to Git may use the terms `revision'
 or `version' instead of `commit'. `Commit' is
 also used as a short and for `commit object'.
 
-@c @item commit (verb)
+@item commit (verb)
+The action of storing a new snapshot of the
+project's state. The state of the index is
+stored and @code{HEAD} is advanced to the
+new commit.
 
 @item commit object
 A Git internal object which contains the
