@@ -1293,7 +1293,12 @@ A working tree is clean if has no changes
 relative to the current @code{HEAD}
 
 @c @item commit
-@c @item commit object
+
+@item commit object
+A Git internal object which contains the
+information about a particalur revision.
+It contains informations such as author,
+commiter, date, files and parents.
 
 @item core Git
 The fundamental tools of source code management.
