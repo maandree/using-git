@@ -1399,7 +1399,16 @@ the @code{HEAD} is ``detached''.
 @item head ref
 Synonym for `head'.
 
-@c @item hook
+@item hook
+Several Git commands make callouts to user
+definable scripts. This allows developers to
+add functionally or checkout, and commands
+can be verified and aborted.
+
+@file{.git/hooks} are filled with sample
+scripts that can be enabled by removing their
+@file{.sample} suffix.
+
 @c @item index
 @c @item index entry
 @c @item master
