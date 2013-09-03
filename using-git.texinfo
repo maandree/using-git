@@ -1354,7 +1354,14 @@ appear in any parent. Variable name conflicts
 can be a cause of evil merges. This is why you
 do not rebase your commits. 
 
-@c @item fast-forward
+@item fast-forward
+A special type of merge that will often be
+the case when you pull updates from a remote
+repository. A fast-forward merge is a merge
+where you have made no changes but there
+are changes on the remote-tracking branch
+that can be pulled without any merge logic.
+
 @c @item fetch
 @c @item gitfile
 @c @item grafts
