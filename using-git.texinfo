@@ -1368,7 +1368,15 @@ remote repository, you download, to a local
 database, objects that have not yet been
 downloaded.
 
-@c @item gitfile
+@item gitfile
+A plain file named @file{.git} located in
+the root fo the working tree, that points
+the to real repository.
+The is a create idea to use this if you
+do not want a backup repostory as it prevents
+you from accidentally remove anything but
+the working tree.
+
 @c @item grafts
 
 @item hash
