@@ -1163,7 +1163,7 @@ your origin:
 
 @example
 git tag -d 'RELEASE_VERSION'
-git push :refs/tags/'RELEASE_VERSION'
+git push origin :refs/tags/'RELEASE_VERSION'
 @end example
 
 
