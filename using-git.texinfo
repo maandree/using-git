@@ -1344,7 +1344,10 @@ directories, which you can list with the
 command @command{ls} and you can change directory
 with the command @command{cd}.
 
-@c @item dirty
+@item dirty
+The working tree is dirty if it contains uncommited
+modifications.
+
 @c @item evil merge
 @c @item fast-forward
 @c @item fetch
