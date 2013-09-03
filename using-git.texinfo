@@ -1327,7 +1327,16 @@ An object that is not reachable, even from other
 unreachable objects; there are not references to
 it.
 
-@c @item deatched @code{HEAD}
+@item detached @code{HEAD}
+@code{HEAD} that does not store the name of a
+branch. Git allows you to checkout arbitrary
+commmits, when you checkout a commit that is
+not the tip of any branch, the @code{HEAD} is
+``detached''.
+
+To store changes make in a detached @code{HEAD}
+you must first create a new branch from it.
+
 @c @item directory
 @c @item dirty
 @c @item evil merge
