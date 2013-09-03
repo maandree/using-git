@@ -1362,7 +1362,12 @@ where you have made no changes but there
 are changes on the remote-tracking branch
 that can be pulled without any merge logic.
 
-@c @item fetch
+@item fetch
+When you fetch a branch's head ref from a
+remote repository, you download, to a local
+database, objects that have not yet been
+downloaded.
+
 @c @item gitfile
 @c @item grafts
 
@@ -1378,6 +1383,7 @@ object name.
 @c @item hook
 @c @item index
 @c @item index entry
+@c @item master
 @c @item merge
 @c @item object
 @c @item object database
