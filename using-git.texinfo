@@ -1391,7 +1391,10 @@ object name.
 A named reference to the commit at the tip
 if a branch.
 
-@c @item @code{HEAD}
+@item @code{HEAD}
+The head of the currently checked out branch,
+or the currently checkout commit in which case
+the @code{HEAD} is ``detached''.
 
 @item head ref
 Synonym for `head'.
