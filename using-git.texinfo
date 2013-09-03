@@ -1298,7 +1298,16 @@ Creating a new commit from a subset of commits.
 A working tree is clean if has no changes
 relative to the current @code{HEAD}
 
-@c @item commit
+@item commit (noun)
+A single point in the development history
+stored in Git. The entire history of a project
+is represented as a set of interrelated commits.
+
+Alternatives to Git may use the terms `revision'
+or `version' instead of `commit'. `Commit' is
+also used as a short and for `commit object'.
+
+@c @item commit (verb)
 
 @item commit object
 A Git internal object which contains the
