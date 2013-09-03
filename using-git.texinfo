@@ -58,8 +58,8 @@ Texts. A copy of the license is included in the section entitled
 * I just don't know what went wrong::
 * Version control::
 * Interface::
-* Glossary::
 * GNU Free Documentation License::
+* Glossary::
 @end menu
 
 
@@ -1256,6 +1256,12 @@ is annoying.
 
 
 
+@node GNU Free Documentation License
+@appendix GNU Free Documentation License
+@include fdl.texinfo
+
+
+
 @node Glossary
 @appendix Glossary
 
@@ -1387,12 +1393,6 @@ A repository with an incomplete commit history.
 @c @item upstream branch
 @c @item working tree
 @end table
-
-
-
-@node GNU Free Documentation License
-@appendix GNU Free Documentation License
-@include fdl.texinfo
 
 @bye
 
