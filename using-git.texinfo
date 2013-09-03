@@ -1388,8 +1388,11 @@ of content. In Git's context, synonym for
 object name.
 
 @c @item head
-@c @item HEAD
-@c @item head ref
+@c @item @code{HEAD}
+
+@item head ref
+Synonym for `head'.
+
 @c @item hook
 @c @item index
 @c @item index entry
