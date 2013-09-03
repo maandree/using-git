@@ -1266,6 +1266,8 @@ is annoying.
 @appendix Glossary
 
 @table @asis
+@c TODO @item alternate object database
+
 @item bare repositry
 A bare repository is a repository without an
 index tree or working tree. It just contains
@@ -1377,7 +1379,7 @@ do not want a backup repostory as it prevents
 you from accidentally remove anything but
 the working tree.
 
-@c @item grafts
+@c TODO @item grafts
 
 @item hash
 Especially if cryptographic, almost unique,
