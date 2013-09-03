@@ -1166,6 +1166,18 @@ git tag -d 'RELEASE_VERSION'
 git push origin :refs/tags/'RELEASE_VERSION'
 @end example
 
+@file{refs/tags/RELEASE_VERSION} is a
+file in the @file{.git} directory.
+Using a @code{:} tells git that you
+want to push the local file before the
+@code{:} to the remote file after the
+@code{:}. If the local file is not
+specified, in order words, the argument
+begins with @code{:}, you are telling
+git to remove the remote file.
+This only work with referense, that is,
+files inside @file{.git/refs}.
+
 
 
 @node Cherry picking
