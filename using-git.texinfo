@@ -1421,7 +1421,11 @@ be promoted to a commit.
 The information regarding a particular file
 that is stored in the index
 
-@c @item master
+@item master
+Unless set otherwise, the default branch in
+a repository. It is created with the first
+commit in the project.
+
 @c @item merge
 @c @item object
 @c @item object database
