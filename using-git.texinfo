@@ -1290,6 +1290,10 @@ out of.
 @item cache
 Obsolete, replaced by ‘index’.
 
+@item chain
+List of objects where each object has a reference
+to the next object, its successor.
+
 @item checkout
 The action of changing branch.
 
