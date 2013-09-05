@@ -1413,8 +1413,14 @@ can be verified and aborted.
 scripts that can be enabled by removing their
 @file{.sample} suffix.
 
-@c @item index
-@c @item index entry
+@item index
+Snapshot of the working tree intended to
+be promoted to a commit.
+
+@item index entry
+The information regarding a particular file
+that is stored in the index
+
 @c @item master
 @c @item merge
 @c @item object
