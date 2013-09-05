@@ -1426,7 +1426,8 @@ Unless set otherwise, the default branch in
 a repository. It is created with the first
 commit in the project.
 
-@c @item merge
+@c @item merge (verb)
+@c @item merge (noun)
 @c @item object
 @c @item object database
 @c @item object identifier
