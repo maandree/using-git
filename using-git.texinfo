@@ -62,6 +62,7 @@ Texts. A copy of the license is included in the section entitled
 * GNU Free Documentation License::
 * Glossary::
 @end menu
+@c TODO Masterful flow
 
 
 
@@ -1306,6 +1307,7 @@ is annoying.
 * Standard files::
 * Keeping the repository clean::
 @end menu
+@c TODO A friendly build system
 
 
 
