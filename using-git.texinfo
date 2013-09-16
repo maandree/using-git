@@ -1317,7 +1317,7 @@ Everything git can do, you can do in
 the command line, but some repetitive
 gets cumbersome in the command line
 because you will need to run the same
-command in unpre-predictable variations.
+command in unpredictable variations.
 For this the package and command
 @command{tig} may be just want you need
 if you live in the terminal.
@@ -1333,6 +1333,8 @@ create separate issues inside those branches.
 And when a branch get merged with your develop
 branch the unresolved issues is merged into
 the develop branch.
+
+
 
 
 
