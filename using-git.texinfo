@@ -1455,7 +1455,7 @@ in your symlinks.
 @node Git and filenames
 @section Git and filenames
 
-Git treats file names as byte sequences,
+Git treats filenames as byte sequences,
 meaning that if it supports all characters
 supported by your file system, including
 one developers operativing systems uses
