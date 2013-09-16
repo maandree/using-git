@@ -1406,7 +1406,7 @@ see the conflicts and resolve.
 @node Git and shared build caches
 @section Git and shared build caches
 
-A few source controls systems have shared
+A few set source controls systems have shared
 build cache of derived objects. Git does not.
 Build cache, private or public, is none of
 source control systems' concern and should
