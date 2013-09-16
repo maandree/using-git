@@ -1306,8 +1306,8 @@ is annoying.
 * Writing commit messages::
 * Standard files::
 * Keeping the repository clean::
+* A friendly build system::
 @end menu
-@c TODO A friendly build system
 
 
 
@@ -1677,6 +1677,32 @@ Resource files can be places in a
 directory named after their category.
 @end table
 
+
+
+@node A friendly build system
+@section A friendly build system
+
+`So I should not include project metafiles
+use by my integrated development environment?'
+No when you are doing that you are binding
+everyone to your environment and you do not
+provide everyone with a way to build your
+package. Every package should be buildable
+with a small set of commands that do not
+require human interaction beyond type them
+in a simple predictable manner in the command
+line, ther is very important for package
+distribution. To make possible for everyone
+to build your program you can use GNU Autotools
+or just a simple handwritten make file.
+
+Additionall such a build system lets you
+provide means to configure and customise the
+build process as well as installing and
+uninstalling (without using package management)
+the program. Further, it allows you to compile
+individual files and clean the directory
+from all compiled files.
 
 
 
