@@ -226,7 +226,7 @@ For Free Software projects only. Gna! runs on only
 Free Software.
 
 @item @bullet{} @url{https://bitbucket.org, BitBucket}
-Gratis for 5 uses, with unlimied number of private
+Gratis for 5 users, with unlimied number of private
 repositories for 5 collaborators.
 
 @item @bullet{} @url{https://github.com/, GitHub}
