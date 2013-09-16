@@ -1302,7 +1302,8 @@ is annoying.
 @chapter Features
 
 @menu
-* Git and permissions:
+* Git and permissions::
+* Git and timestamps::
 @end menu
 
 
@@ -1349,6 +1350,38 @@ compiled or have a shebang, it would make
 more since so set it on and only on the
 files with a shebang or otherwise tagged
 to how a specific permission.
+
+
+
+@node Git and timestamps
+@section Git and timestamps
+
+One of Git's features is that it does
+not have the feature@footnote{Yes, that
+it does not have it. Do not be confused,
+not have features are often grater features.}
+of perserving timestamps.
+
+Perserving modification time on files is
+considered harmful. Consider if Git were
+to perserve the modification time. If you
+have compiled the program, and then checkout
+en earlier commit, perhaps another branch,
+and you build it again, now your compiled
+files from the other branch has a newer time
+stamp then the source in the current branch
+and the files will not build unless you
+force them to build, which you more than
+likely will forget. So you may observe a
+behaviour of your program that is not defined
+by the checkout source code.
+
+This is way Git sets the timestamp to the
+current time on every file it modifies, but
+only those. Files that have not changes will
+not change timestamp so the build system
+will not rebuild them unless there is some
+other reason it needs to.
 
 
 
