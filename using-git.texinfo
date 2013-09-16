@@ -1716,7 +1716,10 @@ from all compiled files.
 @appendix Glossary
 
 @table @asis
-@c TODO @item alternate object database
+@item alternate object database
+A repository can inherit part of its object
+database from another object database, which
+is called ``alternate''.
 
 @item bare repositry
 A bare repository is a repository without an
@@ -1833,7 +1836,11 @@ do not want a backup repostory as it prevents
 you from accidentally remove anything but
 the working tree.
 
-@c TODO @item grafts
+@item grafts
+Two different development lines can be
+join together by recoding facke ancestry
+information. This is configured via the
+@file{.git/info/grafts} file.
 
 @item hash
 Especially if cryptographic, almost unique,
