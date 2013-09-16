@@ -1510,7 +1510,67 @@ shell function the runs
 @node Standard files
 @section Standard files
 
-TODO
+All projects should have a set of files:
+
+@table @asis
+@item @file{README} @i{(optional)}
+You should have a readme file at the root
+of your project. It should describe the
+project and how the program is used.
+
+@item @file{DEPENDENCIES} @i{(optional)}
+If your program has other dependencies
+than a compiler, linker, interpreter,
+@command{libc}, @command{coreutils} and
+similar standard packages, and make tools
+such as @command{make} and @command{automake}.
+You should have a file that list all
+dependency: runtime dependencies, optional
+runtime dependencies, build dependencies,
+opt-out build dependencies, opt-in build
+dependencies. Try to specify version range
+and what the package is used for, especially
+for optional dependecies.
+
+@item @file{INSTALLING} @i{(optional)}
+For more advanced build systems you should
+have a file that specified how to configure
+the building process.
+
+@item @file{CONTRIBUTING} @i{(optional)}
+If your have rules on how to submit patches,
+code style guildlines, or other information
+for contributors, you should have files
+with all such information in the top of
+your repository.
+
+@item @file{HACKING} @i{(optional)}
+For complex project you can have a file
+named @file{HACKING} with information
+about how to modify the code.
+
+@item @file{COPYING}
+When you make your project available
+it is not longer private software and
+you need to give it a license compatible
+with its dependencies. If you do not
+have a license it defaults to being
+proprietary. The copying file includes
+the license summary or the complete
+license text if it is short, and at
+the top, the project name, short
+description, years of active development,
+and copyright holder name and e-mail
+address. It is the same text as the
+copyright information you put at the
+top of source code files.
+
+@item @file{LICENSE}
+If the projects license is large, you
+put the fill license plain text in the
+file anmed @file{LICENSE} in the top
+if your repository.
+@end table
 
 
 
