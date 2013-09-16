@@ -1309,7 +1309,7 @@ is annoying.
 * Git and keyword expansion::
 * Git and links::
 * Git and filenames::
-@c TODO * Git and merge tracking::
+* Git and merge tracking::
 @c TODO * git and file renames::
 @c TODO * git and encoding convertions::
 @c TODO * Git and atomic commits::
@@ -1353,7 +1353,7 @@ no directories are also ignored.
 Be aware that some systems sets the execution
 bit willy-nilly when a file is created.
 
-This is a short comming of Git, but only
+This is a shortcoming of Git, but only
 in comparision to darcs. Since files are
 only executable if they are compiled or
 have a shebang, it would make more since
@@ -1465,14 +1465,30 @@ it is true that systems really should use
 UTF-8, be case sensitive and support
 the entire Unicode, even characters that
 are not yet defined with use of all 31
-bits@footnote{Yes Unicode supports only
-up to 31 bits, so negative ordinals can
-be considered process private use.}
+bits@footnote{Yes Unicode supports only  @c It is a shortcoming of English that this
+up to 31 bits, so negative ordinals can  @c footnote cannot be expressed more clarily
+be considered process private use.}      @c without significant length increase.
 except the NUL control character, you
 may consider just using lower case ASCII
 and be friendly to other systems on use
 a very restricted set of punctuation
 and no control characters.
+
+
+
+@node Git and merge tracking
+@section Git and merge tracking
+
+Git takes history seriously, therefore
+when a merge is made, even if it can
+be automatically fully merged, a commit
+it created. This is very useful is
+keep track of changes and identifing
+and resolving evil merges. If you are
+inclined to shoot your self in the
+foot you can always rebase your
+repository so that merges are not
+created.
 
 
 
