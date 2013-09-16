@@ -1396,7 +1396,7 @@ including @command{info} manuals, Hypertext
 Markup Language, Portable Document Format and
 PostScript.
 
-TeX is more general perpose@footnote{Texinfo is
+TeX is more general purpose@footnote{Texinfo is
 actually a macro set for TeX} has extensible and
 redefinable syntax and is written to guarantee
 that one source will always and everywhere produce
