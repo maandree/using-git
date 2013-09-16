@@ -1381,7 +1381,7 @@ not a file you can open and se the conflicts in
 so you must open both's versions and manual
 inspect and merge them.
 
-Luckly most type of files formats have an
+Luckily most type of files formats have an
 text based alternative.
 
 @table @asis
