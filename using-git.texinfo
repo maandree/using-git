@@ -1308,6 +1308,10 @@ is annoying.
 * Git and shared build caches::
 * Git and keyword expansion::
 * Git and links::
+* Git and filenames::
+@c TODO * Git and merge tracking::
+@c TODO * git and file renames::
+@c TODO * Git and atomic commits::
 @end menu
 
 
@@ -1444,6 +1448,30 @@ the exact reference stored in the symlink,
 it is not resolved or otherwise rewritten,
 so make short you use relative references
 in your symlinks.
+
+
+
+@node Git and filenames
+@section Git and filenames
+
+Git treats file names as byte sequences,
+meaning that if it supports all characters
+supported by your file system, including
+one developers operativing systems uses
+UTF-8 and the other's uses UTF-16, or
+only ASCII, there will be problems. Will
+it is true that systems really should use
+UTF-8, be case sensitive and support
+the entire Unicode, even characters that
+are not yet defined with use of all 31
+bits@footnote{Yes Unicode supports only
+up to 31 bits, so negative ordinals can
+be considered process private use.}
+except the NUL control character, you
+may consider just using lower case ASCII
+and be friendly to other systems on use
+a very restricted set of punctuation
+and no control characters.
 
 
 
@@ -1846,7 +1874,7 @@ distribution. To make possible for everyone
 to build your program you can use GNU Autotools
 or just a simple handwritten make file.
 
-Additionall such a build system lets you
+Additionally such a build system lets you
 provide means to configure and customise the
 build process as well as installing and
 uninstalling (without using package management)
