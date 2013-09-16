@@ -1382,13 +1382,26 @@ Luckly most type of files formats have an
 text based alternative.
 
 @table @asis
-@item Images
+@item Raster images
 Portable pixmap (.ppm, .pgm, .pbm, .pnm) is
 a text based@footnote{Optionally partially
 binary} image format that is supported by
-The GIMP.
+The GNU Image Manipulation Program (GIMP).
 
-@item Documentations
+@item Vector images
+Scalable Vector@footnote{Yes it is redudant,
+but that is really what it is called} Graphics
+(SVG) is the most popular vector image format,
+and in fact it is text based, more precisely
+it is XML based.
+Will you may not be able to view an SVG file
+with merge conflicts, you are still able to
+open it in an text editor and fix the conficts.
+However it may not be the simplest thing to
+resolve in a text editor it helps you to identify
+where the conflicts are located in the graphics.
+
+@item Documentation
 Texinfo and TeX are two very popular alternatives
 to word editors such as Libre Office.
 
