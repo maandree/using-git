@@ -411,7 +411,7 @@ is how is says he is.
 @section Workflow
 
 Git encourage you to create multiple local
-branches of you repository. A branch is a
+branches of your repository. A branch is a
 fork of your commit history, it allows you
 to implement features in parallel. The most
 important part with this is that you can
