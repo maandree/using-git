@@ -1304,6 +1304,7 @@ is annoying.
 @menu
 * Git and permissions::
 * Git and timestamps::
+* Git and custom merge tools::
 @end menu
 
 
@@ -1385,6 +1386,22 @@ other reason it needs to.
 
 
 
+@node Git and custom merge tools
+@section Git and custom merge tools
+
+Git lets you use custom automatic merge tools.
+This can be used, for example, to merge binary
+file formats. It is possible to use a merge
+tool to required human interaction, however,
+this is discouraged because than the commit
+history will have no indication that there
+was a merge conflict. You can use a merge tool
+that tries to merge and marks all conflicts,
+and then manually use a tool the lets you
+see the conflicts and resolve.
+
+
+
 @node Beyond Git
 @chapter Beyond Git
 
@@ -1404,8 +1421,8 @@ other reason it needs to.
 
 Git is used for source control, for
 a complete, possibily collaborative,
-development environment you additional
-tools.
+development environment you need
+additional tools.
 
 Everything git can do, you can do in
 the command line, but some repetitive
