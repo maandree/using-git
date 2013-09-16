@@ -285,6 +285,7 @@ ssh-keygen -t rsa -C 'YOUR_EMAIL_ADDRESS'
 * What is Git?::
 * It is distributed::
 * Integrity::
+* Online documentation::
 @end menu
 
 
@@ -292,13 +293,14 @@ ssh-keygen -t rsa -C 'YOUR_EMAIL_ADDRESS'
 @node What is Git?
 @section What is Git?
 
-Git is a version control system know for
-its lightning speed and being distributed.
-A version control system is a system for
-storing changes in a history tree and allow
-for multiple people to work on the same
-project without the risk of the code being
-too new to accept a submitted patch.
+Git is a version control system known for
+its lightning speed@footnote{Specially
+under POSIX compatible systems} and being
+distributed. A version control system is a
+system for storing changes in a history
+tree and allow for multiple people to work
+on the same project without the risk of the
+code being too new to accept a submitted patch.
 
 When you are working it is important to keep
 track of changes so that you can find when
@@ -393,6 +395,48 @@ against a broken commit history.
 Additionally commits can be signed with
 GPG, so you can be sure that the commit
 is how is says he is.
+
+
+
+@node Online documentation
+@section Online documentation
+
+As with most software packages, Git
+includes online documentation, accessible
+in several ways. The simplest way, this
+will working on all systems is by add
+@option{--help} to the command @command{git}
+or @command{git VERB}.
+
+Git is a project started by Linus Torvalds,
+the creator of the Linux kernel, so naturally
+it has manpages, but not any official
+@command{info} manual. Since @command{info}
+supports manpage you can use @command{info}
+in place of @command{man}.
+
+Git includes several manpages, one manpage
+for every Git command: @command{man git VERB}
+or alternatively @command{man git-VERB}, and
+manpages on special topic:
+
+@itemize
+@item @command{man git}
+@item @command{man gitattributes}
+@item @command{man gitcli}
+@item @command{man gitcore-tutorial}
+@item @command{man gitcredentials}
+@item @command{man gitdiffcore}
+@item @command{man gitglossary}
+@item @command{man githooks}
+@item @command{man gitignore}
+@item @command{man gitmodules}
+@item @command{man gitnamespaces}
+@item @command{man gitrepository-layout}
+@item @command{man gittutorial}
+@item @command{man gittutorial-2}
+@item @command{man gitworkflows}
+@end itemize
 
 
 
