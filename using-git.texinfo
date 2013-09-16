@@ -1303,6 +1303,7 @@ is annoying.
 * Additional tools::
 * The binary problem::
 * Writing commit messages::
+* Standard files::
 @end menu
 
 
@@ -1490,6 +1491,13 @@ your text editor and stage the openned
 files when the editor exits. And create a
 shell function the runs
 @command{git commit -m "$*"}.
+
+
+
+@node Standard files
+@section Standard files
+
+TODO
 
 
 
