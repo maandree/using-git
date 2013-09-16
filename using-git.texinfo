@@ -700,7 +700,7 @@ set to the proper message ID.
 
 To apply a patch, use the @command{git am}
 @footnote{`am' stands for `apply mailbox',
-but it words on regular patch files}
+but it works on regular patch files}
 command:
 
 @example
