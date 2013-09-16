@@ -136,7 +136,7 @@ always want to use is:
 @example
 _/
 # It is a good idea to allow the directory _ to
-# contain temporary file you do not whant to stage.
+# contain temporary file you do not want to stage.
 
 .*
 # Generally you probably do not want to include
