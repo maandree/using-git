@@ -1372,9 +1372,38 @@ conflict, git may not realise it depending on
 the binary format, or may not be able to merge
 the changes. If git cannot merge the and you
 cannot open it in a text editor, you will
-not a file you can open an se the conflicts in
+not a file you can open and se the conflicts in
 so you must open both's versions and manual
 inspect and merge them.
+
+Luckly most type of files formats have an
+text based alternative.
+
+@table @asis
+@item Images
+Portable pixmap (.ppm, .pgm, .pbm, .pnm) is
+a text based@footnote{Optionally partially
+binary} image format that is supported by
+The GIMP.
+
+@item Documentations
+Texinfo and TeX two very popular alternatives
+to word editors such as Libre Office.
+
+Texinfo is designed for manuals and books, and
+can be compiled to virtually any publish format,
+including @command{info} manuals, Hypertext
+Markup Language, Portable Document Format and
+PostScript.
+
+TeX is more general perpose@footnote{Texinfo is
+actually a macro set for TeX} has extensible and
+redefinable syntax and is written to guarantee
+that one source will always and everywhere produce
+the exact same binaries, in terms of hows that
+look when viewed. Its macro set LaTeX is the
+prefered office system in academia.
+@end table
 
 
 
