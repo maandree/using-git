@@ -1346,12 +1346,13 @@ no directories are also ignored.
 Be aware that some systems sets the execution
 bit willy-nilly when a file is created.
 
-This is a short comming of git. Since
-files are only executable if they are
-compiled or have a shebang, it would make
-more since so set it on and only on the
-files with a shebang or otherwise tagged
-to how a specific permission.
+This is a short comming of Git, but only
+in comparision to darcs. Since files are
+only executable if they are compiled or
+have a shebang, it would make more since
+so set it on and only on the files with a
+shebang or otherwise tagged to how a specific
+permission.
 
 
 
