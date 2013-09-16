@@ -1305,6 +1305,7 @@ is annoying.
 * Git and permissions::
 * Git and timestamps::
 * Git and custom merge tools::
+* Git and shared build caches::
 @end menu
 
 
@@ -1399,6 +1400,18 @@ was a merge conflict. You can use a merge tool
 that tries to merge and marks all conflicts,
 and then manually use a tool the lets you
 see the conflicts and resolve.
+
+
+
+@node Git and shared build caches
+@section Git and shared build caches
+
+A few source controls systems have shared
+build cache of derived objects. Git does not.
+Build cache, private or public, is none of
+source control systems' concern and should
+be handled with tools made specifically for
+just that.
 
 
 
