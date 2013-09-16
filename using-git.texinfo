@@ -1301,6 +1301,7 @@ is annoying.
 
 @menu
 * Additional tools::
+* The binary problem::
 @end menu
 
 
@@ -1357,6 +1358,23 @@ All of these programs, as well as Git, are
 released under the GNU General Public License,
 except Flyspray which is released under the GNU
 Lesser General Public License.
+
+
+
+@node The binary problem
+@section The binary problem
+
+Source control does not work well with binary
+files. Consider that two persons are edition
+the same file which cannot be interpreted by
+a human using a text editor. If there is a
+conflict, git may not realise it depending on
+the binary format, or may not be able to merge
+the changes. If git cannot merge the and you
+cannot open it in a text editor, you will
+not a file you can open an se the conflicts in
+so you must open both's versions and manual
+inspect and merge them.
 
 
 
