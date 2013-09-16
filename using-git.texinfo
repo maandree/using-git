@@ -1110,7 +1110,7 @@ Instead of manually telling Git if a commit
 is good or bad, you can use:
 
 @example
-git bisect TEST_SCRIPT [ARGUMENTS...]
+git bisect run TEST_SCRIPT [ARGUMENTS...]
 @end example
 
 The test script should exit with 0, if and
