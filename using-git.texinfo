@@ -1311,6 +1311,7 @@ is annoying.
 * Git and filenames::
 @c TODO * Git and merge tracking::
 @c TODO * git and file renames::
+@c TODO * git and encoding convertions::
 @c TODO * Git and atomic commits::
 @end menu
 
