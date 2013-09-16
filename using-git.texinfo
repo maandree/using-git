@@ -1302,6 +1302,7 @@ is annoying.
 @menu
 * Additional tools::
 * The binary problem::
+* Writing commit messages::
 @end menu
 
 
@@ -1387,7 +1388,7 @@ binary} image format that is supported by
 The GIMP.
 
 @item Documentations
-Texinfo and TeX two very popular alternatives
+Texinfo and TeX are two very popular alternatives
 to word editors such as Libre Office.
 
 Texinfo is designed for manuals and books, and
@@ -1404,6 +1405,91 @@ the exact same binaries, in terms of hows that
 look when viewed. Its macro set LaTeX is the
 prefered office system in academia.
 @end table
+
+
+
+@node Writing commit messages
+@section Writing commit messages
+
+Commits are accompanied by messages. This
+both helps yourself and other developers to
+identify a specific commit of interest, as
+well as giving information about what is
+happening in the development process, so
+every developer can keep up to speed.
+
+Commit messages can also be used to create
+changelogs, where you create a change log
+from the commit history and filter out
+unimportant changes.
+
+Change logs and commit massages are generally
+written on the same style. A short message
+written in imperfect, optionally with additional
+larges paragraphs that goes more in depth.
+
+Even if your project is not in English it
+is preferable to keep your commit message
+as well as much as possible of your project
+(that is not visible to the user) in English.
+Assume your project is in Swedish, everyone
+that understands Swedish will be able to
+translate it to any other language. So far
+it would be okay to write anything in Swedish,
+but once it has been translate, for example
+to English, additional translators that do
+not understand Swedish can contribute with
+additional translators. Now it is perferable
+with English, while the translators can
+understand everything that are should translate
+they do not understand anything else.
+When translating a program it useful to be
+able to understand what the program does and
+not just want it prints so you can do more
+accurate translations, and sometimes just
+one translation is not enough to have en
+unambiguous understanding.
+
+It is preferable to commit as often as
+possible, however this interrupts your
+mind flow, so committing should take
+as short time as possible@footnote{Git is
+very friendly in this respect as create
+a commit is lightning fast, and photon
+fast in comparsing to other old school
+source control systems}. Because of this
+you may need to compromise your messages,
+one thing you can do is to not describe
+a fix bug if it should be obvious for
+the changeset@footnote{Can only be obvious
+from small changes}, after all if you
+do not understand a change you can always
+ask someone. Another thing you can do is
+to use some standard shorthands.
+
+@table @asis
+@item m
+Minor change.
+@item doc
+Add or change documentation.
+@item typo
+Fix a typo.
+@item spello
+Fix a spello.
+@item grammaro
+Fix a grammaro.
+@item +
+As well as, another logical change
+in the same commit.
+@end table
+
+If you want shorten the time it takes to
+create a commit, I personally recommend
+to have a short shell function for opening
+your text editor and stage the openned
+files when the editor exits. And create a
+shell function the runs
+@command{git commit -m "$*"}.
 
 
 
