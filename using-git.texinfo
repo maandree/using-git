@@ -296,7 +296,7 @@ ssh-keygen -t rsa -C 'YOUR_EMAIL_ADDRESS'
 @section What is Git?
 
 Git is a version control system known for
-its lightning speed@footnote{Specially
+its lightning speed@footnote{Especially
 under POSIX compatible systems.} and being
 distributed. A version control system is a
 system for storing changes in a history
