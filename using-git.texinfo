@@ -1350,7 +1350,7 @@ GNU Mailman is a projcet for managing electronic
 mailing lists which can be very useful for
 accepting patches.
 @item
-newds is standalone NNTP server for centralised
+newsd is standalone NNTP server for centralised
 newsgroup forum serving on a single server, which
 can be very discussions.
 @end itemize
