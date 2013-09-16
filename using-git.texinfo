@@ -1334,7 +1334,29 @@ And when a branch get merged with your develop
 branch the unresolved issues is merged into
 the develop branch.
 
+If you are working on a large project with
+multiple collaborator and contributors, and
+you have dedicated hosting serve, you can
+install Internet services that can assist
+collaboration and especially contributors.
+@itemize
+@item
+Flyspray is a web-based project management
+and issue tracking system used by many projects
+@item
+GNU Mailman is a projcet for managing electronic
+mailing lists which can be very useful for
+accepting patches.
+@item
+newds is standalone NNTP server for centralised
+newsgroup forum serving on a single server, which
+can be very discussions.
+@end itemize
 
+All of these programs, as well as Git, are
+released under the GNU General Public License,
+except Flyspray which is released under the GNU
+Lesser General Public License.
 
 
 
