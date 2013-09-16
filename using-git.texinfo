@@ -296,7 +296,7 @@ ssh-keygen -t rsa -C 'YOUR_EMAIL_ADDRESS'
 
 Git is a version control system known for
 its lightning speed@footnote{Specially
-under POSIX compatible systems} and being
+under POSIX compatible systems.} and being
 distributed. A version control system is a
 system for storing changes in a history
 tree and allow for multiple people to work
@@ -631,7 +631,7 @@ and `[PATCH v3]' on the second update.
 If the patch, however it not readly for
 being included, but is rather for discussion,
 use `PATCH/RFC'@footnote{RFC is an abbreviation
-for `Request for comments'} instead of `PATCH'.
+for `Request for comments'.} instead of `PATCH'.
 
 To send the patch, use @command{git send-email}:
 
@@ -700,7 +700,7 @@ set to the proper message ID.
 
 To apply a patch, use the @command{git am}
 @footnote{`am' stands for `apply mailbox',
-but it works on regular patch files}
+but it works on regular patch files.}
 command:
 
 @example
@@ -1304,6 +1304,7 @@ is annoying.
 * The binary problem::
 * Writing commit messages::
 * Standard files::
+* Keeping the repository clean::
 @end menu
 
 
@@ -1385,12 +1386,12 @@ text based alternative.
 @item Raster images
 Portable pixmap (.ppm, .pgm, .pbm, .pnm) is
 a text based@footnote{Optionally partially
-binary} image format that is supported by
+binary.} image format that is supported by
 The GNU Image Manipulation Program (GIMP).
 
 @item Vector images
 Scalable Vector@footnote{Yes it is redudant,
-but that is really what it is called} Graphics
+but that is really what it is called.} Graphics
 (SVG) is the most popular vector image format,
 and in fact it is text based, more precisely
 it is XML based.
@@ -1412,7 +1413,7 @@ Markup Language, Portable Document Format and
 PostScript.
 
 TeX is more general purpose@footnote{Texinfo is
-actually a macro set for TeX} has extensible and
+actually a macro set for TeX.} has extensible and
 redefinable syntax and is written to guarantee
 that one source will always and everywhere produce
 the exact same binaries, in terms of hows that
@@ -1471,12 +1472,12 @@ as short time as possible@footnote{Git is
 very friendly in this respect as create
 a commit is lightning fast, and photon
 fast in comparsing to other old school
-source control systems}. Because of this
+source control systems.}. Because of this
 you may need to compromise your messages,
 one thing you can do is to not describe
 a fix bug if it should be obvious for
 the changeset@footnote{Can only be obvious
-from small changes}, after all if you
+from small changes.}, after all if you
 do not understand a change you can always
 ask someone. Another thing you can do is
 to use some standard shorthands.
@@ -1571,6 +1572,101 @@ put the fill license plain text in the
 file anmed @file{LICENSE} in the top
 if your repository.
 @end table
+
+
+
+@node Keeping the repository clean
+@section Keeping the repository clean
+
+Keeping repositories clean is instrumental
+in making it easy to maintains and simple
+for new contributors to get started. Do
+not commit binaries to repository, it should
+only contain source files, this means that
+you do not commit the program precompiled,
+libraries the project is using and integrated
+development environment (IDE) files.
+You can however make exceptions for precompiled
+not-programs that are compiled by your build
+system if you think it is useful enough for
+users to be available precompiled. For example
+you can have a manual precompiled.
+
+Your project can include directories such as:
+
+@table @file
+@item bin
+This directory should not be committed, rather
+it should be ignored and be created when
+compiling the program, it should include linked
+files such as commands, .so-files and .jar-file.
+
+@item obj
+This directory should not be committed, rather
+it should be ignored and be created when
+compiling the program, it should include
+compiled but not linked files such as .o-files
+and .class-file.
+
+@item src
+Put your source code it this directory.
+
+@item dev
+Auxiliary files and scripts used by developers,
+such as code self tests, bisection commands,
+and resource file inspection scripts.
+
+@item contrib
+Personally, I do not like this, but you
+can use it for additional source that is not
+required for the core of the package.
+
+@item dist
+If you are maintain package distribution
+if your package of an operativing system
+distribution, you can have directories
+named @file{dist/DISTRIBUTION} for each
+distribition. You may want to do this
+this way because than other users can
+look at it and start maintaining package
+distribution of your package of the
+operativing system distribution they
+are using.
+
+@item share
+If you have of the following directories,
+you can put all of them this directories
+instead of in the root.
+
+@item completion
+All commands such have shell tab-completion,
+if you are writing them individually for
+each shell you can place them in this
+directory.
+
+@item manuals
+If you write manuals in multiple formats
+you can place them in this directory.
+
+@item info
+Every project should be well documented,
+if you are this with texinfo, you can
+put you texinfo files in this directory.
+
+@item man
+If your project have manpages, you can
+place them in this directory.
+
+@item po
+Programs that used @command{gettext} for
+translations can place the translations
+in this directory.
+
+@item *
+Resource files can be places in a
+directory named after their category.
+@end table
+
 
 
 
