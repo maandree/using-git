@@ -58,6 +58,7 @@ Texts. A copy of the license is included in the section entitled
 * I just don't know what went wrong::
 * Version control::
 * Interface::
+* Beyond Git::
 * GNU Free Documentation License::
 * Glossary::
 @end menu
@@ -1292,6 +1293,46 @@ use characters in paths that are
 used in the shell for wildcards
 and expansions... yeah, I know, it
 is annoying.
+
+
+
+@node Beyond Git
+@chapter Beyond Git
+
+@menu
+* Additional tools::
+@end menu
+
+
+
+@node Additional tools
+@section Additional tools
+
+Git is used for source control, for
+a complete, possibily collaborative,
+development environment you additional
+tools.
+
+Everything git can do, you can do in
+the command line, but some repetitive
+gets cumbersome in the command line
+because you will need to run the same
+command in unpre-predictable variations.
+For this the package and command
+@command{tig} may be just want you need
+if you live in the terminal.
+
+@command{bugseverywhere} is a grate tool
+for keeping track of issues in git repositories.
+Issues are commited to the current branch
+you are working on, meaning that you can
+have separate issues in separate branches.
+So if you have separate branches for separate
+features that are being implemented you can
+create separate issues inside those branches.
+And when a branch get merged with your develop
+branch the unresolved issues is merged into
+the develop branch.
 
 
 
