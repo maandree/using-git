@@ -980,7 +980,7 @@ Chris: Why?
 Bryan: Awesome.
 
 @noindent
-Chris: Here, I... <interrupted>
+Chris: Here, I… <interrupted>
 
 @noindent
 Bryan: I live on the edge. I'm like
@@ -998,7 +998,7 @@ I would love to think that I am so
 hardcore that I just always ran as
 root. I just, caution to the wind,
 screw it, lets just thunderdome this
-bitch and... you know, see what
+bitch and… you know, see what
 happens. But no, never run as root,
 never ever do that. The only time
 you run as root is when you run as
@@ -1293,7 +1293,7 @@ wildcards in the arguments just a
 the shell. To avoid problems, never
 use characters in paths that are
 used in the shell for wildcards
-and expansions... yeah, I know, it
+and expansions… yeah, I know, it
 is annoying.
 
 
