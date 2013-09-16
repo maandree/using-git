@@ -1310,8 +1310,9 @@ is annoying.
 * Git and links::
 * Git and filenames::
 * Git and merge tracking::
-@c TODO * git and file renames::
-@c TODO * git and encoding convertions::
+* Git and empty directories::
+@c TODO * Git and file renames::
+@c TODO * Git and encoding convertions::
 @c TODO * Git and atomic commits::
 @end menu
 
@@ -1360,6 +1361,11 @@ have a shebang, it would make more since
 so set it on and only on the files with a
 shebang or otherwise tagged to how a specific
 permission.
+
+Additionally Git does not track file ownership
+--- that whould not only be stupid, that would
+be outright dumb, even moronic ---, access
+control lists, extended attributes nor forks.
 
 
 
@@ -1443,6 +1449,8 @@ it belongs.
 A Git repository will not grow larger if
 you hard link a huge file over and over
 again, not that you would ever want to…
+However Git does not actually track hard
+links.
 
 Git supports symbolic links, and stores
 the exact reference stored in the symlink,
@@ -1489,6 +1497,21 @@ inclined to shoot your self in the
 foot you can always rebase your
 repository so that merges are not
 created.
+
+
+
+@node Git and empty directories
+@section Git and empty directories
+
+Git does not track empty directories,
+it even removes them for you when
+it remove all files in a directory.
+Basically there is not reason to track
+directories, ever, but if you are so
+inclined you can add a @file{.gitignore}
+file inside it.
+
+
 
 
 
