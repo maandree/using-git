@@ -1381,6 +1381,14 @@ not a file you can open and se the conflicts in
 so you must open both's versions and manual
 inspect and merge them.
 
+Perhaps you plan to work alone and never ever
+get another developer on your project and are
+not convinced that merge conflicts reason
+enough to work text based formats. Than consider
+that you need to know the exact changes of
+commits; the Git log will not be able to help
+you if you are using binary formats.
+
 Luckily most type of files formats have an
 text based alternative.
 
