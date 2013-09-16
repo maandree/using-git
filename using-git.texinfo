@@ -58,6 +58,7 @@ Texts. A copy of the license is included in the section entitled
 * I just don't know what went wrong::
 * Version control::
 * Interface::
+* Features::
 * Beyond Git::
 * GNU Free Documentation License::
 * Glossary::
@@ -1294,6 +1295,53 @@ use characters in paths that are
 used in the shell for wildcards
 and expansions... yeah, I know, it
 is annoying.
+
+
+
+@node Features
+@chapter Features
+
+@menu
+* Git and permissions:
+@end menu
+
+
+
+@node Git and permissions
+@section Git and permissions
+
+File systems lets you set permissions
+for users on files. Permissions, such
+as whether the owner, a specific user
+group, or others, can read, write or
+execute the file as well as whether
+the permissions of the owner if the
+file is granted the execute instance
+of the program for further permissions
+that are mission critical.
+
+Tracking permissions in version control
+system makes no senses since source code
+should always be readable and writable
+by the owner and it is local configuration
+whether you want to extend those
+permissions to other users on your
+computer.
+
+However there are source code that is
+executable, scripts, such as Bash, Perl
+and Python. This is may Git does however
+track the execution bits. The set-user-ID
+bit and the set-group-ID bit is however
+not tracked, nor should they, those
+should only be set when the program is
+being installed.
+
+Git does not track directories, so permissions
+no directories are also ignored.
+
+Be aware that some systems sets the execution
+bit willy-nilly when a file is created.
 
 
 
