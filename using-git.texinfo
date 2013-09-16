@@ -1307,6 +1307,7 @@ is annoying.
 * Git and custom merge tools::
 * Git and shared build caches::
 * Git and keyword expansion::
+* Git and links::
 @end menu
 
 
@@ -1416,6 +1417,7 @@ be handled with tools made specifically for
 just that.
 
 
+
 @node Git and keyword expansion
 @section Git and keyword expansion
 
@@ -1427,6 +1429,21 @@ Nor it is a true task for source control
 systems to implement, If can as successfully
 be implemented with external tools, where
 it belongs.
+
+
+
+@node Git and links
+@section Git and links
+
+A Git repository will not grow larger if
+you hard link a huge file over and over
+again, not that you would ever want to…
+
+Git supports symbolic links, and stores
+the exact reference stored in the symlink,
+it is not resolved or otherwise rewritten,
+so make short you use relative references
+in your symlinks.
 
 
 
