@@ -1306,6 +1306,7 @@ is annoying.
 * Git and timestamps::
 * Git and custom merge tools::
 * Git and shared build caches::
+* Git and keyword expansion::
 @end menu
 
 
@@ -1413,6 +1414,19 @@ Build cache, private or public, is none of
 source control systems' concern and should
 be handled with tools made specifically for
 just that.
+
+
+@node Git and keyword expansion
+@section Git and keyword expansion
+
+About half of all source control systems
+supports keyword expansion. As a feature,
+Git does not. Keyword expansion causes
+strange problems and is not really useful.
+Nor it is a true task for source control
+systems to implement, If can as successfully
+be implemented with external tools, where
+it belongs.
 
 
 
