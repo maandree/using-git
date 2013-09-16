@@ -157,7 +157,7 @@ Git parses @file{.gitignore} with wildcards,
 rather than exclusion, latter entires override
 earlier entries.
 
-When you have create you @file{.gitignore} you
+When you have created your @file{.gitignore} you
 are ready to stage it and make your first commit:
 
 @example
@@ -172,7 +172,7 @@ git commit -m 'first commit'
 
 It is a good idea to create a backup repostory,
 so you do not lose your work on a disc failure,
-filesystem corruption accidental removal.
+filesystem corruption or accidental removal.
 
 You can such repostory for allowing collaboration
 with a command repository that the collaborators
