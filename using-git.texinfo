@@ -1721,6 +1721,10 @@ Fix a typo.
 Fix a spello.
 @item grammaro
 Fix a grammaro.
+@item ref
+Abbreviation for reference.
+@item conf
+Abbreviation for configuration.
 @item +
 As well as, another logical change
 in the same commit.
