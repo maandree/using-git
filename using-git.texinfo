@@ -2147,7 +2147,11 @@ you cloned.
 @item pack
 A set of objects that have been compressed.
 
-@c @item pack index
+@item pack index
+A list of metadata for objects in a pack,
+to speed up access time of individual
+objects.
+
 @c @item pathspec
 @c @item pickaxe
 
@@ -2165,6 +2169,8 @@ branch, often a remote-tracking branch.
 @item push
 The adcttion of sending updates to a remote
 repository.
+
+@c TODO @item reachable
 
 @item rebase
 The action of rewriting history by pretending
