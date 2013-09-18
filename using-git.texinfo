@@ -2166,8 +2166,10 @@ branch, often a remote-tracking branch.
 The adcttion of sending updates to a remote
 repository.
 
-@c @item reachable
-@c @item rebase
+@item rebase
+The action of rewriting history by pretending
+that you pulled updates before committing.
+
 @c @item ref
 @c @item reflog
 @c @item refspec
