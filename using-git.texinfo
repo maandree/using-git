@@ -2035,6 +2035,11 @@ appear in any parent. Variable name conflicts
 can be a cause of evil merges. This is why you
 do not rebase your commits. 
 
+@item fast forward
+The action of doing a fast-forward merge,
+a pull for updates when git branch is just
+behind, not diverged.
+
 @item fast-forward
 A special type of merge that will often be
 the case when you pull updates from a remote
