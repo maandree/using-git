@@ -2137,7 +2137,11 @@ A set of objects that have been compressed.
 @c @item pack index
 @c @item pathspec
 @c @item pickaxe
-@c @item plumbing
+
+@item plumbing
+The fundamental tools of source code management.
+Low-level commands.
+
 @c @item porcelain
 @c @item pull
 @c @item push
