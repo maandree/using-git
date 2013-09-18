@@ -2142,7 +2142,9 @@ A set of objects that have been compressed.
 The fundamental tools of source code management.
 Low-level commands.
 
-@c @item porcelain
+@item porcelain
+High-level commands.
+
 @c @item pull
 @c @item push
 @c @item reachable
