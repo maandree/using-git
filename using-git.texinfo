@@ -219,7 +219,7 @@ hosts Free Software.
 @item @bullet{} @url{https://savannah.nongnu.org/, Savannah}
 Hosts Free Software only, and projects are audited
 for licensing issues upon registration. So it can
-take a short time before it is accepted, but you your
+take a short time before it is accepted, but your
 project will not use non-Free Software and no license
 information will be missing. Savannah runs on only
 Free Software.
