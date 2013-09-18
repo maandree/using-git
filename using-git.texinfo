@@ -2131,7 +2131,9 @@ The action of mergin more than two branches.
 The default repository to push to, the one
 you cloned.
 
-@c @item pack
+@item pack
+A set of objects that have been compressed.
+
 @c @item pack index
 @c @item pathspec
 @c @item pickaxe
