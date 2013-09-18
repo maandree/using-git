@@ -2118,11 +2118,24 @@ another development branch.
 A commit the is created when merging a
 branch into another.
 
-@c @item object
-@c @item object database
-@c @item object identifier
-@c @item object name
-@c @item object type
+@item object
+The unit of storage in Git. It is
+identified by the SHA-1 hash of its
+content.
+
+@item object database
+Stores a set of Git objects.
+
+@item object identifier
+Unique 40 character hexadecimal identifer of
+an object, derived from the objects content,
+by hashing with SHA-1.
+
+@item object name
+Synonym for object identifier.
+
+@item object type
+`Commit', `tree', `tag' or `blob'.
 
 @item octopus
 The action of mergin more than two branches.
