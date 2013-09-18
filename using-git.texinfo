@@ -2145,8 +2145,14 @@ Low-level commands.
 @item porcelain
 High-level commands.
 
-@c @item pull
-@c @item push
+@item pull
+The action of integrate new commits from another
+branch, often a remote-tracking branch.
+
+@item push
+The adcttion of sending updates to a remote
+repository.
+
 @c @item reachable
 @c @item rebase
 @c @item ref
