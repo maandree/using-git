@@ -2152,8 +2152,8 @@ A list of metadata for objects in a pack,
 to speed up access time of individual
 objects.
 
-@c @item pathspec
-@c @item pickaxe
+@c TODO @item pathspec
+@c TODO @item pickaxe
 
 @item plumbing
 The fundamental tools of source code management.
@@ -2176,9 +2176,15 @@ repository.
 The action of rewriting history by pretending
 that you pulled updates before committing.
 
-@c @item ref
-@c @item reflog
-@c @item refspec
+@item ref
+SHA-1 hash or name of a particular object.
+
+@c TODO @item reflog
+
+@item refspec
+Description of the mapping between ref and
+local ref. Used by fetch and push.
+
 @c @item remote-tracking branch
 @c @item repository
 
