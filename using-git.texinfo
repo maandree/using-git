@@ -177,9 +177,9 @@ It is a good idea to create a backup repostory,
 so you do not lose your work on a disc failure,
 filesystem corruption or accidental removal.
 
-You can such repostory for allowing collaboration
-with a command repository that the collaborators
-can all submit and fetch commits from.
+You can ushe such repository for allowing
+collaboration with a common repository that all
+collaborators can submit and fetch commits from.
 
 This repository is customarly called `origin'.
 And it is a bare repository, meaning that it
