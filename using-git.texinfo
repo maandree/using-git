@@ -1109,7 +1109,7 @@ Discard all stored stash objects.
 
 If you have not yet pushed your latest
 commit you can amend it. If you have
-pushed it, you cannot amend it cause
+pushed it, you cannot amend it because
 the commit ID changes because it is
 SHA-1 hashsum of all information.
 
