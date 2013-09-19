@@ -1168,8 +1168,8 @@ git reset --hard HEAD~N
 Where @code{N} is the number of revisions
 before the checked out, you want to jump to.
 You can also use @command{git bisect skip}
-to Git which revision that cannot be tested
-so they are excluded from the bisection
+to tell Git which revision that cannot be
+tested so they are excluded from the bisection
 process.
 
 Instead of manually telling Git if a commit
