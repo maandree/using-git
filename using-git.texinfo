@@ -1402,7 +1402,7 @@ Perserving modification time on files is
 considered harmful. Consider if Git were
 to perserve the modification time. If you
 have compiled the program, and then checkout
-en earlier commit, perhaps another branch,
+an earlier commit, perhaps another branch,
 and you build it again, now your compiled
 files from the other branch has a newer time
 stamp then the source in the current branch
