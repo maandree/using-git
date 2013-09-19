@@ -118,14 +118,14 @@ cd MY_PROJECT
 @end example
 
 When you are inside the directory for the repository
-issus the git command to initialise the repository:
+issus the Git command to initialise the repository:
 
 @example
 git init
 @end example
 
 This command creates a directory namend @file{.git}
-inside the directory with all data git requires to
+inside the directory with all data Git requires to
 operate on the repository.
 
 The next thing you want to do is to create a
@@ -212,7 +212,7 @@ updates others have made, use the command
 As seen you do not need host, but it is a grate
 way for making your projects available to the world.
 
-Here is a lost of gratis git hosting services that
+Here is a lost of gratis Git hosting services that
 hosts Free Software.
 
 @table @asis
@@ -247,7 +247,7 @@ Hosting limited to 2 GB.
 
 @end table
 
-You should note that there are, other, git hosting
+You should note that there are, other, Git hosting
 services that does not allow Free Software. Some
 of them will allow Open Source, some will allow
 Free Software, but not gratis.
@@ -542,7 +542,7 @@ where the other has change the indention,
 so keep to a coding style from the start;
 or both has edited the same lines.
 
-If you get a merge conflict, git will tell
+If you get a merge conflict, Git will tell
 you so, in which files there are conflicts,
 and exit with the return code 1 to indicated
 that the merge was not successful and human
@@ -594,7 +594,7 @@ repository:
 git clone REPOSITORY -o upstream
 @end example
 
-By including @option{-o upstream}, git
+By including @option{-o upstream}, Git
 sets up the cloned repository as a
 remote repository named `upstream'.
 
@@ -813,7 +813,7 @@ git add FILE
 
 To remove a file or rename a file,
 just do as you normally would without
-git, but prepand @code{git}:
+Git, but prepend @code{git}:
 
 @example
 git rm FILE           # Remove FILE
@@ -882,7 +882,7 @@ type @command{git status}.
 @node Go back in time
 @section Go back in time
 
-Because git keeps track of what
+Because Git keeps track of what
 has changed it has a log you
 access, which has commit messages,
 so you know when something has
@@ -1110,7 +1110,7 @@ Bisection is the process of identifying
 when a bug was introduced.
 
 To start a bisection you first need
-to tell git to start bisection and
+to tell Git to start bisection and
 specify the commit range. If the current
 commit is bad you type:
 
@@ -1199,7 +1199,7 @@ The created tag can be refered to as
 any commit or branch.
 
 If you want to remove a tag, you
-just tell git to delete it and push
+just tell Git to delete it and push
 the deletion of its reference to
 your origin:
 
@@ -1210,13 +1210,13 @@ git push origin :refs/tags/'RELEASE_VERSION'
 
 @file{refs/tags/RELEASE_VERSION} is a
 file in the @file{.git} directory.
-Using a @code{:} tells git that you
+Using a @code{:} tells Git that you
 want to push the local file before the
 @code{:} to the remote file after the
 @code{:}. If the local file is not
 specified, in order words, the argument
 begins with @code{:}, you are telling
-git to remove the remote file.
+Git to remove the remote file.
 This only work with referense, that is,
 files inside @file{.git/refs}.
 
@@ -1537,7 +1537,7 @@ a complete, possibily collaborative,
 development environment you need
 additional tools.
 
-Everything git can do, you can do in
+Everything Git can do, you can do in
 the command line, but some repetitive
 gets cumbersome in the command line
 because you will need to run the same
@@ -1547,7 +1547,7 @@ For this the package and command
 if you live in the terminal.
 
 @command{bugseverywhere} is a grate tool
-for keeping track of issues in git repositories.
+for keeping track of issues in Git repositories.
 Issues are commited to the current branch
 you are working on, meaning that you can
 have separate issues in separate branches.
@@ -1591,9 +1591,9 @@ Source control does not work well with binary
 files. Consider that two persons are edition
 the same file which cannot be interpreted by
 a human using a text editor. If there is a
-conflict, git may not realise it depending on
+conflict, Git may not realise it depending on
 the binary format, or may not be able to merge
-the changes. If git cannot merge the and you
+the changes. If Git cannot merge the and you
 cannot open it in a text editor, you will
 not a file you can open and se the conflicts in
 so you must open both's versions and manual
@@ -1725,6 +1725,8 @@ Fix a grammaro.
 Abbreviation for reference.
 @item conf
 Abbreviation for configuration.
+@item misc
+Abbreviation for miscellaneous.
 @item +
 As well as, another logical change
 in the same commit.
@@ -2037,7 +2039,7 @@ do not rebase your commits.
 
 @item fast forward
 The action of doing a fast-forward merge,
-a pull for updates when git branch is just
+a pull for updates when Git branch is just
 behind, not diverged.
 
 @item fast-forward
