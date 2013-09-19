@@ -865,7 +865,7 @@ it has some caveats. GNU Arch
 keeps track files by giving
 them unique identifier, this
 solves the problem were you in
-git can get an evil merge if
+Git can get an evil merge if
 the pulled branch does not have
 any common commits@footnote{Identified
 with commit ID, not snapshots,
