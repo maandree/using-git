@@ -366,7 +366,7 @@ to latest commit so this workflow works
 fine.
 
 Small projects will usally have one
-maintainer and contributors clones her
+maintainer and contributors clone her
 blessed repository and sends submissons
 to her. Larger projects may have multiple
 maintainers that helps with excepting
