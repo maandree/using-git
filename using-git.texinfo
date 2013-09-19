@@ -196,7 +196,7 @@ git init --bare
 
 cd -  # Go back to your project respository
 git remote add origin file:///srv/git/MY_REPOSITORY.git
-git push -u orgin master  # master is the bransh you are working in
+git push -u orgin master  # master is the branch you are working in
 @end example
 
 It is standard to append @file{.git} to the
