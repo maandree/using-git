@@ -2281,19 +2281,38 @@ is is also quite old.
 @item shallow repository
 A repository with an incomplete commit history.
 
-@c @item symref
+@c TODO @item symref
 @c @itemx symbolic reference
-@c @item tag
-@c @item tag object
-@c @item topic branch
-@c @item tree
-@c @item tree object
-@c @item tree-ish
-@c @item unmerged index
-@c @item unreachable object
-@c @item upstream branch
-@c @item working tree
+@c TODO @item tag
+@c TODO @item tag object
+@c TODO @item topic branch
+@c TODO @item tree
+@c TODO @item tree object
+@c TODO @item tree-ish
+@c TODO @item unmerged index
+@c TODO @item unreachable object
+@c TODO @item upstream branch
+@c TODO @item working tree
 @end table
 
 @bye
+
+
+TODO:
+
+man gitrevisions
+.git/config
+man gitrepository-layout
+man gitignore
+man gitmodules
+
+
+TODO: (late in the manual)
+
+man gitattributes
+man githooks
+man gitdiffcore
+man gitcredentials
+man gitnamespaces
+man gitcore-tutorial
 
