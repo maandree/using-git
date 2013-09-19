@@ -1311,7 +1311,7 @@ is annoying.
 * Git and filenames::
 * Git and merge tracking::
 * Git and empty directories::
-@c TODO * Git and file renames::
+* Git and file renames::
 * Git and encoding convertions::
 * Git and atomic commits::
 @end menu
@@ -1510,6 +1510,16 @@ Basically there is not reason to track
 directories, ever, but if you are so
 inclined you can add a @file{.gitignore}
 file inside it.
+
+
+
+@node Git and file renames
+@section Git and file renames
+
+The authors of Git beleave that tracking
+file names implicitly provide a more flexible
+way to track how your tree is changing,
+and less painful merging of patches.
 
 
 
