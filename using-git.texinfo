@@ -2233,8 +2233,9 @@ that you pulled updates before committing.
 @itemx reference
 SHA-1 hash or name of a particular object.
 
-@c TODO @item reflog
-@c @itemx reference log
+@item reflog
+@itemx reference log
+Local history of a reference.
 
 @item refspec
 @itemx reference specification
