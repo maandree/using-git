@@ -1036,7 +1036,7 @@ what you are doing.
 If something went horribly, horribly,
 horribly, horribly wrong and you do
 not know how to get back to a clean
-state, you can always doing this naïvely
+state, you can always do this naïvely
 by clone the repository:
 
 @example
