@@ -1536,7 +1536,7 @@ file inside it.
 @node Git and file renames
 @section Git and file renames
 
-The authors of Git beleave that tracking
+The authors of Git believe that tracking
 file names implicitly provide a more flexible
 way to track how your tree is changing,
 and less painful merging of patches.
