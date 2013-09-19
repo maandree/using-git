@@ -415,7 +415,7 @@ Git is a project started by Linus Torvalds,
 the creator of the Linux kernel, so naturally
 it has manpages, but not any official
 @command{info} manual. Since @command{info}
-supports manpage you can use @command{info}
+supports manpages you can use @command{info}
 in place of @command{man}.
 
 Git includes several manpages, one manpage
