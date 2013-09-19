@@ -343,7 +343,7 @@ respository and works on that clone
 instead of ``checking out'' the current
 tip of the source code. This actually
 means that there are multiple backups
-of the respository is recovering a
+of the respository and recovering a
 crash or corruption will be a breeze.
 
 It is a popular misconception that
