@@ -474,14 +474,14 @@ important part with this is that you can
 fix bugs meanwhile you are working on big
 new features.
 
-You main branch is by default called `master',
+Your main branch is by default called `master',
 from it, it is recommended to have a branch
 called `develop'. The develop branch is the
 branch you work on, and when it is stable,
 you merge it with the master branch.
 
 From the develop branch you can branch out
-an create topic branches, an disposable
+and create topic branches, an disposable
 experiments.
 
 
