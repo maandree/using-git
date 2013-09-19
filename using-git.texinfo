@@ -1410,7 +1410,7 @@ and the files will not build unless you
 force them to build, which you more than
 likely will forget. So you may observe a
 behaviour of your program that is not defined
-by the checkout source code.
+by the checked out source code.
 
 This is way Git sets the timestamp to the
 current time on every file it modifies, but
