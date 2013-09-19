@@ -324,7 +324,7 @@ merge them down onto the mainline when stable.
 
 Another important feature of version
 control that can be used to tag releases
-of the code. If you have release a program
+of the code. If you have released a program
 and is sent a bug report you may want to
 test it one both the current version and
 the version the user used.
