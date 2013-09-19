@@ -267,7 +267,7 @@ Many Git servers authenticate using public
 SSH keys. If you do not already have SSH
 installed, install it, it is probably named
 @code{openssh} in your GNU/Linux@footnote{Or
-what ever you are using} distributions'
+whatever you are using} distribution's
 package repository.
 
 Before create an SSH key, check if you already
