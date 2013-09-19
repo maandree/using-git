@@ -1395,7 +1395,7 @@ control lists, extended attributes nor forks.
 One of Git's features is that it does
 not have the feature@footnote{Yes, that
 it does not have it. Do not be confused,
-not have features are often grater features.}
+not having features are often grater features.}
 of perserving timestamps.
 
 Perserving modification time on files is
