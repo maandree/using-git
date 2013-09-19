@@ -545,7 +545,7 @@ git merge MERGEE
 @end example
 
 If you two cannot be automatically merged,
-you will you get a merge conflict. A case
+you will get a merge conflict. A case
 where you will get merge conflicts is when
 one of the branches as made a modification
 where the other has change the indention,
