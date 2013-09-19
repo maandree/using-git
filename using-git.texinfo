@@ -625,7 +625,7 @@ you began from @code{upstream/master}:
 git format-patch upstream/master
 @end example
 
-This command with create a patch whose name
+This command will create a patch whose name
 will be printed by @command{git format-patch}.
 
 Creating a patch this way will keep track
