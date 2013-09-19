@@ -369,12 +369,12 @@ Small projects will usally have one
 maintainer and contributors clone her
 blessed repository and sends submissons
 to her. Larger projects may have multiple
-maintainers that helps with excepting
+maintainers that helps with accepting
 submissons. A common model like this,
 that you often se on GitHub, is the
 integeration manager workflow, where the
 maintainer is an integeration manager
-than excepts pull requests from developers
+than accepts pull requests from developers
 that have public repositores, often
 called forks (which should not be confused
 with a project fork where the forker
