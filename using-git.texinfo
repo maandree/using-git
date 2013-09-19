@@ -371,7 +371,7 @@ blessed repository and sends submissons
 to her. Larger projects may have multiple
 maintainers that helps with accepting
 submissons. A common model like this,
-that you often se on GitHub, is the
+that you often see on GitHub, is the
 integeration manager workflow, where the
 maintainer is an integeration manager
 than accepts pull requests from developers
