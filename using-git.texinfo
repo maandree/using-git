@@ -212,8 +212,11 @@ updates others have made, use the command
 @node Gratis hosting
 @section Gratis hosting
 
-As seen you do not need host, but it is a grate
-way for making your projects available to the world.
+As seen you do not need a hosting service --- if
+you have a network filesystem anyone with access
+to it can also have access your bare repository ---
+but it is a grate way for making your projects
+available to the world.
 
 Here is a lost of gratis Git hosting services that
 hosts Free Software.
