@@ -375,10 +375,10 @@ that you often see on GitHub, is the
 integeration manager workflow, where the
 maintainer is an integeration manager
 than accepts pull requests from developers
-that have public repositores, often
+that have public repositories, often
 called forks (which should not be confused
 with a project fork where the forker
-is taked the project in another direction
+is taking the project in another direction
 is does not requests pulls.)
 
 Even larger project will usablly work
