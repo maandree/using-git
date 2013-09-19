@@ -436,6 +436,7 @@ manpages on special topic:
 @item @command{man gitmodules}
 @item @command{man gitnamespaces}
 @item @command{man gitrepository-layout}
+@item @command{man gitrevisions}
 @item @command{man gittutorial}
 @item @command{man gittutorial-2}
 @item @command{man gitworkflows}
