@@ -700,10 +700,14 @@ As indicated here, it is surrended by less than
 and grater than-signs. You should, if you have
 subscribed to the mailing list, have gotten it
 send to your e-mail. If you do not have it, go
-the the mailing lit and click that you want to
+the the mailing list and click that you want to
 reply, it will open your e-mail client in compose
 mode and the in-reply-to address will have been
-set to the proper message ID.
+set to the proper message ID.@footnote{Assuming
+your e-mail client supports field specification
+and is associated with @code{mailto:}, usally
+this is not a problem, if it is, claws-mail will
+do the job.}
 
 
 
