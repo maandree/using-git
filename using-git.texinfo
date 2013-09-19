@@ -2245,7 +2245,9 @@ local ref. Used by fetch and push.
 A reference to a brnach that is used to
 follow changes in another repository.
 
-@c @item repository
+@item repo.
+@itemx repository
+Database of development history.
 
 @item resolve
 The action of manually merging the parts
@@ -2268,6 +2270,7 @@ is is also quite old.
 A repository with an incomplete commit history.
 
 @c @item symref
+@c @itemx symbolic reference
 @c @item tag
 @c @item tag object
 @c @item topic branch
