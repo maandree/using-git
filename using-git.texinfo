@@ -638,7 +638,7 @@ accepting patches.
 The created patch file is formated as an
 e-mail, with `[PATCH]' in the beginning of
 the subject line. If you update the patch
-it is customary to use `[PATCH v2]' instread
+it is customary to use `[PATCH v2]' instead
 and `[PATCH v3]' on the second update.
 If the patch, however it not readly for
 being included, but is rather for discussion,
