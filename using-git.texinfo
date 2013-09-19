@@ -652,7 +652,7 @@ git send-email --to=EMAIL_ADDRESS_TO_SEND_TO PATCH_FILE
 @end example
 
 If you have registered to the mailing list with,
-or for some other reason want to send under
+or for some other reason want to send under,
 a different e-mail address then you made the
 commits with, you need to specify an envelop
 sender, by adding an option:
