@@ -1790,8 +1790,10 @@ Fix a spello.
 Fix a grammaro.
 @item ref
 Abbreviation for reference.
+@item dir
+Abbreviation for directory.
 @item conf
-Abbreviation for configuration.
+Abbreviation for configuration or configure.
 @item misc
 Abbreviation for miscellaneous.
 @item +
