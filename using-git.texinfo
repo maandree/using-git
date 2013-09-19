@@ -38,6 +38,7 @@ Texts. A copy of the license is included in the section entitled
 
 @titlepage
 @title Using Git
+@subtitle Educational manual for Git, the version control system.
 @author by Mattias Andrée (maandree)
 
 @page
