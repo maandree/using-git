@@ -777,8 +777,9 @@ Git has four trees should know about
 to better understand how Git works.
 
 The first tree you encounter is the
-working directory. The tree begins
-in the parent so called git directory;
+working directory, called the working
+tree in Git. The tree begins in the
+parent so called git directory;
 the directory you executed
 @command{git init} in, and contains
 the directory @file{.git}.
