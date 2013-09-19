@@ -673,14 +673,14 @@ server to use, authorisation and configurations:
 @end example
 
 If you are using a forwarding e-mail, such
-as @@member.fsf.org, you send from using your
+as @@member.fsf.org, you send using your
 normal e-mail, but use the forwarding e-mail
 address as the envelop-sender, most e-mail
 server should accept this.
 
 If you are replying to a message in the mailing
 list, perhaps with an updated patch, you should
-specify the message ID of the message to replay
+specify the message ID of the message to reply
 to. This done my adding the option:
 
 @example
