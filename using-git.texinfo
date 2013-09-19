@@ -1801,7 +1801,7 @@ top of source code files.
 @item @file{LICENSE}
 If the projects license is large, you
 put the fill license plain text in the
-file anmed @file{LICENSE} in the top
+file named @file{LICENSE} in the top
 if your repository.
 @end table
 
