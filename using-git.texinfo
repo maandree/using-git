@@ -173,7 +173,7 @@ git commit -m 'first commit'
 @node Create an origin
 @section Create an origin
 
-It is a good idea to create a backup repostory,
+It is a good idea to create a backup repository,
 so you do not lose your work on a disc failure,
 filesystem corruption or accidental removal.
 
