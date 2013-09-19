@@ -557,7 +557,7 @@ you so, in which files there are conflicts,
 and exit with the return code 1 to indicated
 that the merge was not successful and human
 intervention is required. If the merger
-branch as a file with the line
+branch has a file with the line
 @code{Hello world} and the mergee branch
 as the line @code{hello world!}, the
 file will contain:
