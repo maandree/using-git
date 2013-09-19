@@ -498,7 +498,7 @@ git checkout -b BRANCH_NAME
 @end example
 
 After issuing this command you are located
-in a new branch. The create it in the origin,
+in a new branch. To create it in the origin,
 make a push:
 
 @example
@@ -514,7 +514,8 @@ git push
 
 The @option{-u origin BRANCH_NAME} is just
 to initially tell which remote repository
-a pushes should go to.
+a pushes should go to.@footnote{It actually
+also tells to not push anything else.}
 
 To switch branch use the checkout command:
 
