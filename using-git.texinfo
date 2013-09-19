@@ -835,43 +835,6 @@ file or stage the removal of it
 if it as been removed from the
 working directory.
 
-A caveat with @command{git mv} is
-that is that is that same thing as
-typing:
-
-@example
-cp FILE NEW_NAME
-git rm FILE
-git add NEW_NAME
-@end example
-
-In other words, the history for
-the file is reset and if you do
-this at the same time someone
-edits the file you will get a
-merge conflict.
-
-This is not a problem with GNU
-Arch because it keeps track of
-which file is which by giving
-it an unique identifier, and you
-may think that would have been
-a good think. But if the content
-of the file depends on the file's
-name, or the other way around,
-and a line with such dependency
-is added, the file's content
-would become bad. Well it is
-debatable since the case could
-be that another file depends on
-the renamed files name, and
-someone could make a change in
-that file. But fixing a merge
-conflict when you have only
-renamed the file is not too hard
-and it eliminates a potatial
-maintenance miss.
-
 If you want to know the file
 staging difference between the
 index and working directory
