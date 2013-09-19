@@ -2206,6 +2206,13 @@ objects.
 @c TODO @item pathspec
 @c @item path specification
 
+@item parent
+Logical predecessor. The commit from which
+a new commit is made is called the new commit's
+parent. A merge have two or more parents, and
+the first commit, or the first commit in an
+orphaned branched, has no parents.
+
 @c TODO @item pickaxe
 
 @item plumbing
