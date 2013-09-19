@@ -1270,6 +1270,7 @@ command.
 * First things first::
 * Wildcards::
 @end menu
+@comment TODO man gitrevisions
 
 
 
@@ -2300,7 +2301,6 @@ A repository with an incomplete commit history.
 
 TODO:
 
-man gitrevisions
 .git/config
 man gitrepository-layout
 man gitignore
