@@ -640,7 +640,7 @@ e-mail, with `[PATCH]' in the beginning of
 the subject line. If you update the patch
 it is customary to use `[PATCH v2]' instead
 and `[PATCH v3]' on the second update.
-If the patch, however it not readly for
+If the patch, however it not ready for
 being included, but is rather for discussion,
 use `PATCH/RFC'@footnote{RFC is an abbreviation
 for `Request for comments'.} instead of `PATCH'.
