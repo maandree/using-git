@@ -786,7 +786,8 @@ the directory @file{.git}.
 
 When you are using @command{git add}
 to stage files you encounter the next
-tree. This tree is called the index,
+tree. This tree is called the index
+@footnote{Previously called the cache.},
 and is separate from the working
 directory, when you stage a file,
 you stage an edit, if you edit the
