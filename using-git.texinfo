@@ -1404,8 +1404,8 @@ to perserve the modification time. If you
 have compiled the program, and then checkout
 an earlier commit, perhaps another branch,
 and you build it again, now your compiled
-files from the other branch has a newer time
-stamp then the source in the current branch
+files from the other branch has a newer
+timestamp then the source in the current branch
 and the files will not build unless you
 force them to build, which you more than
 likely will forget. So you may observe a
