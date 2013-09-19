@@ -404,7 +404,7 @@ get noticed as the develops cannot work
 against a broken commit history.
 
 Additionally commits can be signed with
-GPG, so you can be sure that the commiter
+GPG, so you can be sure that the committer
 is who she says she is.
 
 
@@ -471,7 +471,7 @@ branches of your repository. A branch is a
 fork of your commit history, it allows you
 to implement features in parallel. The most
 important part with this is that you can
-fix bugs meanwhile you are working one big
+fix bugs meanwhile you are working on big
 new features.
 
 You main branch is by default called `master',
