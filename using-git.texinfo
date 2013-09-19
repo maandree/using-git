@@ -2249,7 +2249,7 @@ The action of integrate new commits from another
 branch, often a remote-tracking branch.
 
 @item push
-The adcttion of sending updates to a remote
+The action of sending updates to a remote
 repository.
 
 @c TODO @item reachable
