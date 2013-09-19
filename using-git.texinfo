@@ -1139,7 +1139,7 @@ git bisect bad
 git bisect good LAST_KNOWN_GOOD_COMMIT
 @end example
 
-After this you either of, depending if
+After this you either type, depending if
 the commit Git checks out is good or bad:
 
 @example
