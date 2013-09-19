@@ -789,7 +789,7 @@ to stage files you encounter the next
 tree. This tree is called the index
 @footnote{Previously called the cache.},
 and is separate from the working
-directory, when you stage a file,
+tree, when you stage a file,
 you stage an edit, if you edit the
 file further those changes does not
 make it into the index until you
