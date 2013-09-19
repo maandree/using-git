@@ -1312,7 +1312,7 @@ is annoying.
 * Git and merge tracking::
 * Git and empty directories::
 @c TODO * Git and file renames::
-@c TODO * Git and encoding convertions::
+* Git and encoding convertions::
 * Git and atomic commits::
 @end menu
 
@@ -1363,7 +1363,7 @@ shebang or otherwise tagged to how a specific
 permission.
 
 Additionally Git does not track file ownership
---- that whould not only be stupid, that would
+--- that would not only be stupid, that would
 be outright dumb, even moronic ---, access
 control lists, extended attributes nor forks.
 
@@ -1510,6 +1510,18 @@ Basically there is not reason to track
 directories, ever, but if you are so
 inclined you can add a @file{.gitignore}
 file inside it.
+
+
+
+@node Git and encoding convertions
+@section Git and encoding convertions
+
+Git can keep track of encoding for
+commit metadata. Git does however not
+convert file content, if your are indeed
+inclined to want to shoot yourself in
+the foot a filtering mechanism can be
+used.
 
 
 
