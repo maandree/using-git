@@ -1236,7 +1236,7 @@ want to push the local file before the
 specified, in order words, the argument
 begins with @code{:}, you are telling
 Git to remove the remote file.
-This only work with referense, that is,
+This only work with references, that is,
 files inside @file{.git/refs}.
 
 
