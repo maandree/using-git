@@ -381,7 +381,7 @@ with a project fork where the forker
 is taking the project in another direction
 is does not requests pulls.)
 
-Even larger project will usablly work
+Even larger project will usally work
 with a dictator and lieutenants workflow
 where developers clones the blessed
 repository and submits patches to the
