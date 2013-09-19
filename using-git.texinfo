@@ -355,7 +355,7 @@ repository, possibly with mirrors.
 
 A blessed repository, refered to as
 the upstream, is the projects official
-respository. Its maintained by a select
+respository. It is maintained by a select
 few with input from submitted updates.
 But the upstream can also be a shared
 repository, this is the classical
