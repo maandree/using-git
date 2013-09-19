@@ -1341,7 +1341,7 @@ is annoying.
 @node Git and permissions
 @section Git and permissions
 
-File systems lets you set permissions
+Filesystems lets you set permissions
 for users on files. Permissions, such
 as whether the owner, a specific user
 group, or others, can read, write or
