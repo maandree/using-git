@@ -339,7 +339,7 @@ were centralised. Every project has one
 repository all contributers pushed and
 pulled from. Git is distributed, this
 means that contributers clone the
-respository and words on that clone
+respository and works on that clone
 instead of ``checking out'' the current
 tip of the source code. This actually
 means that there are multiple backups
