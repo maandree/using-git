@@ -835,6 +835,46 @@ file or stage the removal of it
 if it as been removed from the
 working directory.
 
+Git trackes file renames implicitly,
+so @command{git mv} is same thing as:
+
+@example
+cp FILE NEW_NAME
+git rm FILE
+git add NEW_NAME
+@end example
+
+This approach is flexible, but
+it has some caveats. GNU Arch
+keeps track files by giving
+them unique identifier, this
+solves the problem were you in
+git can get an evil merge if
+the pulled branch does not have
+any common commits@footnote{Identified
+with commit ID, not snapshots,
+which reflects on more than the
+file content.}, for example,
+the pull patch was not made from
+a clone repository or did not
+contain commit history. Other
+systems tracks renames explicitly
+when a rename command is made,
+that is worst because than mean
+that you need to use the rename
+commit, and evil merges are even
+more probable. A problem will
+merging when where is a rename
+is that the changes are automerged
+instead of creating a conflict,
+you can get evil merges where
+the content of the resulting file
+refers to the files old name,
+naturally this is still a problem
+if another file depending on
+the renamed file is edited in
+parallel.
+
 If you want to know the file
 staging difference between the
 index and working directory
