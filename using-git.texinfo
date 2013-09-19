@@ -383,7 +383,7 @@ is does not requests pulls.)
 
 Even larger project will usally work
 with a dictator and lieutenants workflow
-where developers clones the blessed
+where developers clone the blessed
 repository and submits patches to the
 lieutenants who in turn submits the the
 dictator that finally pushes the changes
