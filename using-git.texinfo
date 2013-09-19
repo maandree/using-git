@@ -404,8 +404,8 @@ get noticed as the develops cannot work
 against a broken commit history.
 
 Additionally commits can be signed with
-GPG, so you can be sure that the commit
-is how is says he is.
+GPG, so you can be sure that the commiter
+is who she says she is.
 
 
 
