@@ -872,7 +872,7 @@ renamed the file is not too hard
 and it eliminates a potatial
 maintenance miss.
 
-If you want do know the file
+If you want to know the file
 staging difference between the
 index and working directory
 type @command{git status}.
