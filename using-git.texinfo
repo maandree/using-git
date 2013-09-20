@@ -1811,13 +1811,13 @@ Minor change.
 @item doc
 Add or change documentation.
 @item typo
-Fix a typo.
+Fix a typo (a typing error.)
 @item spello
-Fix a spello.
+Fix a spello (a spelling error.)
 @item stylo
-Fix a stylo.
+Fix a stylo (a literate style error.)
 @item grammaro
-Fix a grammaro.
+Fix a grammaro (a grammatical error.)
 @item ref
 Abbreviation for `reference'.
 @item dir
