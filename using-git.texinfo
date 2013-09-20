@@ -1401,7 +1401,7 @@ bit willy-nilly when a file is created.
 This is a shortcoming of Git, but only
 in comparision to darcs. Since files are
 only executable if they are compiled or
-have a shebang, it would make more since
+have a shebang, it would make more sense
 so set it on and only on the files with a
 shebang or otherwise tagged to how a specific
 permission.
