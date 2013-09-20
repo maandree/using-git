@@ -1817,13 +1817,13 @@ Fix a spello.
 @item grammaro
 Fix a grammaro.
 @item ref
-Abbreviation for reference.
+Abbreviation for `reference'.
 @item dir
-Abbreviation for directory.
+Abbreviation for `directory'.
 @item conf
-Abbreviation for configuration or configure.
+Abbreviation for `configuration' or `configure'.
 @item misc
-Abbreviation for miscellaneous.
+Abbreviation for `miscellaneous'.
 @item +
 As well as, another logical change
 in the same commit.
