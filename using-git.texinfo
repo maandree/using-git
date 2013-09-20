@@ -1376,7 +1376,7 @@ of the program for further permissions
 that are mission critical.
 
 Tracking permissions in version control
-system makes no senses since source code
+system makes no sense since source code
 should always be readable and writable
 by the owner and it is local configuration
 whether you want to extend those
@@ -1402,7 +1402,7 @@ This is a shortcoming of Git, but only
 in comparision to darcs. Since files are
 only executable if they are compiled or
 have a shebang, it would make more sense
-so set it on and only on the files with a
+to set it on and only on the files with a
 shebang or otherwise tagged to how a specific
 permission.
 
