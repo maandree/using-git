@@ -242,7 +242,7 @@ to it can also have access your bare repository ---
 but it is a grate way for making your projects
 available to the world.
 
-Here is a lost of gratis Git hosting services that
+Here is a list of gratis Git hosting services that
 hosts Free Software.
 
 @table @asis
@@ -2350,6 +2350,7 @@ man gitmodules
 
 TODO: (late in the manual)
 
+mirrors, but they are not safe!
 man gitattributes
 man githooks
 man gitdiffcore
