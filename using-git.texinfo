@@ -1796,7 +1796,10 @@ very friendly in this respect as create
 a commit is lightning fast, and photon
 fast in comparsing to other old school
 source control systems.}. Because of this
-you may need to compromise your messages,
+you may need to compromise your messages
+--- which is not too bad because they are
+accompanied by code, but never do it when
+submitting patches or pull requests ---
 one thing you can do is to not describe
 a fix bug if it should be obvious for
 the changeset@footnote{Can only be obvious
