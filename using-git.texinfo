@@ -1818,6 +1818,8 @@ Fix a spello (a spelling error.)
 Fix a stylo (a literate style error.)
 @item grammaro
 Fix a grammaro (a grammatical error.)
+@item style
+Fix a coding style error or mistake.
 @item ref
 Abbreviation for `reference'.
 @item dir
