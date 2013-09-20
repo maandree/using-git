@@ -1403,7 +1403,7 @@ in comparision to darcs. Since files are
 only executable if they are compiled or
 have a shebang, it would make more sense
 to set it on and only on the files with a
-shebang or otherwise tagged to how a specific
+shebang or otherwise tagged to have a specific
 permission.
 
 Additionally Git does not track file ownership
