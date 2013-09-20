@@ -1814,6 +1814,8 @@ Add or change documentation.
 Fix a typo.
 @item spello
 Fix a spello.
+@item stylo
+Fix a stylo.
 @item grammaro
 Fix a grammaro.
 @item ref
