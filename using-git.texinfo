@@ -1658,7 +1658,7 @@ collaboration and especially contributors.
 @itemize
 @item
 Flyspray is a web-based project management
-and issue tracking system used by many projects
+and issue tracking system used by many projects.
 @item
 GNU Mailman is a projcet for managing electronic
 mailing lists which can be very useful for
