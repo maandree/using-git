@@ -1,25 +1,32 @@
 In lack of good git documentation and manuals, I started by own.
 
 It seems to be lack of well written manuals, and Git's online
-documention itself is atrocious. While I do not except the writers
-to have taking any course in pedagogy or didactics, or even have any
-practical experience, I at least expect the writters to try to
-keep those aspects in mind, but that does not seem to be the case.
+documention itself is atrocious. While I do not except the
+writers to have taking any course in pedagogy or didactics, or
+even have any practical experience, I at least expect the
+writters to try to keep those aspects in mind, but that does
+not seem to be the case.
 
-Documentation should first introduct the concept, then the
+Documentation should first introduce the concept, then the
 implementation; that is, first how to get started, than what
-they are doing. In other words, first how to create a Git
+they are doing*. In other words, first how to create a Git
 repository and the absolute essantials, than introduce Git
 itself. Not first taking about what Git is, readers want to
 read the chapters in their order, if they do not have anything
 specific in mind.
 
-Documentation should then give you breif documentation of everthing
-you need to know in the order of imporantance, then, iterator be
-more advanced.
+Documentation should then give you breif a documentation of
+everything you need to know in the order of its imporantance,
+then, iterate to the more advanced.
 
-But one of the most important part is not to start with dangerous
-commands just because it is easier to be lazy them. Try to do it
-right from the beginning, otherwise the wrong way will stick in
-the reader's memory.
+But one of the most important part is not to start with
+dangerous commands just because it is easier to be lazy them.
+Try to do it right from the beginning, otherwise the wrong
+way will stick in the reader's memory.
+
+
+
+*  This is a concept called ‘concrete before abstract’. While I
+   disagree that it is always the best practices, I do thinks
+   in this case.
 
