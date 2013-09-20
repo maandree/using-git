@@ -1822,6 +1822,7 @@ Fix a grammaro (a grammatical error.)
 Abbreviation for `reference'.
 @item dir
 Abbreviation for `directory'.
+@footnote{`Catalogue' and, for Windows folk, `folder' are synonyms for `directory'.}
 @item conf
 Abbreviation for `configuration' or `configure'.
 @item misc
