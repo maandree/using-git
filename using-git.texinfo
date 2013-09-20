@@ -1674,7 +1674,7 @@ released under the GNU General Public License,
 except Flyspray which is released under the GNU
 Lesser General Public License@footnote{Yeah, it
 is a weird license for anything that is not
-library, but that is what it is what it is
+a library, but that is what it is what it is
 released under.}.
 
 
