@@ -2287,7 +2287,10 @@ branch, often a remote-tracking branch.
 The action of sending updates to a remote
 repository.
 
-@c TODO @item reachable
+@item reachable
+All ancestors of a given commit are reachable
+from that commit. This can be generallised to
+chained objects.
 
 @item rebase
 The action of rewriting history by pretending
