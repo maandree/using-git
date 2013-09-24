@@ -2334,8 +2334,11 @@ is is also quite old.
 @item shallow repository
 A repository with an incomplete commit history.
 
-@c TODO @item symref
-@c @itemx symbolic reference
+@item symref
+@itemx symbolic reference
+A reference that does not point to a SHA-1 ID,
+but rather to another reference.
+
 @c TODO @item tag
 @c TODO @item tag object
 @c TODO @item topic branch
