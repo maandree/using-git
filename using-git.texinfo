@@ -78,14 +78,14 @@ such as how to use a command.
 * Introduction::                          What is Git and why is it the best?
 * Branching out::                         The flexibility of non-linearity
 * Collaborating::                         Shared goals, shared development
-* Basic commands::                        So happy hacking
-* I just don't know what went wrong::
-* Version control::
-* Interface::
-* Features::
-* Beyond Git::
-* GNU Free Documentation License::
-* Glossary::
+* Basic commands::                        So happy hacking!
+* I just don't know what went wrong::     Identifying when something broke and how to recover
+* Version control::                       Time to release a new version?
+* Interface::                             Git's interface design
+* Features::                              Git's design and features
+* Beyond Git::                            Just using Git is not enough
+* GNU Free Documentation License::        Sharing is good, it does not make you a pirate
+* Glossary::                              Lost in all the big words?
 @end menu
 @c TODO Masterful flow
 
@@ -1061,10 +1061,10 @@ what you are doing.
 @chapter I just don't know what went wrong
 
 @menu
-* Naïve reset::
-* Using the stash::
-* Commit amendment::
-* Bisection::
+* Naïve reset::                           Last resort recovery
+* Using the stash::                       Stash changes
+* Commit amendment::                      Correcting an unpushed commit
+* Bisection::                             Identifing when something broke
 @end menu
 
 
@@ -1216,9 +1216,9 @@ bisection.
 @chapter Version control
 
 @menu
-* Tagging versions::
-* Cherry picking::
-* Examine the log::
+* Tagging versions::                      Releasing your new version
+* Cherry picking::                        Backporting and selective proposed update merge
+* Examine the log::                       Utilising Git's commit log
 @end menu
 
 
@@ -1306,8 +1306,8 @@ command.
 @chapter Interface
 
 @menu
-* First things first::
-* Wildcards::
+* First things first::                    Order betters! (Especially with find)
+* Wildcards::                             Beware of wildcards
 @end menu
 @comment TODO man gitrevisions
 
@@ -1346,18 +1346,18 @@ is annoying.
 @chapter Features
 
 @menu
-* Git and permissions::
-* Git and timestamps::
-* Git and custom merge tools::
-* Git and shared build caches::
-* Git and keyword expansion::
-* Git and links::
-* Git and filenames::
-* Git and merge tracking::
-* Git and empty directories::
-* Git and file renames::
-* Git and encoding convertions::
-* Git and atomic commits::
+* Git and permissions::                   File permission tracking in Git
+* Git and timestamps::                    File timestamp tracking in Git
+* Git and custom merge tools::            Merge tool customisability in Git
+* Git and shared build caches::           Shared build caches do not belong in source control
+* Git and keyword expansion::             Keyword expansion is evil and do not belong in source control
+* Git and links::                         Symlink and hardlink tracking in Git
+* Git and filenames::                     Filename tracking in Git
+* Git and merge tracking::                Merge commit tracking in Git
+* Git and empty directories::             Nontracking of empty directories in Git
+* Git and file renames::                  File rename tracking in Git
+* Git and encoding convertions::          Encoding convertions in Git
+* Git and atomic commits::                Atomic commits and source control
 @end menu
 
 
@@ -1611,12 +1611,12 @@ the state in the same manner.
 @chapter Beyond Git
 
 @menu
-* Additional tools::
-* The binary problem::
-* Writing commit messages::
-* Standard files::
-* Keeping the repository clean::
-* A friendly build system::
+* Additional tools::                      Programs that you can use togather with Git
+* The binary problem::                    Binary files are evil agaist source control
+* Writing commit messages::               How to write good commit messages
+* Standard files::                        People have expections, and they should have
+* Keeping the repository clean::          Good housekeeping is important
+* A friendly build system::               Build systems makes the it easier for you and others
 @end menu
 
 
@@ -1926,7 +1926,7 @@ you do not commit the program precompiled,
 libraries the project is using and integrated
 development environment (IDE) files.
 You can however make exceptions for precompiled
-not-programs that are compiled by your build
+non-programs that are compiled by your build
 system if you think it is useful enough for
 users to be available precompiled. For example
 you can have a manual precompiled.
