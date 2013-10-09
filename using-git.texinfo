@@ -4,7 +4,7 @@
 @setfilename using-git.info
 @settitle using git
 @afourpaper
-@c @afourpaper
+@c @afivepaper
 @documentencoding UTF-8
 @documentlanguage en
 
