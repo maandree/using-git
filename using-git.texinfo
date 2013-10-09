@@ -4,8 +4,16 @@
 @setfilename using-git.info
 @settitle using git
 @afourpaper
+@c @afourpaper
 @documentencoding UTF-8
 @documentlanguage en
+
+@c @set HARD_COPY_EDITION
+@c @smallbook
+@ifset HARD_COPY_EDITION
+@cropmarks
+@setchapternewpage odd
+@endif
 @finalout
 @c %**end of header
 
@@ -16,9 +24,6 @@
 * using git: (using git).             Using the Git source control management
 @end direntry
 
-
-@c @set HARD_COPY_EDITION
-@c @smallbook
 
 
 @macro prelude

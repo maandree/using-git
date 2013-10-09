@@ -5,6 +5,8 @@ TEXINFO_DIR = .
 PREFIX = /usr
 DATA = /share
 
+TEXIFLAGS = #--force
+
 
 
 .PHONY: all
@@ -43,17 +45,26 @@ pdf: $(PROGRAM).pdf.gz
 ps: $(PROGRAM).ps.gz
 dvi: $(PROGRAM).dvi.gz
 
+#logo.pdf: logo.svg
+#        rsvg-convert --format=pdf "$<" > "$@"
+
+#logo.eps: obj/logo.ps
+#        ps2eps "$<"
+
+#logo.ps: logo.svg
+#        rsvg-convert --format=ps "$<" > "$@"
+
 %.info: $(TEXINFO_DIR)/%.texinfo
-	$(MAKEINFO) "$<"
+	$(MAKEINFO) $(TEXIFLAGS) "$<"
 
 %.pdf: $(TEXINFO_DIR)/%.texinfo
-	texi2pdf "$<"
+	texi2pdf $(TEXIFLAGS) "$<"
 
 %.dvi: $(TEXINFO_DIR)/%.texinfo
-	$(TEXI2DVI) "$<"
+	$(TEXI2DVI) $(TEXIFLAGS) "$<"
 
 %.ps: $(TEXINFO_DIR)/%.texinfo
-	texi2pdf --ps "$<"
+	texi2pdf $(TEXIFLAGS) --ps "$<"
 
 .PHONY: install-info
 install: install-info
