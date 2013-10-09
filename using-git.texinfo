@@ -17,39 +17,19 @@
 @end direntry
 
 
-@copying
-Copyright @copyright{} 2013 Mattias Andrée
+@c @set HARD_COPY_EDITION
+@c @smallbook
 
-@quotation
-Permission is granted to copy, distribute and/or modify this document
-under the terms of the GNU Free Documentation License, Version 1.3 or
-any later version published by the Free Software Foundation; with no
-Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
-Texts. A copy of the license is included in the section entitled
-``GNU Free Documentation License''.
-@end quotation
-@end copying
+
+@macro prelude
+@center @titlefont{Prelude}
+@iftex
+@sp 1
+@end iftex
 
 @ifnottex
-@node Top
-@top Using Git
-@insertcopying
+@quotation
 @end ifnottex
-
-@titlepage
-@title Using Git
-@subtitle Educational manual for Git, the version control system.
-@author by Mattias Andrée (maandree)
-
-@page
-@center git: A silly, incompetent, stupid, annoying, or childish person.
-@vskip 0pt plus 1filll
-@insertcopying
-@page
-
-
-@center @titlefont{Prelude}
-@sp 1
 
 @noindent
 This Git manual is intended to be
@@ -68,6 +48,60 @@ and @command{man git VERB}, is much
 better for quick lookup of information,
 such as how to use a command.
 @end titlepage
+
+@c @ifclear HARD_COPY_EDITION
+@c If you prefer a hard copy edition, you can order one from
+@c ...
+@c @end ifclear
+
+@ifnottex
+@end quotation
+@end ifnottex
+@end macro
+
+
+@copying
+Copyright @copyright{} 2013 Mattias Andrée
+
+@quotation
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts. A copy of the license is included in the section entitled
+``GNU Free Documentation License''.
+@end quotation
+@end copying
+
+@ifnottex
+@node Top
+@top Using Git
+@insertcopying
+
+@prelude
+@end ifnottex
+
+@titlepage
+@title Using Git
+@subtitle Educational manual for Git, the version control system.
+
+@c @vskip 0pt plus 1filll
+@c @c this way, it is centered exactly in pdf and approximently in dvi and ps
+@c @c @center does not work for @image in dvi and ps
+@c @multitable @columnfractions 0.15 0.7
+@c @item @tab @center @image{obj/logo,200px}
+@c @end multitable
+@c @vskip 0pt plus 1filll
+
+@author by Mattias Andrée (maandree)
+
+@page
+@center git: A silly, incompetent, stupid, annoying, or childish person.
+@vskip 0pt plus 1filll
+@insertcopying
+
+@page
+@prelude
 
 @contents
 
