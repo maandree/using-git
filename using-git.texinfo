@@ -8,12 +8,16 @@
 @documentencoding UTF-8
 @documentlanguage en
 
+@set TEXI_5
+
 @c @set HARD_COPY_EDITION
 @c @smallbook
 @ifset HARD_COPY_EDITION
+@ifset TEXI_5
 @cropmarks
+@end ifset
 @setchapternewpage odd
-@endif
+@end ifset
 @finalout
 @c %**end of header
 
@@ -32,9 +36,11 @@
 @sp 1
 @end iftex
 
+@ifset TEXI_5
 @ifnottex
 @quotation
 @end ifnottex
+@end ifset
 
 @noindent
 This Git manual is intended to be
@@ -58,9 +64,12 @@ such as how to use a command.
 @c ...
 @c @end ifclear
 
+@ifset TEXI_5
 @ifnottex
 @end quotation
 @end ifnottex
+@end ifset
+
 @end macro
 
 
