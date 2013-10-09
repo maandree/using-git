@@ -74,11 +74,11 @@ such as how to use a command.
 
 
 @menu
-* Getting started::
-* Introduction::
-* Branching out::
-* Collaborating::
-* Basic commands::
+* Getting started::                       Getting started with Git
+* Introduction::                          What is Git and why is it the best?
+* Branching out::                         The flexibility of non-linearity
+* Collaborating::                         Shared goals, shared development
+* Basic commands::                        So happy hacking
 * I just don't know what went wrong::
 * Version control::
 * Interface::
@@ -95,11 +95,11 @@ such as how to use a command.
 @chapter Getting started
 
 @menu
-* Identify yourself::
-* Create a repository::
-* Create an origin::
-* Gratis hosting::
-* Generate your key::
+* Identify yourself::                     Configure Git to identify you when you make commits
+* Create a repository::                   Create your first repository
+* Create an origin::                      Create a backup repository
+* Gratis hosting::                        Get a hosting service for your superawesomazing projects
+* Generate your key::                     Create an identification key
 @end menu
 
 
@@ -317,10 +317,10 @@ ssh-keygen -t rsa -C 'YOUR_EMAIL_ADDRESS'
 @chapter Introduction
 
 @menu
-* What is Git?::
-* It is distributed::
-* Integrity::
-* Online documentation::
+* What is Git?::                          So exactly what is Git?
+* It is distributed::                     The power of non-centralisation
+* Integrity::                             How you know that noone is messing with your project
+* Online documentation::                  Git comes with online documentation
 @end menu
 
 
@@ -480,9 +480,9 @@ manpages on special topic:
 @chapter Branching out
 
 @menu
-* Workflow::
-* Creating branches::
-* Merging branches::
+* Workflow::                              Why should I branch?
+* Creating branches::                     How do I branch?
+* Merging branches::                      How do I merge my branches?
 @end menu
 
 
@@ -609,10 +609,10 @@ the files and make a new commit.
 @chapter Collaborating
 
 @menu
-* Cloning a repository::
-* Submitting patches::
-* Accepting patches::
-* Making pull requests::
+* Cloning a repository::                  Start your collaboration
+* Submitting patches::                    Submit your work upstream
+* Accepting patches::                     Accepting received commits
+* Making pull requests::                  Request integration
 @end menu
 
 
@@ -787,9 +787,9 @@ you want to see the changes.
 @chapter Basic commands
 
 @menu
-* The trees of Git::
-* File operations::
-* Go back in time::
+* The trees of Git::                      How history in Git is structured
+* File operations::                       Working with files in Git
+* Go back in time::                       Virtual time travel
 @end menu
 
 
