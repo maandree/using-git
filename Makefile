@@ -29,7 +29,7 @@ uninstall:
 
 .PHONY: clean
 clean:
-	-rn -r -- bin obj
+	-rm -r -- bin obj
 
 ## Texinfo manual section
 
