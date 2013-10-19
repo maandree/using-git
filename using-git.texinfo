@@ -4,8 +4,20 @@
 @setfilename using-git.info
 @settitle using git
 @afourpaper
+@c @afivepaper
 @documentencoding UTF-8
 @documentlanguage en
+
+@set TEXI_5
+
+@c @set HARD_COPY_EDITION
+@c @smallbook
+@ifset HARD_COPY_EDITION
+@ifset TEXI_5
+@cropmarks
+@end ifset
+@setchapternewpage odd
+@end ifset
 @finalout
 @c %**end of header
 
@@ -15,6 +27,50 @@
 @direntry
 * using git: (using git).             Using the Git source control management
 @end direntry
+
+
+
+@macro prelude
+@center @titlefont{Prelude}
+@iftex
+@sp 1
+@end iftex
+
+@ifset TEXI_5
+@ifnottex
+@quotation
+@end ifnottex
+@end ifset
+
+@noindent
+This Git manual is intended to be
+educational rather than a lookup
+documentation. And written as a
+tutorial, similarly to an educational
+math book, except it does not include
+problems to solve or test.
+Consequentially, it is designed to
+be read chapter by chapter with
+occasional look-back. Because of
+the scattered design of the content
+layout, Git's online documentation,
+accessible with @command{man git}
+and @command{man git VERB}, is much
+better for quick lookup of information,
+such as how to use a command.
+
+@c @ifclear HARD_COPY_EDITION
+@c If you prefer a hard copy edition, you can order one from
+@c ...
+@c @end ifclear
+
+@ifset TEXI_5
+@ifnottex
+@end quotation
+@end ifnottex
+@end ifset
+
+@end macro
 
 
 @copying
@@ -34,39 +90,31 @@ Texts. A copy of the license is included in the section entitled
 @node Top
 @top Using Git
 @insertcopying
+
+@prelude
 @end ifnottex
 
 @titlepage
 @title Using Git
 @subtitle Educational manual for Git, the version control system.
+
+@c @vskip 0pt plus 1filll
+@c @c this way, it is centered exactly in pdf and approximently in dvi and ps
+@c @c @center does not work for @image in dvi and ps
+@c @multitable @columnfractions 0.15 0.7
+@c @item @tab @center @image{obj/logo,200px}
+@c @end multitable
+@c @vskip 0pt plus 1filll
+
 @author by Mattias Andrée (maandree)
 
 @page
 @center git: A silly, incompetent, stupid, annoying, or childish person.
 @vskip 0pt plus 1filll
 @insertcopying
+
 @page
-
-
-@center @titlefont{Prelude}
-@sp 1
-
-@noindent
-This Git manual is intended to be
-educational rather than a lookup
-documentation. And written as a
-tutorial, similarly to an educational
-math book, except it does not include
-problems to solve or test.
-Consequentially, it is designed to
-be read chapter by chapter with
-occasional look-back. Because of
-the scattered design of the content
-layout, Git's online documentation,
-accessible with @command{man git}
-and @command{man git VERB}, is much
-better for quick lookup of information,
-such as how to use a command.
+@prelude
 @end titlepage
 
 @contents
@@ -74,18 +122,18 @@ such as how to use a command.
 
 
 @menu
-* Getting started::
-* Introduction::
-* Branching out::
-* Collaborating::
-* Basic commands::
-* I just don't know what went wrong::
-* Version control::
-* Interface::
-* Features::
-* Beyond Git::
-* GNU Free Documentation License::
-* Glossary::
+* Getting started::                       Getting started with Git
+* Introduction::                          What is Git and why is it the best?
+* Branching out::                         The flexibility of non-linearity
+* Collaborating::                         Shared goals, shared development
+* Basic commands::                        So happy hacking!
+* I just don't know what went wrong::     Identifying when something broke and how to recover
+* Version control::                       Time to release a new version?
+* Interface::                             Git's interface design
+* Features::                              Git's design and features
+* Beyond Git::                            Just using Git is not enough
+* GNU Free Documentation License::        Sharing is good, it does not make you a pirate
+* Glossary::                              Lost in all the big words?
 @end menu
 @c TODO Masterful flow
 
@@ -95,11 +143,11 @@ such as how to use a command.
 @chapter Getting started
 
 @menu
-* Identify yourself::
-* Create a repository::
-* Create an origin::
-* Gratis hosting::
-* Generate your key::
+* Identify yourself::                     Configure Git to identify you when you make commits
+* Create a repository::                   Create your first repository
+* Create an origin::                      Create a backup repository
+* Gratis hosting::                        Get a hosting service for your superawesomazing projects
+* Generate your key::                     Create an identification key
 @end menu
 
 
@@ -317,10 +365,10 @@ ssh-keygen -t rsa -C 'YOUR_EMAIL_ADDRESS'
 @chapter Introduction
 
 @menu
-* What is Git?::
-* It is distributed::
-* Integrity::
-* Online documentation::
+* What is Git?::                          So exactly what is Git?
+* It is distributed::                     The power of non-centralisation
+* Integrity::                             How you know that noone is messing with your project
+* Online documentation::                  Git comes with online documentation
 @end menu
 
 
@@ -480,9 +528,9 @@ manpages on special topic:
 @chapter Branching out
 
 @menu
-* Workflow::
-* Creating branches::
-* Merging branches::
+* Workflow::                              Why should I branch?
+* Creating branches::                     How do I branch?
+* Merging branches::                      How do I merge my branches?
 @end menu
 
 
@@ -609,10 +657,10 @@ the files and make a new commit.
 @chapter Collaborating
 
 @menu
-* Cloning a repository::
-* Submitting patches::
-* Accepting patches::
-* Making pull requests::
+* Cloning a repository::                  Start your collaboration
+* Submitting patches::                    Submit your work upstream
+* Accepting patches::                     Accepting received commits
+* Making pull requests::                  Request integration
 @end menu
 
 
@@ -787,9 +835,9 @@ you want to see the changes.
 @chapter Basic commands
 
 @menu
-* The trees of Git::
-* File operations::
-* Go back in time::
+* The trees of Git::                      How history in Git is structured
+* File operations::                       Working with files in Git
+* Go back in time::                       Virtual time travel
 @end menu
 
 
@@ -1061,10 +1109,10 @@ what you are doing.
 @chapter I just don't know what went wrong
 
 @menu
-* Naïve reset::
-* Using the stash::
-* Commit amendment::
-* Bisection::
+* Naïve reset::                           Last resort recovery
+* Using the stash::                       Stash changes
+* Commit amendment::                      Correcting an unpushed commit
+* Bisection::                             Identifing when something broke
 @end menu
 
 
@@ -1216,9 +1264,9 @@ bisection.
 @chapter Version control
 
 @menu
-* Tagging versions::
-* Cherry picking::
-* Examine the log::
+* Tagging versions::                      Releasing your new version
+* Cherry picking::                        Backporting and selective proposed update merge
+* Examine the log::                       Utilising Git's commit log
 @end menu
 
 
@@ -1306,8 +1354,8 @@ command.
 @chapter Interface
 
 @menu
-* First things first::
-* Wildcards::
+* First things first::                    Order betters! (Especially with find)
+* Wildcards::                             Beware of wildcards
 @end menu
 @comment TODO man gitrevisions
 
@@ -1346,18 +1394,18 @@ is annoying.
 @chapter Features
 
 @menu
-* Git and permissions::
-* Git and timestamps::
-* Git and custom merge tools::
-* Git and shared build caches::
-* Git and keyword expansion::
-* Git and links::
-* Git and filenames::
-* Git and merge tracking::
-* Git and empty directories::
-* Git and file renames::
-* Git and encoding convertions::
-* Git and atomic commits::
+* Git and permissions::                   File permission tracking in Git
+* Git and timestamps::                    File timestamp tracking in Git
+* Git and custom merge tools::            Merge tool customisability in Git
+* Git and shared build caches::           Shared build caches do not belong in source control
+* Git and keyword expansion::             Keyword expansion is evil and do not belong in source control
+* Git and links::                         Symlink and hardlink tracking in Git
+* Git and filenames::                     Filename tracking in Git
+* Git and merge tracking::                Merge commit tracking in Git
+* Git and empty directories::             Nontracking of empty directories in Git
+* Git and file renames::                  File rename tracking in Git
+* Git and encoding convertions::          Encoding convertions in Git
+* Git and atomic commits::                Atomic commits and source control
 @end menu
 
 
@@ -1611,12 +1659,12 @@ the state in the same manner.
 @chapter Beyond Git
 
 @menu
-* Additional tools::
-* The binary problem::
-* Writing commit messages::
-* Standard files::
-* Keeping the repository clean::
-* A friendly build system::
+* Additional tools::                      Programs that you can use togather with Git
+* The binary problem::                    Binary files are evil agaist source control
+* Writing commit messages::               How to write good commit messages
+* Standard files::                        People have expections, and they should have
+* Keeping the repository clean::          Good housekeeping is important
+* A friendly build system::               Build systems makes the it easier for you and others
 @end menu
 
 
@@ -1926,7 +1974,7 @@ you do not commit the program precompiled,
 libraries the project is using and integrated
 development environment (IDE) files.
 You can however make exceptions for precompiled
-not-programs that are compiled by your build
+non-programs that are compiled by your build
 system if you think it is useful enough for
 users to be available precompiled. For example
 you can have a manual precompiled.
