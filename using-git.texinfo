@@ -501,8 +501,8 @@ is who she says she is.
 
 As with most software packages, Git
 includes online documentation, accessible
-in several ways. The simplest way, this
-will working on all systems is by add
+in several ways. The simplest way --- this
+will working on all systems --- is by adding
 @option{--help} to the command @command{git}
 or @command{git VERB}.
 
