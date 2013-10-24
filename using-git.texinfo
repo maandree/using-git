@@ -485,7 +485,7 @@ Git cryptographically hashes all data
 associated with a commit, including the
 prior commit. This makes it unfeasible
 to modify a commit without changing the
-commit ID; change the commit ID brakes
+commit ID; changing the commit ID brakes
 the commit history and would therefore
 get noticed as the develops cannot work
 against a broken commit history.
