@@ -363,7 +363,7 @@ have one. You are looking for a pair of
 @file{~/.ssh}. @file{id_rsa} is your private
 key and should not be shared or made public.
 @file{id_rsa.pub} is you public key and is
-the file you want to upload you your Git
+the file you want to upload to your Git
 hosting server.
 
 If you do not already have a key, you can
