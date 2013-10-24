@@ -1367,7 +1367,7 @@ command.
 @chapter Interface
 
 @menu
-* First things first::                    Order betters! (Especially with find)
+* First things first::                    Order matters! (Especially with find)
 * Wildcards::                             Beware of wildcards
 @end menu
 @comment TODO man gitrevisions
