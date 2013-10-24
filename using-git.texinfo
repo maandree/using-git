@@ -209,7 +209,7 @@ issus the Git command to initialise the repository:
 git init
 @end example
 
-This command creates a directory namend @file{.git}
+This command creates a directory named @file{.git}
 inside the directory with all data Git requires to
 operate on the repository.
 
