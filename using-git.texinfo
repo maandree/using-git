@@ -357,7 +357,7 @@ whatever you are using.} distribution's
 package repository. If not, you can download
 it at @url{http://www.openssh.com}.
 
-Before create an SSH key, check if you already
+Before creating an SSH key, check if you already
 have one. You are looking for a pair of
 @file{id_rsa.pub} and @file{id_rsa}, in
 @file{~/.ssh}. @file{id_rsa} is your private
