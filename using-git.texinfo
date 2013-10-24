@@ -242,7 +242,7 @@ _/
 
 Git parses @file{.gitignore} with wildcards,
 @code{#} for comments and @code{!} for inclusion
-rather than exclusion, latter entires override
+rather than exclusion. Latter entires override
 earlier entries.
 
 When you have created your @file{.gitignore} you
