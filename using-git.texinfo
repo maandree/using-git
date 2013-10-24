@@ -214,7 +214,7 @@ inside the directory with all data Git requires to
 operate on the repository.
 
 The next thing you want to do is to create a
-@file{.gitignore} file, it is used to keep track
+@file{.gitignore} file. It is used to keep track
 of with files that should be be included in the
 repository, unless overruled with a forced staging.
 
