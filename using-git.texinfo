@@ -215,7 +215,7 @@ operate on the repository.
 
 The next thing you want to do is to create a
 @file{.gitignore} file. It is used to keep track
-of with files that should be be included in the
+of with files that should be included in the
 repository, unless overruled with a forced staging.
 
 A good base @file{.gitignore} content you probably
