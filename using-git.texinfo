@@ -400,7 +400,7 @@ on the same project without the risk of the
 code being too new to accept a submitted patch.
 
 When you are working it is important to keep
-track of changes so that you can find when
+track of changes so that you can find which
 edit step broke the system. But version
 control also lets you create branches, these
 are different versions of the same project
