@@ -466,7 +466,7 @@ that have public repositories, often
 called forks (which should not be confused
 with a project fork where the forker
 is taking the project in another direction
-is does not requests pulls.)
+and does not intend requests pulls.)
 
 Even larger project will usally work
 with a dictator and lieutenants workflow
