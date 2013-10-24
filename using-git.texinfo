@@ -264,7 +264,8 @@ filesystem corruption or accidental removal.
 
 You can use such repositories for allowing
 collaboration with a common repository that all
-collaborators can submit and fetch commits from.
+collaborators can submit commits to and fetch
+commits from.
 
 This repository is customarly called `origin'.
 And it is a bare repository, meaning that it
