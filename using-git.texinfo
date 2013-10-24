@@ -568,7 +568,7 @@ branch you work on, and when it is stable,
 you merge it with the master branch.
 
 From the develop branch you can branch out
-and create topic branches, an disposable
+and create topic branches, and disposable
 experiments.
 
 
