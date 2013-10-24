@@ -59,6 +59,19 @@ and @command{man git VERB}, is much
 better for quick lookup of information,
 such as how to use a command.
 
+This manual will teach you the basics
+for using Git with an early focus on
+contributing to existing projects, and
+iterates to increasingly more advanced
+features that makes life with Git even
+easier. But it will also teach you some
+ideas behide Git's design. You will also
+learn about side-issues such as how to
+best make your own project installable
+and navigateable by others without
+excessive documentation and without having
+to answer too many questions.
+
 @c @ifclear HARD_COPY_EDITION
 @c If you prefer a hard copy edition, you can order one from
 @c ...
