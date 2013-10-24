@@ -601,7 +601,7 @@ git push
 
 The @option{-u origin BRANCH_NAME} is just
 to initially tell which remote repository
-a pushes should go to.@footnote{It actually
+pushes should go to.@footnote{It actually
 also tells to not push anything else.}
 
 To switch branch use the checkout command:
