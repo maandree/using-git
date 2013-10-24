@@ -406,7 +406,8 @@ control also lets you create branches, these
 are different versions of the same project
 being developed concurrently which lets your
 team implement features in parallel and
-merge them down onto the mainline when stable.
+merge them down onto the mainline when stable
+or implemented to an acceptable degree.
 
 Another important feature of version
 control that can be used to tag releases
