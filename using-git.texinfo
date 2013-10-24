@@ -305,7 +305,7 @@ but it is a grate way for making your projects
 available to the world.
 
 Here is a list of gratis Git hosting services that
-hosts Free Software.
+allow hosting of Free Software projects.
 
 @table @asis
 @item @bullet{} @url{https://savannah.nongnu.org/, Savannah}
