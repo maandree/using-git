@@ -272,7 +272,7 @@ And it is a bare repository, meaning that it
 only holds the data in the @file{.git} directory
 and cannot be used as the working directory, it
 is missing what is in Git called `index'
-@footnote{Or `cache', an obsolete term} and
+@footnote{Or `cache', an obsolete term.} and
 `working tree'.
 
 @example
