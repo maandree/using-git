@@ -262,7 +262,7 @@ It is a good idea to create a backup repository,
 so you do not lose your work on a disc failure,
 filesystem corruption or accidental removal.
 
-You can use such repository for allowing
+You can use such repositories for allowing
 collaboration with a common repository that all
 collaborators can submit and fetch commits from.
 
