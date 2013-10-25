@@ -624,7 +624,7 @@ git pull . MERGEE
 @end example
 
 In the default mode, @command{git pull . MERGEE}
-is a short and fore a fetch and merge:
+is a shorthand for a fetch and merge:
 
 @example
 git fetch MERGEE &&
