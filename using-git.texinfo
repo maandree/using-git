@@ -778,7 +778,7 @@ to. This done my adding the option:
 To get the message ID, open the message in your
 e-mail client and choose to see all headers ---
 if not possible: download the it as an mbox file
-and open it in an text editor --- a look for:
+and open it in a text editor --- a look for:
 
 @example
 Message-ID: <MESSAGE_ID>
@@ -1784,7 +1784,7 @@ and in fact it is text based, more precisely
 it is XML based.
 Will you may not be able to view an SVG file
 with merge conflicts, you are still able to
-open it in an text editor and fix the conficts.
+open it in a text editor and fix the conficts.
 However it may not be the simplest thing to
 resolve in a text editor it helps you to identify
 where the conflicts are located in the graphics.
