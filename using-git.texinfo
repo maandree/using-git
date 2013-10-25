@@ -631,8 +631,8 @@ git fetch MERGEE &&
 git merge MERGEE
 @end example
 
-If you two cannot be automatically merged,
-you will get a merge conflict. A case
+If the two branches cannot be automatically
+merged, you will get a merge conflict. A case
 where you will get merge conflicts is when
 one of the branches has made a modification
 where the other has change the indention,
