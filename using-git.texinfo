@@ -1000,7 +1000,7 @@ so you know when something has
 happend or what has happen lately.
 To read the log type @command{git log}.
 If you want to know which files
-have changes, you can use
+have changed, you can use
 @command{git whatchanged} instead.
 
 If you want to take a closer look
