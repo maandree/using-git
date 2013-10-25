@@ -684,7 +684,7 @@ the files and make a new commit.
 @section Cloning a repository
 
 The first thing you need to do in order
-to begin collaboration is the clone the
+to begin collaboration is to clone the
 repository:
 
 @example
