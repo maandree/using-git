@@ -615,7 +615,7 @@ git checkout BRANCH_NAME
 @node Merging branches
 @section Merging branches
 
-The merge a branch into another, switch
+To merge a branch into another, switch
 to one of them and pull the other:
 
 @example
