@@ -817,6 +817,11 @@ and some projects will require it. To
 sign off with @command{git am}, just add
 @command{--signoff}.
 
+If you are unable to apply a patch with
+@command{git am} because of the patch's
+formatting, test @command{git apply}
+instead.
+
 
 
 @node Making pull requests
