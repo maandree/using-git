@@ -693,7 +693,8 @@ git clone REPOSITORY -o upstream
 
 By including @option{-o upstream}, Git
 sets up the cloned repository as a
-remote repository named `upstream'.
+remote repository named `upstream'
+instead of `origin'.
 
 If you want to access a branch in the
 upstream repository, use
