@@ -872,7 +872,7 @@ to better understand how Git works.
 The first tree you encounter is the
 working directory, called the working
 tree in Git. The tree begins in the
-parent so called git directory;
+parent of the so called git directory;
 the directory you executed
 @command{git init} in, and contains
 the directory @file{.git}.
