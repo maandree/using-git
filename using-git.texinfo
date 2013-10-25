@@ -829,14 +829,14 @@ instead.
 
 A less feature rich alternative to
 patches are pull request, but they are
-easier to just because you do know need
+easier to use because you do not need
 to know anything to make a pull request
 and to accept them you just need to
 know how to pull from other repositories.
 
 Git does however provide a command
 the produces a clean standard message
-than can be posted on a mailing list.
+that can be posted on a mailing list.
 To do this just type:
 
 @example
