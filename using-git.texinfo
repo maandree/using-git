@@ -637,7 +637,7 @@ where you will get merge conflicts is when
 one of the branches has made a modification
 where the other has change the indention,
 so keep to a coding style from the start;
-or both has edited the same lines.
+or both have edited the same lines.
 
 If you get a merge conflict, Git will tell
 you so, in which files there are conflicts,
