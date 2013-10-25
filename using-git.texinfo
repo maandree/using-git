@@ -827,7 +827,7 @@ instead.
 @node Making pull requests
 @section Making pull requests
 
-A less feature rich alternative than
+A less feature rich alternative to
 patches are pull request, but they are
 easier to just because you do know need
 to know anything to make a pull request
