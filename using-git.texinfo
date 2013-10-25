@@ -931,8 +931,8 @@ git mv FILE NEW_NAME  # Rename FILE to NEW_NAME
 If a directory becomes empty
 in the working directory it is
 automatically removed from working
-directory. Directories are never
-tracked by Git, so you cannot have
+directory. Directories are not
+tracked by Git, you cannot have
 an empty directory in a commit.
 
 You can also use @command{git add -u}
