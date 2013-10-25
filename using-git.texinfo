@@ -891,7 +891,7 @@ restage the file.
 When you have done some work ---
 just a small logical step is recommended
 --- and want to save your changes you
-commit then with @command{git commit}.
+commit the index with @command{git commit}.
 This is when you encounter the third
 tree, the @code{HEAD}. @code{HEAD} is
 the file tree of the last commit, and
