@@ -959,20 +959,20 @@ them unique identifier, this
 solves the problem were you in
 Git can get an evil merge if
 the pulled branch does not have
-any common commits@footnote{Identified
+any common commits.@footnote{Identified
 with commit ID, not snapshots,
 which reflects on more than the
-file content.}, for example,
+file content.} For example,
 the pull patch was not made from
 a clone repository or did not
 contain commit history. Other
 systems tracks renames explicitly
 when a rename command is made,
-that is worst because than mean
+that is worst because that means
 that you need to use the rename
 commit, and evil merges are even
-more probable. A problem will
-merging when where is a rename
+more probable. A problem with
+merging when there is a rename
 is that the changes are automerged
 instead of creating a conflict,
 you can get evil merges where
