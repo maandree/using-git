@@ -868,7 +868,6 @@ you want to see the changes.
 
 Git has four trees should know about
 to better understand how Git works.
-
 The first tree you encounter is the
 working directory, called the working
 tree in Git. The tree begins in the
@@ -929,10 +928,10 @@ git rm FILE           # Remove FILE
 git mv FILE NEW_NAME  # Rename FILE to NEW_NAME
 @end example
 
-If an directory in becomes empty
+If a directory becomes empty
 in the working directory it is
 automatically removed from working
-directory. And directories are never
+directory. Directories are never
 tracked by Git, so you cannot have
 an empty directory in a commit.
 
