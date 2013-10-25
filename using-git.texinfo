@@ -994,16 +994,11 @@ type @command{git status}.
 @section Go back in time
 
 Because Git keeps track of what
-has changed it has a log you
+has changed it has a log you can
 access, which has commit messages,
 so you know when something has
 happend or what has happen lately.
-To read the log type:
-
-@example
-git log
-@end example
-
+To read the log type @command{git log}.
 If you want to know which files
 have changes, you can use
 @command{git whatchanged} instead.
@@ -1025,17 +1020,10 @@ git stash pop           # Only if you have uncommited changes, this
 @end example
 
 If you instead what to see all
-changes from that point of time type:
-
-@example
-git diff COMMIT_ID
-@end example
-
-Or for a specific file:
-
-@example
-git diff COMMIT_ID FILE
-@end example
+changes from that point of time type
+@command{git diff COMMIT_ID}, or
+@command{git diff COMMIT_ID FILE}
+for a specific file.
 
 If you decide that you want to go back
 permanently to this state you type:
