@@ -1457,6 +1457,10 @@ the old commits that have be squashed
 and update the new commit. Without
 @option{--force} the push will be rejected.
 
+Try to avoid commit squash between
+were the squash top is not the tip
+of a commit chain.
+
 
 
 @node Think about the children
