@@ -142,6 +142,7 @@ Texts. A copy of the license is included in the section entitled
 * Basic commands::                        So happy hacking!
 * I just don't know what went wrong::     Identifying when something broke and how to recover
 * Version control::                       Time to release a new version?
+* Commit squashing::                      Melding commits
 * Interface::                             Git's interface design
 * Features::                              Git's design and features
 * Beyond Git::                            Just using Git is not enough
@@ -1282,7 +1283,7 @@ bisection.
 @node Tagging versions
 @section Tagging versions
 
-General, programs have different release
+Generally, programs have different release
 version. When you release a new version,
 you tag the last commit makes it into
 that version. To do this, create an
@@ -1355,6 +1356,143 @@ commit message. You can limit the commits
 to a commits where specify files has been
 changed by appending those files to the
 command.
+
+
+
+@node Commit squashing
+@chapter Commit squashing
+
+@menu
+* Squash'em::                             Merging commits into one
+* Think about the children::              Repairing the history of child branches
+@end menu
+
+
+
+@node Squash'em
+@section Squash'em
+
+Assume that you made a commit, but you
+find a typo or an other error and make
+subsequent commit. These two commits are
+the part of the same logical step,
+normally you would want to make the
+second commit an amendment of the first
+commit rather than a separate commit,
+but if you did not you can squash them
+together. Normally this does not matter,
+but you may want to keep your commit
+history clean or you may be requested to
+if you submit a patch or pull request.
+
+Squashing commits is a bit more
+complicated than one may want to,
+but it is simple rather than complex.
+If you have a branch that you want
+to squash and merge with another branch
+it is easy:
+
+@example
+git merge --squash mergee
+@end example
+
+The merger and the mergee now have
+different history. You can either
+delete the mergee with
+@command{git branch -D mergee}
+or rename it do indicate the that
+its history is different:
+
+@example
+git branch -m mergee unsquashed-mergee
+@end example
+
+But the complicated part is when you
+want to squash a set of commits without
+mergine them into another branch.
+To do this you need to create a temporary
+branch and merge into it. Assume that
+you have then branches @code{squashthis}
+and @code{squashbase}; @code{squashthis}
+is a branch that should be squash from
+@code{squashbase}.
+
+@example
+git checkout squashthis
+git checkout -b unsquashed-squashthis    # Save the unsquashed commits
+git push -u origin/unsquashed-squashthis # and (optionally) push them
+git checkout squashbase
+git checkout -b squashed-squashthis
+git merge --squash squashthis
+@end example
+
+Now you have make a backup of
+@code{squashthis}, named
+@code{unsquashed-squashthis}, before
+it was squashed; and created
+a squashed duplicated of
+@code{squashthis} named
+@code{squashed-squashthis}.
+But you should also turn
+@code{squashthis} into
+@code{squashed-squashthis} and
+push the update preferable without
+ever deleting @code{squashthis}
+on the remote repository so that
+an collaboration service when a
+pull request is made does not get
+confused.
+
+@example
+# We are still in squashed-squashthis
+git branch -M squashed-squashthis squashthis
+# The local squashthis has been deleted and replaced with
+# squashed-squashthis, and we are now in squashthis, the
+# new name of squashed-squashthis.
+git push --force
+@end example
+
+@option{--force} is needed to remove
+the old commits that have be squashed
+and update the new commit. Without
+@option{--force} the push will be rejected.
+
+
+
+@node Think about the children
+@section Think about the children
+
+If @code{squashthis} in @ref{Squash'em},
+is not the tip of a branch, it will
+atleast have one child branch. That
+child (all children) will have a
+broken history and be a child of
+@code{squashbase} instead of
+@code{squashthis}. To repair this,
+the child needs to be rebased:
+
+@example
+git checkout squashchild
+git rebase squashthis
+@end example 
+
+This is an except to the rule that
+you should not run @command{git rebase}.
+In this case it is prefered because
+you are repairing rewritten history
+rather than rewriting history.
+
+The consequence if this rebase is
+that the commit of @code{squashthis}
+is inserted between @code{squashbase}
+and @code{unsquash-squashthis} before
+@code{squashchild}. The commits of
+@code{unsquash-} @code{squashthis} have
+no effect and should be removed. To do
+this you need to squash togather the
+commits of @code{unsquash-squashthis}
+and (at least) the first proper commit
+of @code{squashchild}.
 
 
 
@@ -1667,7 +1805,7 @@ the state in the same manner.
 @chapter Beyond Git
 
 @menu
-* Additional tools::                      Programs that you can use togather with Git
+* Additional tools::                      Programs that you can use together with Git
 * The binary problem::                    Binary files are evil agaist source control
 * Writing commit messages::               How to write good commit messages
 * Standard files::                        People have expections, and they should have
