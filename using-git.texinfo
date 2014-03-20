@@ -1641,8 +1641,8 @@ used.
 This might seem obvious, but CVS,
 ClearCase and Visual SourceSafe
 does not implement this; atomic
-commits. Atomic commits refers
-to a guarantee att an action cannot
+commits. Atomic commits refers to
+a guarantee that an action cannot
 be interrupted and leave in a
 partially complete state but be
 marked at complete, either all
