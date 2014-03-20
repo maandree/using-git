@@ -1459,7 +1459,10 @@ and update the new commit. Without
 
 Try to avoid commit squashing
 were the squash top is not the tip
-of a commit chain.
+of a commit chain. It will probably
+lead to merge conflicts and you will
+have interate the process for
+subsequent commits.
 
 
 
