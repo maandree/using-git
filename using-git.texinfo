@@ -1461,8 +1461,14 @@ Try to avoid commit squashing
 were the squash top is not the tip
 of a commit chain. It will probably
 lead to merge conflicts and you will
-have interate the process for
-subsequent commits.
+have interate the process for subsequent
+commits. Additionally, it is a bad idea
+to squash branches other as working,
+this includes you default branch
+(usually called @code{master}). You
+should always assume that others are
+working on public branches that feature
+branches.
 
 
 
