@@ -1365,8 +1365,8 @@ command.
 @menu
 * Squash'em::                             Merging commits into one
 * Think about the children::              Repairing the history of child branches
+* Commit splitting::                      Splitting after squashing
 @end menu
-@c TODO cherry-pick reset
 
 
 
@@ -1507,6 +1507,59 @@ this you need to squash togather the
 commits of @code{unsquash-squashthis}
 and (at least) the first proper commit
 of @code{squashchild}.
+
+
+
+@node Commit splitting
+@section Commit splitting
+
+You way want to split a commit, after
+you have squashed commits, to make a
+set of commits each representing a
+logical step.
+
+If the commit you want to split is
+named @code{squashed}, you can checkout
+the commit before it and cherry-pick it
+into a new branch:
+
+@example
+git checkout squashed^
+git checkout -b splitted-squashed
+git cherry-pick squashed
+@end example
+
+Then you reset to make so that the
+changes are not staged:
+
+@example
+git reset HEAD^
+@end example
+
+Now you can include the changes you
+want in to first commit and start over
+from the @command{git cherry-pick}
+step and include the changes for the
+second commit and so on until everything
+is included.
+
+When you can created the final commit
+you can save @code{squashed}:
+
+@example
+git checkout squashed
+git checkout -b unsplitted-squashed
+git push -u origin unsplitted-squashed
+@end example
+
+And then update @code{squashed} with
+the commit split:
+
+@example
+git checkout splitted-squashed
+git branch -M splitted-squashed squashed
+git push --force
+@end example
 
 
 
