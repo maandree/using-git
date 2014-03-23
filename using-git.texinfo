@@ -1366,6 +1366,7 @@ command.
 * Squash'em::                             Merging commits into one
 * Think about the children::              Repairing the history of child branches
 @end menu
+@c TODO cherry-pick reset
 
 
 
