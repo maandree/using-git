@@ -786,7 +786,7 @@ Message-ID: <MESSAGE_ID>
 @end example
 
 As indicated here, it is surrended by less than
-and grater than-signs. You should, if you have
+and greater than-signs. You should, if you have
 subscribed to the mailing list, have gotten it
 send to your e-mail. If you do not have it, go
 the the mailing list and click that you want to
