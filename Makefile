@@ -13,16 +13,6 @@ TEXIFLAGS = #--force
 all:
 
 
-%.gz: %
-	gzip -9c < "$<" > "$@"
-
-%.bz2: %
-	bzip2 -9c < "$<" > "$@"
-
-%.xz: %
-	xz -e9 < "$<" > "$@"
-
-
 .PHONY: install
 install:
 
@@ -40,10 +30,10 @@ all: doc
 doc: info pdf ps dvi
 
 .PHONY: info pdf ps dvi
-info: $(PROGRAM).info.gz
-pdf: $(PROGRAM).pdf.gz
-ps: $(PROGRAM).ps.gz
-dvi: $(PROGRAM).dvi.gz
+info: $(PROGRAM).info
+pdf: $(PROGRAM).pdf
+ps: $(PROGRAM).ps
+dvi: $(PROGRAM).dvi
 
 #logo.pdf: logo.svg
 #        rsvg-convert --format=pdf "$<" > "$@"
@@ -79,8 +69,8 @@ uninstall-info:
 .PHONY: clean-texinfo
 clean: clean-texinfo
 clean-texinfo:
-	-rm -- *.{info,pdf,ps,dvi}{,.gz,.bz2,.xz} 2>/dev/null
-	-rm -- *.{aux,cp,cps,fn,ky,log,pg,pgs,toc,tp,vr,vrs} 2>/dev/null
+	-rm -- *.{info,pdf,ps,dvi}
+	-rm -- *.{aux,cp,cps,fn,ky,log,pg,pgs,toc,tp,vr,vrs}
 
 ## License section
 
