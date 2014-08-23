@@ -302,7 +302,7 @@ updates others have made, use the command
 As seen, you do not need a hosting service --- if
 you have a network filesystem anyone with access
 to it can also have access your bare repository ---
-but it is a grate way for making your projects
+but it is a great way for making your projects
 available to the world.
 
 Here is a list of gratis Git hosting services that
@@ -1060,7 +1060,7 @@ delete the filesystem while your
 operating system is running.
 
 @noindent
-Bryan: Yeah, it is a grate user in
+Bryan: Yeah, it is a great user in
 that regard.
 
 @noindent
@@ -1153,7 +1153,7 @@ mv REPOSITORY.new REPOSITORY
 @node Using the stash
 @section Using the stash
 
-The stash is a grate utility for storing
+The stash is a great utility for storing
 changes. If you have made changes in
 the working directory or the index, you
 can store them in the stash and both
@@ -1686,7 +1686,7 @@ control lists, extended attributes nor forks.
 One of Git's features is that it does
 not have the feature@footnote{Yes, that
 it does not have it. Do not be confused,
-not having features are often grater features.}
+not having features are often greater features.}
 of perserving timestamps.
 
 Perserving modification time on files is
@@ -1905,7 +1905,7 @@ For this the package and command
 @command{tig} may be just want you need
 if you live in the terminal.
 
-@command{bugseverywhere} is a grate tool
+@command{bugseverywhere} is a great tool
 for keeping track of issues in Git repositories.
 Issues are commited to the current branch
 you are working on, meaning that you can
