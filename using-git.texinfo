@@ -770,7 +770,7 @@ server should accept this.
 If you are replying to a message in the mailing
 list, perhaps with an updated patch, you should
 specify the message ID of the message to reply
-to. This done my adding the option:
+to. This done by adding the option:
 
 @example
 --in-reply-to=MESSAGE_ID
@@ -1570,7 +1570,7 @@ git push --force
 * First things first::                    Order matters! (Especially with find)
 * Wildcards::                             Beware of wildcards
 @end menu
-@comment TODO man gitrevisions
+@c TODO man gitrevisions
 
 
 
