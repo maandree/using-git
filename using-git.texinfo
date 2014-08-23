@@ -761,6 +761,12 @@ server to use, authorisation and configurations:
 --smtp-pass=PASSPHRASE
 @end example
 
+You do not need to use @option{--smtp-pass}.
+But if you are inclined to it is good to know
+that if you start the command line with
+whitespace in GNU Bash, GNU Bash will not
+store the command in the command history.
+
 If you are using a forwarding e-mail, such
 as @@member.fsf.org, you send using your
 normal e-mail, but use the forwarding e-mail
