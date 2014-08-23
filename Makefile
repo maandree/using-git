@@ -1,9 +1,13 @@
-PROGRAM = using-git
+BOOK = using-git
 PKGNAME = using-git
 TEXINFO_DIR = .
 
 PREFIX = /usr
 DATA = /share
+DATADIR = $(DATADIR)
+INFODIR = $(DATADIR)/info
+DOCDIR = $(DATADIR)/doc
+LICENSEDIR = $(DATADIR)/licenses
 
 TEXIFLAGS = #--force
 
@@ -30,59 +34,82 @@ all: doc
 doc: info pdf ps dvi
 
 .PHONY: info pdf ps dvi
-info: $(PROGRAM).info
-pdf: $(PROGRAM).pdf
-ps: $(PROGRAM).ps
-dvi: $(PROGRAM).dvi
+info: $(BOOK).info
+pdf: $(BOOK).pdf
+ps: $(BOOK).ps
+dvi: $(BOOK).dvi
 
-#logo.pdf: logo.svg
-#        rsvg-convert --format=pdf "$<" > "$@"
-
-#logo.eps: obj/logo.ps
-#        ps2eps "$<"
-
-#logo.ps: logo.svg
-#        rsvg-convert --format=ps "$<" > "$@"
+#obj/logo.svg: logo.svg
+#	@mkdir -p obj
+#	cp "$<" "$@"
+#
+#obj/logo.pdf: logo.svg
+#	@mkdir -p obj
+#	rsvg-convert --format=pdf "$<" > "$@"
+#
+#obj/logo.eps: obj/logo.ps
+#	ps2eps "$<"
+#
+#obj/logo.ps: logo.svg
+#	@mkdir -p obj
+#	rsvg-convert --format=ps "$<" > "$@"
 
 %.info: $(TEXINFO_DIR)/%.texinfo
 	$(MAKEINFO) $(TEXIFLAGS) "$<"
 
 %.pdf: $(TEXINFO_DIR)/%.texinfo
-	texi2pdf $(TEXIFLAGS) "$<"
+	@mkdir -p obj
+	cd obj && yes X | texi2pdf $(TEXIFLAGS) "../$<"
+	mv "obj/$@" "$@"
 
 %.dvi: $(TEXINFO_DIR)/%.texinfo
-	$(TEXI2DVI) $(TEXIFLAGS) "$<"
+	@mkdir -p obj
+	cd obj && yes X | $(TEXI2DVI) $(TEXIFLAGS) "../$<"
+	mv "obj/$@" "$@"
 
 %.ps: $(TEXINFO_DIR)/%.texinfo
-	texi2pdf $(TEXIFLAGS) --ps "$<"
+	@mkdir -p obj
+	cd obj && yes X | texi2pdf $(TEXIFLAGS) --ps "../$<"
+	mv "obj/$@" "$@"
 
-.PHONY: install-info
+.PHONY: install-info install-pdf install-dvi install-ps
 install: install-info
-install-info: $(PROGRAM).info.gz
-	install -Dm644 "$<" -- "$(DESTDIR)$(PREFIX)$(DATA)/info/$(PKGNAME).info.gz"
+install-info: $(BOOK).info
+	install -Dm644 "$<" -- "$(DESTDIR)$(INFODIR)/$(PKGNAME).info"
+install-pdf: $(BOOK).pdf
+	install -Dm644 "$<" -- "$(DESTDIR)$(DOCDIR)/$(PKGNAME).pdf"
+install-dvi: $(BOOK).dvi
+	install -Dm644 "$<" -- "$(DESTDIR)$(DOCDIR)/$(PKGNAME).dvi"
+install-ps: $(BOOK).ps
+	install -Dm644 "$<" -- "$(DESTDIR)$(DOCDIR)/$(PKGNAME).ps"
 
-.PHONY: uninstall-info
-uninstall: uninstall-info
+.PHONY: uninstall-info uninstall-pdf uninstall-dvi uninstall-ps
+uninstall: uninstall-info uninstall-pdf uninstall-dvi uninstall-ps
 uninstall-info:
-	-rm -- "$(DESTDIR)$(PREFIX)$(DATA)/info/$(PKGNAME).info.gz"
+	-rm -- "$(DESTDIR)$(INFODIR)/$(PKGNAME).info"
+uninstall-pdf:
+	-rm -- "$(DESTDIR)$(DOCDIR)/$(PKGNAME).pdf"
+uninstall-dvi:
+	-rm -- "$(DESTDIR)$(DOCDIR)/$(PKGNAME).dvi"
+uninstall-ps:
+	-rm -- "$(DESTDIR)$(DOCDIR)/$(PKGNAME).ps"
 
 .PHONY: clean-texinfo
 clean: clean-texinfo
 clean-texinfo:
-	-rm -- *.{info,pdf,ps,dvi}
-	-rm -- *.{aux,cp,cps,fn,ky,log,pg,pgs,toc,tp,vr,vrs}
+	-rm -r -- *.{info,pdf,ps,dvi}
 
 ## License section
 
 .PHONY: install-license
 install: install-license
 install-license:
-	install -d -- "$(DESTDIR)$(PREFIX)$(DATA)/licenses/$(PKGNAME)"
-	install -m644 LICENSE -- "$(DESTDIR)$(PREFIX)$(DATA)/licenses/$(PKGNAME)"
+	install -d -- "$(DESTDIR)$(LICENSEDIR)/$(PKGNAME)"
+	install -m644 LICENSE -- "$(DESTDIR)$(LICENSEDIR)/$(PKGNAME)"
 
 .PHONY: uninstall-license
 uninstall: uninstall-license
 uninstall-license:
-	-rm -- "$(DESTDIR)$(PREFIX)$(DATA)/licenses/$(PKGNAME)/LICENSE"
-	-rmdir -- "$(DESTDIR)$(PREFIX)$(DATA)/licenses/$(PKGNAME)"
+	-rm -- "$(DESTDIR)$(LICENSEDIR)/$(PKGNAME)/LICENSE"
+	-rmdir -- "$(DESTDIR)$(LICENSEDIR)/$(PKGNAME)"
 
