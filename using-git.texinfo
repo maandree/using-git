@@ -317,11 +317,11 @@ project will not use non-Free Software and no license
 information will be missing. Savannah runs on only
 Free Software.
 
-@item @bullet{} @url{https://gna.org, Gna!}
+@item @bullet{} @url{https://gna.org/, Gna!}
 For Free Software projects only. Gna! runs on only
 Free Software.
 
-@item @bullet{} @url{https://bitbucket.org, BitBucket}
+@item @bullet{} @url{https://bitbucket.org/, BitBucket}
 Gratis for 5 users, with unlimied number of private
 repositories for 5 collaborators.
 
@@ -331,11 +331,11 @@ and reactivatable when expired. Teachers and student
 organisations can get private repositories, as many
 as required, for an organisation.
 
-@item @bullet{} @url{https://www.assembla.com/catalog/51-free-private-git-repository-package?type=private&ad=git-wiki, Assembla}
+@item @bullet{} @url{https://www.assembla.com/, Assembla}
 Hosting limited to 2 GB with one free private
 repository for three users.
 
-@item @bullet{} @url{https://www.cloudforge.com/pricing, CloudForge}
+@item @bullet{} @url{https://www.cloudforge.com/, CloudForge}
 Hosting limited to 2 GB.
 
 @end table
