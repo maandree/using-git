@@ -277,7 +277,7 @@ is missing what is in Git called `index'
 `working tree'.
 
 @example
-mkcd -p /srv/git/MY_REPOSITORY.git
+mkdir -p /srv/git/MY_REPOSITORY.git
 cd /srv/git/MY_REPOSITORY.git
 git init --bare
 
