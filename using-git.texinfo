@@ -1977,10 +1977,18 @@ text based alternative.
 
 @table @asis
 @item Raster images
-Portable pixmap (.ppm, .pgm, .pbm, .pnm) is
+Portable Pixmap (.ppm, .pgm, .pbm, .pnm) is
 a text based@footnote{Optionally partially
 binary.} image format that is supported by
 The GNU Image Manipulation Program (GIMP).
+If you want transparency in your images,
+Portable Arbitrary Pap (.pam) is the best
+well established format, however, it is
+not widely supported --- but ImageMagick
+and GraphicsMagick can be used to conversion
+to Portable Network Graphics (.png) or almost
+any other format, --- and only the headers
+are in plain text.
 
 @item Vector images
 Scalable Vector@footnote{Yes it is redudant,
