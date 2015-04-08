@@ -724,7 +724,7 @@ it can easily be submitted to a mailing list,
 which the common way for large projects for
 accepting patches.
 
-The created patch file is formated as an
+The created patch file is formatted as an
 e-mail, with `[PATCH]' in the beginning of
 the subject line. If you update the patch
 it is customary to use `[PATCH v2]' instead
