@@ -425,7 +425,7 @@ the version the user used.
 Traditionally, version control systems
 were centralised. Every project has one
 repository all contributors pushed and
-pulled from. Git is distributed, this
+pulled from. Git is distributed. This
 means that contributors clone the
 respository and works on that clone
 instead of ``checking out'' the current
