@@ -1982,7 +1982,7 @@ a text based@footnote{Optionally partially
 binary.} image format that is supported by
 The GNU Image Manipulation Program (GIMP).
 If you want transparency in your images,
-Portable Arbitrary Pap (.pam) is the best
+Portable Arbitrary Map (.pam) is the best
 well established format, however, it is
 not widely supported --- but ImageMagick
 and GraphicsMagick can be used to conversion
