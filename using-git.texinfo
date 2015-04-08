@@ -289,7 +289,7 @@ git push -u orgin master  # master is the branch you are working in
 It is standard to append @file{.git} to the
 end of the repository name when it is bare.
 
-To submit your changes to `origin' you can now
+To submit your changes to `origin', you can now
 use the command @command{git push}. To fetch
 updates others have made, use the command
 @command{git pull}.
