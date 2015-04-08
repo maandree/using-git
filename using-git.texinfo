@@ -2052,10 +2052,10 @@ Assume your project is in Swedish, everyone
 that understands Swedish will be able to
 translate it to any other language. So far
 it would be okay to write anything in Swedish,
-but once it has been translate, for example
+but once it has been translated, for example
 to English, additional translators that do
 not understand Swedish can contribute with
-additional translators. Now it is perferable
+additional translations. Now it is perferable
 with English, while the translators can
 understand everything that are should translate
 they do not understand anything else.
@@ -2163,7 +2163,7 @@ with all such information in the top of
 your repository.
 
 @item @file{HACKING} @i{(optional)}
-For complex project you can have a file
+For complex projects you can have a file
 named @file{HACKING} with information
 about how to modify the code.
 
