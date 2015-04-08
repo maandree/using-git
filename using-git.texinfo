@@ -1985,7 +1985,7 @@ but that is really what it is called.} Graphics
 (SVG) is the most popular vector image format,
 and in fact it is text based, more precisely
 it is XML based.
-Will you may not be able to view an SVG file
+While you may not be able to view an SVG file
 with merge conflicts, you are still able to
 open it in a text editor and fix the conficts.
 However it may not be the simplest thing to
