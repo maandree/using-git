@@ -1993,8 +1993,8 @@ resolve in a text editor it helps you to identify
 where the conflicts are located in the graphics.
 
 @item Documentation
-Texinfo and TeX are two very popular alternatives
-to word editors such as Libre Office.
+Texinfo and @TeX{} are two very popular alternatives
+to word editors such as LibreOffice.
 
 Texinfo is designed for manuals and books, and
 can be compiled to virtually any publish format,
@@ -2002,12 +2002,12 @@ including @command{info} manuals, Hypertext
 Markup Language, Portable Document Format and
 PostScript.
 
-TeX is more general purpose@footnote{Texinfo is
-actually a macro set for TeX.} has extensible and
+@TeX{} is more general purpose@footnote{Texinfo is
+actually a macro set for @TeX{}.} has extensible and
 redefinable syntax and is written to guarantee
 that one source will always and everywhere produce
 the exact same binaries, in terms of hows that
-look when viewed. Its macro set LaTeX is the
+look when viewed. Its macro set @LaTeX{} is the
 prefered office system in academia.
 @end table
 
