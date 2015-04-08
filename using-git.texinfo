@@ -876,7 +876,7 @@ you want to see the changes.
 @node The trees of Git
 @section The trees of Git
 
-Git has four trees should know about
+Git has four trees your should know about
 to better understand how Git works.
 The first tree you encounter is the
 working directory, called the working
