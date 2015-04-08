@@ -47,8 +47,8 @@ This Git manual is intended to be
 educational rather than a lookup
 documentation. And it is written as a
 tutorial, similarly to an educational
-math book, except it does not include
-problems to solve or test.
+mathematics book, except it does not
+include problems to solve or test.
 Consequentially, it is designed to
 be read chapter by chapter with
 occasional look-backs. Because of
