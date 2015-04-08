@@ -1419,7 +1419,7 @@ git branch -m mergee unsquashed-mergee
 
 But the complicated part is when you
 want to squash a set of commits without
-mergine them into another branch.
+merging them into another branch.
 To do this you need to create a temporary
 branch and merge into it. Assume that
 you have then branches @code{squashthis}
