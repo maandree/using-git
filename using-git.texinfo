@@ -1678,7 +1678,7 @@ permission.
 
 Additionally Git does not track file ownership
 --- that would not only be stupid, that would
-be outright dumb, even moronic ---, access
+be outright dumb, even moronic, --- access
 control lists, extended attributes nor forks.
 
 
