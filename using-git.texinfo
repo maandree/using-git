@@ -766,6 +766,9 @@ But if you are inclined to it is good to know
 that if you start the command line with
 whitespace in GNU Bash, GNU Bash will not
 store the command in the command history.
+Be aware that other users on the system
+will be able to see the passphrase in the
+process list if you use @option{--smtp-pass}.
 
 If you are using a forwarding e-mail, such
 as @@member.fsf.org, you send using your
