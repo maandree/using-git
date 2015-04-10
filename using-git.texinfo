@@ -72,6 +72,8 @@ and navigateable by others without
 excessive documentation and without having
 to answer too many questions.
 
+This manual is aimed at technical people.
+
 @c @ifclear HARD_COPY_EDITION
 @c If you prefer a hard copy edition, you can order one from
 @c ...
