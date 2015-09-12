@@ -1108,7 +1108,7 @@ Are you kidding me, that is asinine!
 I would love to think that I am so
 hardcore that I just always ran as
 root. I just, caution to the wind,
-screw it, lets just thunderdome this
+screw it, let's just thunderdome this
 bitch and… you know, see what
 happens. But no, never run as root,
 never ever do that. The only time
