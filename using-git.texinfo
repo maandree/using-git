@@ -1285,7 +1285,7 @@ bisection.
 
 @menu
 * Tagging versions::                      Releasing your new version
-* Cherry picking::                        Backporting and selective proposed update merge
+* Cherry-picking::                        Backporting and selective proposed update merge
 * Examine the log::                       Utilising Git's commit log
 @end menu
 
@@ -1333,15 +1333,15 @@ files inside @file{.git/refs}.
 
 
 
-@node Cherry picking
-@section Cherry picking
+@node Cherry-picking
+@section Cherry-picking
 
-Cherry picking is the action of applying
+Cherry-picking is the action of applying
 changes made in another commit. It is a
 create tool both for apply changes made
 to another branch or to backport features.
 
-Cherry picking works just merging branches,
+Cherry-picking works just merging branches,
 except, instead of choosing a branch to pull
 and apply all it changes you choose
 individual commits, and commits ranges:
