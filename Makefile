@@ -59,17 +59,17 @@ dvi: $(BOOK).dvi
 
 %.pdf: $(TEXINFO_DIR)/%.texinfo
 	@mkdir -p obj/pdf
-	cd obj/pdf && yes X | texi2pdf $(TEXIFLAGS) "../../$<"
+	cd obj/pdf && texi2pdf $(TEXIFLAGS) "../../$<" < /dev/null
 	mv "obj/pdf/$@" "$@"
 
 %.dvi: $(TEXINFO_DIR)/%.texinfo
 	@mkdir -p obj/dvi
-	cd obj/dvi && yes X | $(TEXI2DVI) $(TEXIFLAGS) "../../$<"
+	cd obj/dvi && $(TEXI2DVI) $(TEXIFLAGS) "../../$<" < /dev/null
 	mv "obj/dvi/$@" "$@"
 
 %.ps: $(TEXINFO_DIR)/%.texinfo
 	@mkdir -p obj/ps
-	cd obj/ps && yes X | texi2pdf $(TEXIFLAGS) --ps "../../$<"
+	cd obj/ps && texi2pdf $(TEXIFLAGS) --ps "../../$<" < /dev/null
 	mv "obj/ps/$@" "$@"
 
 .PHONY: install-info install-pdf install-dvi install-ps
