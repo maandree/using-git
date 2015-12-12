@@ -340,6 +340,12 @@ repository for three users.
 @item @bullet{} @url{https://www.cloudforge.com/, CloudForge}
 Hosting limited to 2 GB.
 
+@item @bullet{} @url{https://www.codeplex.com/, CodePlex}
+Allows only Free Software licenses, but is very restrictive
+the which licenses it allows. Questionable security.
+Cannot be use for projects with complex license
+structures or for example GNU AGPL (GNU GPL is accepted.)
+
 @end table
 
 You should note that there are, other, Git hosting
