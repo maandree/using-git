@@ -89,7 +89,7 @@ This manual is aimed at technical people.
 
 
 @copying
-Copyright @copyright{} 2013, 2014, 2015 Mattias Andrée
+Copyright @copyright{} 2013, 2014, 2015, 2016 Mattias Andrée
 
 @quotation
 Permission is granted to copy, distribute and/or modify this document
@@ -722,14 +722,15 @@ you began from @code{upstream/master}:
 git format-patch upstream/master
 @end example
 
-This command will create a patch whose name
-will be printed by @command{git format-patch}.
+This command will create a patch for each
+commit whose names will be printed by
+@command{git format-patch}.
 
 Creating a patch this way will keep track
 of the commit messages, and the individual
 commits. Another advantage with this is that
 it can easily be submitted to a mailing list,
-which the common way for large projects for
+which is the common way for large projects for
 accepting patches.
 
 The created patch file is formatted as an
@@ -758,6 +759,13 @@ sender, by adding an option:
 --envelope-sender=SENDER_EMAIL_ADDRESS
 @end example
 
+When using an envelop sender you also need to
+specify the commiter with both name and e-mail:
+
+@example
+--from='NAME <EMAIL_ADDRESS>'
+@end example
+
 You will also need the specify which SMTP
 server to use, authorisation and configurations:
 
@@ -783,6 +791,13 @@ as @@member.fsf.org, you send using your
 normal e-mail, but use the forwarding e-mail
 address as the envelop-sender, most e-mail
 server should accept this.
+
+You should configure these settings@footnote{Except
+for the passphrase of course.} in @file{~/.gitconfig}.
+These settings are stored in the @code{[sendemail]}
+section. The key names are the same as the
+command line options, except in camel case
+instead of hyphens.
 
 If you are replying to a message in the mailing
 list, perhaps with an updated patch, you should
